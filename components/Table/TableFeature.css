@@ -1,0 +1,15 @@
+#table-feature table tbody tr td {
+    padding: 1rem 0.5rem;
+}
+
+#table-feature table tbody tr td:first-child {
+    font-weight: 600;
+}
+
+#table-feature table tbody tr td:not(:first-child) {
+    text-align: center;
+}
+
+#table-feature table tbody tr .cell-bold {
+    font-weight: 600;
+}

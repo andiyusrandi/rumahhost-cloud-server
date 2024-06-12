@@ -1,0 +1,19 @@
+#table__packages-vps table thead th,
+#table__packages-desa table thead th {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    font-weight: 400;
+}
+
+#table__packages-vps table tbody td,
+#table__packages-desa table tbody td {
+    padding: 1.25rem 0.75rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    background: white;
+}
+
+#table__packages-vps table tbody td.price,
+#table__packages-desa table tbody td.price {
+    color: #377BF6;
+}
