@@ -1,6 +1,5 @@
 import CloudHostingWordpressPackages from "@/components/Section/CloudHostingWordpressPackages";
 import Commitments from "@/components/Section/Commitments";
-import CreateWebUMKM from "@/components/Section/CreateWebUMKM";
 import ExploreProducts from "@/components/Section/ExploreProducts";
 import SearchDomain from "@/components/Section/SearchDomain";
 import FAQ from "@/components/Section/FAQ";
@@ -56,7 +55,33 @@ const domainPricing = async () => {
   return data
 }
 
+const datas = async () => {
+  const response = await fetch(process.env.DEV_URL + "/api/products/hosting-wordpress", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      whmcs: {
+        gid: 6,
+        action: "GetProducts"
+      },
+      whm: {
+        url: 'https://rumahhost.com:2087/json-api/getpkginfo?'
+      }
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+
+  const data = await response.json()
+  return data
+}
+
 async function CloudHostingWordpress() {
+  const products = await datas()
   const carouselData = await carouselDomain()
   const domainPricingData = await domainPricing()
 
@@ -115,7 +140,7 @@ async function CloudHostingWordpress() {
 
       <SearchDomain carouselData={carouselData} pricingData={domainPricingData} />
 
-      <CloudHostingWordpressPackages />
+      <CloudHostingWordpressPackages datas={products}/>
 
       <ExploreProducts />
 
