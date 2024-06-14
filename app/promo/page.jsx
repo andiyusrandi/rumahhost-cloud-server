@@ -64,7 +64,7 @@ async function Promo() {
         <div className="absolute left-[80%] top-[80%] aspect-square h-16 -translate-x-1/2 -translate-y-1/2 rotate-90 opacity-10 md:left-[60%] md:top-[20%] md:rotate-[80deg]">
           <Image
             src={PromoSVG}
-            alt=""
+            alt="Promo"
             style={{
               objectFit: "contain",
               objectPosition: "center",

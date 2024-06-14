@@ -18,7 +18,7 @@ function CloudHostingSSDPackages({ products }) {
           </p>
         </div>
       </div>
-      <div className="rounded-b-[50%_2rem] rounded-t-[50%_2rem] bg-[#13263C] py-10">
+      <div className="bg-[#e8e8e8] py-10">
         <div className="container">
           <div className="block w-full lg:hidden">
             <CarouselMain
