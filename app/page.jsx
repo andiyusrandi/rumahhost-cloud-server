@@ -10,6 +10,8 @@ import { TypewriterComponent } from "@/components/TypewriterComponent";
 import Artboard from "@/public/ArtboardHome.png";
 import { getData } from "@/utils/api-calls";
 
+// Coba update dari macbook
+
 export const metadata = {
   title: "RumahHost :: Technology Cloud Indonesia",
   description: "RumahHost merupakan penyedia cloud hosting server di Indonesia dengan performa terbaik uptime server terjamin dengan teknologi upper class",
