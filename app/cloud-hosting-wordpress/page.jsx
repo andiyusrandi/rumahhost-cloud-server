@@ -108,11 +108,14 @@ async function CloudHostingWordpress() {
               <h1
                 className={`font-ubuntu text-3xl font-bold text-transparent text-white lg:text-[40px] lg:leading-tight`}
               >
-                Online Bersama RumahHost Dengan Pelayanan Terbaik!
+               WordPress Hosting High Performance.
               </h1>
               <h3 className="text-base">
-                Cloud Hosting Indonesia dengan performance terbaik Uptime server
-                terjamin, Ayo kita mulai sekarang.
+                <li>Cocok untuk Pemula Hingga Profesional</li>
+                <li>Anti Lambat dengan SSD Terbaru</li>
+                <li>Domain dan SSL Gratis</li>
+                <li>Garansi 100 hari Uang Kembali</li>
+              
               </h3>
               <Link
                 href="#pricing"

@@ -45,11 +45,10 @@ function CloudHostingDesa() {
               <h1
                 className={`font-ubuntu text-3xl font-bold text-transparent text-white lg:text-[40px] lg:leading-tight`}
               >
-                Online Bersama RumahHost Dengan Pelayanan Terbaik!
+                Layanan Infrastruktur Server untuk Digitalisasi Desa
               </h1>
               <h3 className="text-base">
-                Cloud Hosting Indonesia dengan performance terbaik Uptime server
-                terjamin, Ayo kita mulai sekarang.
+              Hosting Desa adalah Layanan Infrastruktur Server Berbasis Cloud yang di rancang khusus untuk Website Desa dengan Technology Terbaru dan jaminan uptime 99,99%.
               </h3>
               <Link href="#packages" className="w-fit rounded-lg border border-white bg-transparent px-12 py-3 text-xs font-semibold capitalize text-transparent text-white hover:border-[#f14d2e] hover:bg-[#f14d2e] lg:text-base">mulai sekarang</Link>
             </div>
