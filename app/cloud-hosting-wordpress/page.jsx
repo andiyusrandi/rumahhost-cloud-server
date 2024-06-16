@@ -6,6 +6,7 @@ import FAQ from "@/components/Section/FAQ";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import Artboard from "@/public/ArtboardHome.png";
+import Wphero from "@/public/wp/wp-hero.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -88,19 +89,19 @@ async function CloudHostingWordpress() {
   return (
     <main>
       {/* Hero */}
-      <section id="hero" className="bg__hero-main">
+      <section id="hero" className="bg__hero-wordpress">
         <div className="container py-32 text-white md:pb-28">
           <div className="grid w-full gap-4 md:grid-cols-[auto_50%] lg:grid-cols-[auto_40%]">
             <div className="relative items-center justify-center flex lg:hidden">
               <Image
-                src={Artboard}
-                alt="Artboard"
+                src={Wphero}
+                alt="Wordpress Hosting Murah"
                 priority
                 style={{
                   objectFit: "contain",
                   objectPosition: "center",
                   maxWidth: "28rem",
-                  width: "80%",
+                  width: "72%",
                 }}
               />
             </div>
@@ -126,13 +127,13 @@ async function CloudHostingWordpress() {
             </div>
             <div className="relative items-center justify-center hidden lg:flex">
               <Image
-                src={Artboard}
-                alt=""
+                src={Wphero}
+                alt="wordpress Hosting Murah"
                 priority
                 style={{
                   objectFit: "contain",
                   objectPosition: "center",
-                  maxWidth: "28rem",
+                  maxWidth: "24rem",
                   width: "100%",
                 }}
               />
