@@ -7,7 +7,7 @@ import numeral from "numeral";
 function CloudHostingSSDPackages({ products }) {
   return (
     <section className="mb-12" id="pricing">
-      <div className="container">
+      <div className="container max-w-3xl">
         <div className="mb-10 text-center">
           <h3 className="mb-4 text-[28px] leading-7 font-bold md:text-4xl">
             Harga Cloud Hosting SSD Terbaik di Indonesia
@@ -18,7 +18,7 @@ function CloudHostingSSDPackages({ products }) {
           </p>
         </div>
       </div>
-      <div className="bg-[#e8e8e8] py-10">
+      <div className="bg-[#f2f7fa] py-10">
         <div className="container">
           <div className="block w-full lg:hidden">
             <CarouselMain
@@ -128,7 +128,7 @@ function CloudHostingSSDPackages({ products }) {
             {products.map((data, index) => (
               <div
                 key={index}
-                className={`flex flex-shrink-0 flex-grow basis-full flex-col items-center justify-between rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-primary" : "my-8 bg-white"}`}
+                className={`flex flex-shrink-0 flex-grow basis-full flex-col items-center justify-between rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-[#464646]" : "my-8 bg-white"}`}
               >
                 <div className="w-full">
                   <h5
@@ -152,7 +152,7 @@ function CloudHostingSSDPackages({ products }) {
                       Rp.{numeral(data.pricing.IDR.annually).format("0,0")}
                     </p>
                     <p
-                      className={`block w-fit rounded px-2 py-1 text-sm font-semibold ${data.isPopular ? "bg-white text-primary" : "bg-primary text-white"}`}
+                      className={`block w-fit rounded px-2 py-1 text-sm font-semibold ${data.isPopular ? "bg-white text-primary" : "bg-[#464646] text-white"}`}
                     >
                       Promo - Hemat {numeral(data.promo.value).format("0,0")}%
                     </p>
@@ -216,7 +216,7 @@ function CloudHostingSSDPackages({ products }) {
                 </div>
                 <a
                   href="#"
-                  className={`rounded-lg p-3 text-sm font-semibold capitalize ${data.isPopular ? "bg-white text-primary" : "bg-primary text-white"}`}
+                  className={`rounded-lg p-3 text-sm font-semibold capitalize ${data.isPopular ? "bg-white text-primary" : "bg-[#464646] text-white"}`}
                 >
                   Order Sekarang
                 </a>

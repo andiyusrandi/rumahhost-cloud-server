@@ -53,7 +53,7 @@ function CardProductHosting({ datas }) {
                   fontSize="1.5rem"
                   textTransform="uppercase"
                   fontWeight="700"
-                  textColor={data.isPopular ? "white" : "#FF7D2A"}
+                  textColor={data.isPopular ? "white" : "#000"}
                 >
                   {data.name}
                 </Heading>
@@ -201,7 +201,7 @@ function CardProductHosting({ datas }) {
                 fontSize="1.5rem"
                 textTransform="uppercase"
                 fontWeight="700"
-                textColor={data.isPopular ? "white" : "#00000"}
+                textColor={data.isPopular ? "white" : "#000"}
               >
                 {data.name}
               </Heading>
