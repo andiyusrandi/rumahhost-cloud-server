@@ -109,9 +109,11 @@ async function CloudHostingWordpress() {
               <h1
                 className={`font-ubuntu text-3xl font-bold text-transparent text-white lg:text-[40px] lg:leading-tight`}
               >
-               WordPress Hosting High Performance.
+              Get Ahead with Blazing-Fast WordPress Hosting Solutions!
               </h1>
               <h3 className="text-base">
+              Manfaatkan solusi hosting WordPress super cepat untuk membuat situs Anda lebih unggul. Dapatkan kecepatan dan kinerja optimal yang memastikan situs web Anda memuat dengan cepat, meningkatkan pengalaman pengguna, dan membantu Anda tetap online.
+               <br /><br />
                 <li>Cocok untuk Pemula Hingga Profesional</li>
                 <li>Anti Lambat dengan SSD Terbaru</li>
                 <li>Domain dan SSL Gratis</li>
