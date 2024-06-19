@@ -1,6 +1,5 @@
 "use client";
 
-import { productHosting } from "@/utils/data";
 import {
   Box,
   Card,
@@ -92,7 +91,7 @@ function CardProductHosting({ datas }) {
                     Rp.{numeral(data.pricing.IDR.annually).format("0,0")}
                   </Text>
                   <Box
-                    className={`w-full rounded px-3 py-2 font-bold ${data.isPopular ? "bg-white text-primary" : "bg-primary text-white"}`}
+                    className={`w-full rounded px-3 py-2 font-bold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
                   >
                     Promo {numeral(data.promo.value).format("0,0")}% - Hemat Rp.{numeral(parseInt(data.pricing.IDR.annually) * (parseInt(data.promo.value) / 100)).format("0,0")}
                   </Box>

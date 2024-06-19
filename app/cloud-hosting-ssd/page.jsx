@@ -2,7 +2,7 @@ import CloudHostingSSDPackages from "@/components/Section/CloudHostingSSDPackage
 import Commitments from "@/components/Section/Commitments";
 import ExploreProducts from "@/components/Section/ExploreProducts";
 import SearchDomain from "@/components/Section/SearchDomain";
-import FAQ from "@/components/Section/FAQ";
+import FaqCloudHostingSSD from "@/components/FAQ/FaqCloudHostingSSD";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import Artboards from "@/public/CloudHostingSSD.png";
@@ -127,7 +127,7 @@ async function CloudHostingSSD() {
 
       <ExploreProducts />
 
-      <FAQ />
+      <FaqCloudHostingSSD />
 
       <Commitments isBackgroundWhite={false} />
 

@@ -1,6 +1,6 @@
 import Commitments from "@/components/Section/Commitments";
 import TablePackagesVPS from "@/components/Table/TablePackagesVPS";
-import FAQ from "@/components/Section/FAQ";
+import FaqCloudVps from "@/components/FAQ/FaqCloudVps";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import ServerImage from "@/public/server.png";
@@ -81,7 +81,7 @@ function Server() {
         </div>
       </section>
 
-      <FAQ />
+      <FaqCloudVps />
 
       <Commitments isBackgroundWhite={false} />
 

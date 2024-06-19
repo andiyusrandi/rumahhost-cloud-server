@@ -2,7 +2,7 @@ import CloudHostingWordpressPackages from "@/components/Section/CloudHostingWord
 import Commitments from "@/components/Section/Commitments";
 import ExploreProducts from "@/components/Section/ExploreProducts";
 import SearchDomain from "@/components/Section/SearchDomain";
-import FAQ from "@/components/Section/FAQ";
+import FaqCloudHostingWP from "@/components/FAQ/FaqCloudHostingWP";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import Artboard from "@/public/ArtboardHome.png";
@@ -109,16 +109,13 @@ async function CloudHostingWordpress() {
               <h1
                 className={`font-ubuntu text-3xl font-bold text-transparent text-white lg:text-[40px] lg:leading-tight`}
               >
-              Get Ahead with Blazing-Fast WordPress Hosting Solutions!
+                Get Ahead with Blazing-Fast WordPress Hosting Solutions!
               </h1>
               <h3 className="text-base">
-              Manfaatkan solusi hosting WordPress super cepat untuk membuat situs Anda lebih unggul. Dapatkan kecepatan dan kinerja optimal yang memastikan situs web Anda memuat dengan cepat, meningkatkan pengalaman pengguna, dan membantu Anda tetap online.
-               <br /><br />
                 <li>Cocok untuk Pemula Hingga Profesional</li>
                 <li>Anti Lambat dengan SSD Terbaru</li>
                 <li>Domain dan SSL Gratis</li>
                 <li>Garansi 100 hari Uang Kembali</li>
-              
               </h3>
               <Link
                 href="#pricing"
@@ -130,7 +127,7 @@ async function CloudHostingWordpress() {
             <div className="relative items-center justify-center hidden lg:flex">
               <Image
                 src={Wphero}
-                alt="wordpress Hosting Murah"
+                alt="Wordpress Hosting Murah"
                 priority
                 style={{
                   objectFit: "contain",
@@ -150,7 +147,7 @@ async function CloudHostingWordpress() {
 
       <ExploreProducts />
 
-      <FAQ />
+      <FaqCloudHostingWP />
 
       <Commitments isBackgroundWhite={false} />
 

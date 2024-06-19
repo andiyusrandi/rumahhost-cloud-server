@@ -1,5 +1,5 @@
-import FAQ from "@/components/Section/FAQ";
 import ListDomainPrice from "@/components/Section/ListDomainPrice";
+import FaqDomainMurah from "@/components/FAQ/FaqDomainMurah";
 import Commitments from "@/components/Section/Commitments";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
@@ -107,7 +107,7 @@ async function DomainMurah() {
 
       <ListDomainPrice className="mt-8" datas={datas} />
 
-      <FAQ />
+      <FaqDomainMurah />
 
       <Commitments isBackgroundWhite={false} />
 

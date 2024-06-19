@@ -1,62 +1,67 @@
-import Image from "next/image";
 import CarouselProduct from "@/components/CarouselProduct";
+import Commitments from "@/components/Section/Commitments";
 import CreateWebUMKM from "@/components/Section/CreateWebUMKM";
 import ExploreProducts from "@/components/Section/ExploreProducts";
 import FAQ from "@/components/Section/FAQ";
 import SearchDomain from "@/components/Section/SearchDomain";
 import Testimonial from "@/components/Section/Testimonial";
-import Commitments from "@/components/Section/Commitments";
 import { TypewriterComponent } from "@/components/TypewriterComponent";
 import Artboard from "@/public/ArtboardHome.png";
 import { getData } from "@/utils/api-calls";
-
-// Coba update dari macbook
+import Image from "next/image";
 
 export const metadata = {
   title: "RumahHost :: Technology Cloud Indonesia",
-  description: "RumahHost merupakan penyedia cloud hosting server di Indonesia dengan performa terbaik uptime server terjamin dengan teknologi upper class",
+  description:
+    "RumahHost merupakan penyedia cloud hosting server di Indonesia dengan performa terbaik uptime server terjamin dengan teknologi upper class",
   alternates: {
-    canonical: '/',
-  }
+    canonical: "/",
+  },
 };
 
 const carouselDomain = async () => {
-  const response = await fetch(process.env.DEV_URL + "/api/domains/get-carousel-pricing", {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
+  const response = await fetch(
+    process.env.DEV_URL + "/api/domains/get-carousel-pricing",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
     },
-  });
+  );
 
   if (!response.ok) {
     throw new Error(`HTTP error! Status: ${response.status}`);
   }
 
-  const data = await response.json()
-  return data
-}
+  const data = await response.json();
+  return data;
+};
 
 const domainPricing = async () => {
-  const response = await fetch(process.env.DEV_URL + "/api/domains/get-tld-pricing", {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
+  const response = await fetch(
+    process.env.DEV_URL + "/api/domains/get-tld-pricing",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
     },
-  });
+  );
 
   if (!response.ok) {
     throw new Error(`HTTP error! Status: ${response.status}`);
   }
 
-  const data = await response.json()
-  return data
-}
+  const data = await response.json();
+  return data;
+};
 
 export default async function Home() {
   const products = await getData({ gid: 11, action: "GetProducts" });
-  const carouselData = await carouselDomain()
-  const domainPricingData = await domainPricing()
-    
+  const carouselData = await carouselDomain();
+  const domainPricingData = await domainPricing();
+
   return (
     <main>
       {/* Hero */}
@@ -115,7 +120,10 @@ export default async function Home() {
         </div>
       </section>
 
-      <SearchDomain carouselData={carouselData} pricingData={domainPricingData} />
+      <SearchDomain
+        carouselData={carouselData}
+        pricingData={domainPricingData}
+      />
 
       {/* Products */}
       <section id="products" className="my-8">

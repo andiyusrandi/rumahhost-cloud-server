@@ -2,13 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { MdKeyboardArrowDown, MdWhatsapp } from "react-icons/md";
-import { CgMenuRight, CgClose } from "react-icons/cg";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { CgClose, CgMenuRight } from "react-icons/cg";
+import { MdKeyboardArrowDown, MdWhatsapp } from "react-icons/md";
 
 import LogoHeader from "@/public/LogoHeader.svg";
 
 import { headerItem } from "@/utils/data";
+import ButtonDropdown from "../Button/ButtonDropdown";
 
 function Header() {
   const TOP_OFFSET = 10;
@@ -16,6 +18,7 @@ function Header() {
   const [headerWidth, setHeaderWidth] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showBackground, setShowBackground] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const headerObserver = new ResizeObserver((entries) => {
@@ -24,6 +27,10 @@ function Header() {
 
     headerObserver.observe(headerRef.current);
   });
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -96,7 +103,7 @@ function Header() {
                   return (
                     <div key={index} className="group">
                       <button className="flex w-full items-center justify-between px-3 py-2 capitalize transition-all duration-300 ease-in hover:text-primary">
-                        <Link href={data.url}>{data.title}</Link>
+                        {data.title}
 
                         <MdKeyboardArrowDown className="transition-transform duration-300 ease-in group-hover:rotate-180" />
                       </button>
@@ -143,52 +150,11 @@ function Header() {
               }
 
               return (
-                <div key={index} className="group h-full">
-                  <Link
-                    href={data.url}
-                    className="flex h-full items-center gap-2 text-nowrap px-2 py-4 text-sm capitalize transition-all duration-300 ease-in hover:text-primary"
-                  >
-                    {data.title}
-
-                    <MdKeyboardArrowDown className="transition-transform duration-300 ease-in group-hover:rotate-180" />
-                  </Link>
-
-                  <div
-                    className={`absolute left-0 top-full hidden w-full bg-[#323548] group-hover:flex`}
-                  >
-                    <div className="container flex justify-start gap-4">
-                      {data.subitem.length !== 0 &&
-                        data.subitem.map((subdata, index) => (
-                          <Link
-                            href={subdata.url}
-                            key={index}
-                            className="flex max-w-96 items-center justify-start gap-4 px-3 py-4"
-                          >
-                            <div className="relative aspect-square h-16">
-                              <Image
-                                src={subdata.image}
-                                alt={subdata.title}
-                                fill
-                                sizes="100vw"
-                                style={{
-                                  objectFit: "contain",
-                                  objectPosition: "center center",
-                                }}
-                              />
-                            </div>
-                            <div className="flex h-full flex-1 flex-col items-start text-left">
-                              <h6 className="font-bold text-primary">
-                                {subdata.title}
-                              </h6>
-                              <p className="text-wrap text-sm text-white">
-                                {subdata.desc}
-                              </p>
-                            </div>
-                          </Link>
-                        ))}
-                    </div>
-                  </div>
-                </div>
+                <ButtonDropdown
+                  key={index}
+                  title={data.title}
+                  datas={data.subitem}
+                />
               );
             })}
           </div>
