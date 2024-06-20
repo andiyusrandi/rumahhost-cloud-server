@@ -106,19 +106,16 @@ async function CloudHostingWordpress() {
               />
             </div>
             <div className="flex flex-col items-start gap-8 text-left md:items-end md:text-right lg:text-left lg:items-start lg:pt-14 lg:px-0">
-              <h1
-                className={`font-ubuntu text-3xl font-bold text-transparent text-white lg:text-[40px] lg:leading-tight`}
-              >
-              Get Ahead with Blazing-Fast WordPress Hosting Solutions!
-              </h1>
-              <h3 className="text-base">
-              Manfaatkan solusi hosting WordPress super cepat untuk membuat situs Anda lebih unggul. Dapatkan kecepatan dan kinerja optimal yang memastikan situs web Anda memuat dengan cepat, meningkatkan pengalaman pengguna, dan membantu Anda tetap online.
-               <br /><br />
-                <li>Cocok untuk Pemula Hingga Profesional</li>
-                <li>Anti Lambat dengan SSD Terbaru</li>
-                <li>Domain dan SSL Gratis</li>
-                <li>Garansi 100 hari Uang Kembali</li>
-              
+             
+             <h1 class="font-ubuntu text-3xl font-bold text-transparent text-white lg:text-[40px] lg:leading-tight">Get Ahead with  <mark class="px-2 text-white bg-primary-600 rounded dark:bg-primary">Blazing-Fast</mark> WordPress Hosting Solutions!</h1>
+                <h3 className="text-base">
+                Manfaatkan solusi hosting WordPress super cepat untuk membuat situs Anda lebih unggul. Dapatkan kecepatan dan kinerja optimal yang memastikan situs web Anda memuat dengan cepat, meningkatkan pengalaman pengguna, dan membantu Anda tetap online.
+                <br /><br />
+                  <li>Cocok untuk Pemula Hingga Profesional</li>
+                  <li>Anti Lambat dengan SSD Terbaru</li>
+                  <li>Domain dan SSL Gratis</li>
+                  <li>Garansi 100 hari Uang Kembali</li>
+                
               </h3>
               <Link
                 href="#pricing"

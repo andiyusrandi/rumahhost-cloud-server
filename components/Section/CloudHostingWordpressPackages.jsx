@@ -7,7 +7,7 @@ import numeral from "numeral";
 function CloudHostingWordpressPackages({ datas }) {
   return (
     <section className="mb-12" id="pricing">
-      <div className="container">
+      <div className="container max-w-3xl">
         <div className="mb-10 text-center">
           <h3 className="mb-4 text-[28px] leading-relaxed font-bold md:leading-none md:text-4xl">
             Harga Wordpress Hosting Terbaik di Indonesia
@@ -45,7 +45,7 @@ function CloudHostingWordpressPackages({ datas }) {
                       <span className="text-lg font-bold">
                         {numeral(data.pricing.IDR.annually / 12).format("0,0")}
                       </span>
-                      <span className="text-xs text-[#B5B5C3]"> / bulan</span>
+                      <span className="text-xs "> / Bulan</span>
                     </p>
                   </div>
                   <div className="mb-10 w-full">
@@ -122,9 +122,10 @@ function CloudHostingWordpressPackages({ datas }) {
                       <span className="font-roboto text-4xl font-bold">
                         {numeral(data.pricing.IDR.annually / 12).format("0,0")}
                       </span>
-                      <span className="text-xs text-[#B5B5C3]"> / bulan</span>
+                      <span className="text-xs "> / Bulan</span>
                     </p>
                   </div>
+                  <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-200"></hr>
                   <div className="mb-6 w-full">
                     <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
                       <p>Disk {data.feature.QUOTA / 1000} GB</p>
