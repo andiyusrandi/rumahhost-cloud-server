@@ -275,6 +275,222 @@ export const commitmentData = [
   },
 ];
 
+export const faqHostingMurahData = [
+  {
+    question: "Apa itu web hosting?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
+        komputer yang tersambung dengan layanan internet dan berfungsi untuk
+        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
+        online.
+      </p>
+    ),
+  },
+  {
+    question: "Apa itu Domain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Domain</span> adalah alamat tempat
+        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
+        untuk menemukan dan mengidentifikasi website anda di Internet.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    answer: (
+      <p className="text-sm md:text-base">
+        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
+        <span className="font-medium">
+          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
+        </span>
+        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+      </p>
+    ),
+  },
+]
+
+export const faqCloudHostingSsdData = [
+  {
+    question: "Apa itu web hosting?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
+        komputer yang tersambung dengan layanan internet dan berfungsi untuk
+        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
+        online.
+      </p>
+    ),
+  },
+  {
+    question: "Apa itu Domain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Domain</span> adalah alamat tempat
+        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
+        untuk menemukan dan mengidentifikasi website anda di Internet.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    answer: (
+      <p className="text-sm md:text-base">
+        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
+        <span className="font-medium">
+          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
+        </span>
+        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+      </p>
+    ),
+  },
+]
+
+export const faqCloudHostingWpData = [
+  {
+    question: "Apa itu web hosting?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
+        komputer yang tersambung dengan layanan internet dan berfungsi untuk
+        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
+        online.
+      </p>
+    ),
+  },
+  {
+    question: "Apa itu Domain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Domain</span> adalah alamat tempat
+        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
+        untuk menemukan dan mengidentifikasi website anda di Internet.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    answer: (
+      <p className="text-sm md:text-base">
+        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
+        <span className="font-medium">
+          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
+        </span>
+        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+      </p>
+    ),
+  },
+]
+
+export const faqCloudHostingDesaData = [
+  {
+    question: "Apa itu web hosting?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
+        komputer yang tersambung dengan layanan internet dan berfungsi untuk
+        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
+        online.
+      </p>
+    ),
+  },
+  {
+    question: "Apa itu Domain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Domain</span> adalah alamat tempat
+        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
+        untuk menemukan dan mengidentifikasi website anda di Internet.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    answer: (
+      <p className="text-sm md:text-base">
+        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
+        <span className="font-medium">
+          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
+        </span>
+        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+      </p>
+    ),
+  },
+]
+
+export const faqCloudVpsData = [
+  {
+    question: "Apa itu web hosting?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
+        komputer yang tersambung dengan layanan internet dan berfungsi untuk
+        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
+        online.
+      </p>
+    ),
+  },
+  {
+    question: "Apa itu Domain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Domain</span> adalah alamat tempat
+        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
+        untuk menemukan dan mengidentifikasi website anda di Internet.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    answer: (
+      <p className="text-sm md:text-base">
+        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
+        <span className="font-medium">
+          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
+        </span>
+        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+      </p>
+    ),
+  },
+]
+
+export const faqDomainMurahData = [
+  {
+    question: "Apa itu web hosting?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
+        komputer yang tersambung dengan layanan internet dan berfungsi untuk
+        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
+        online.
+      </p>
+    ),
+  },
+  {
+    question: "Apa itu Domain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Domain</span> adalah alamat tempat
+        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
+        untuk menemukan dan mengidentifikasi website anda di Internet.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    answer: (
+      <p className="text-sm md:text-base">
+        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
+        <span className="font-medium">
+          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
+        </span>
+        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+      </p>
+    ),
+  },
+]
+
 export const faqData = [
   {
     question: "Apa itu web hosting?",

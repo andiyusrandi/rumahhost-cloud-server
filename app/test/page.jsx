@@ -1,15 +1,91 @@
 "use client";
 
-import CarouselMain from "@/components/Carousel/CarouselMain";
-import { cloudHostingSSDSliderData } from "@/utils/data";
-import { Icon } from "@iconify/react";
-import numeral from "numeral";
+import SliderSearchDomain from "@/components/Carousel/SliderSearchDomain";
+
+const suggestDomains = [
+  {
+    name: "akramfirmansyah.com",
+    register: [0, 10000],
+  },
+  {
+    name: "akramfirmansdasyah.com",
+    register: [0, 10000],
+  },
+  {
+    name: "akramfirmanfadasdasyah.com",
+    register: [0, 10000],
+  },
+  {
+    name: "akramfirmfasfafdaansyah.com",
+    register: [0, 10000],
+  },
+  {
+    name: "akramfirfdsfgsgmansyah.com",
+    register: [0, 10000],
+  },
+  {
+    name: "akramfirmgdfhfhansyah.com",
+    register: [0, 10000],
+  },
+  {
+    name: "hfghfh.com",
+    register: [0, 10000],
+  },
+  {
+    name: "hgfhgf.com",
+    register: [0, 10000],
+  },
+  {
+    name: "fsfsdtgr.com",
+    register: [0, 10000],
+  },
+  {
+    name: "gsdgdsfs.com",
+    register: [0, 10000],
+  },
+  {
+    name: "dsgsgv.com",
+    register: [0, 10000],
+  },
+  {
+    name: "daddadas.com",
+    register: [0, 10000],
+  },
+  {
+    name: "rqwrwq.com",
+    register: [0, 10000],
+  },
+  {
+    name: "vczcdas.com",
+    register: [0, 10000],
+  },
+  {
+    name: "dasdaw.com",
+    register: [0, 10000],
+  },
+  {
+    name: "sadqaewqe.com",
+    register: [0, 10000],
+  },
+  {
+    name: "dadasda.com",
+    register: [0, 10000],
+  },
+  {
+    name: "czczcae.com",
+    register: [0, 10000],
+  },
+  {
+    name: "sdadwqeq.com",
+    register: [0, 10000],
+  },
+];
 
 export default function Home() {
   return (
-    <section className="relative z-[1] my-12 rounded-[50%/1.5rem] bg-[#13263C]">
+    <section className="relative z-[1] mt-40">
       <div className="container">
-        <div className="w-full py-8">
+        {/* <div className="w-full py-8">
           <CarouselMain
             isShowNavigator={false}
             isShowDots={true}
@@ -70,7 +146,20 @@ export default function Home() {
               </div>
             ))}
           </CarouselMain>
-        </div>
+        </div> */}
+
+        {/* Start */}
+        {suggestDomains.length > 0 && (
+          <div className="mt-5 w-full overflow-hidden rounded-md font-ubuntu shadow-lg">
+            <div className="bg-primary p-4">
+              <h1 className="text-center text-lg font-semibold text-white md:text-left md:text-xl xl:text-2xl">
+                Rekomendai Domain Lainnya
+              </h1>
+            </div>
+            <SliderSearchDomain datas={suggestDomains} />
+          </div>
+        )}
+        {/* End */}
       </div>
     </section>
   );

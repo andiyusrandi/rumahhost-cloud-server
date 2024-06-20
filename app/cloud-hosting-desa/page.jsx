@@ -1,7 +1,7 @@
 import CarouselCloudHostingDesa from "@/components/Carousel/CarouselCloudHostingDesa";
 import Commitments from "@/components/Section/Commitments";
 import TablePackagesDesa from "@/components/Table/TablePackagesDesa";
-import FAQ from "@/components/Section/FAQ";
+import FaqCloudHostingDesa from "@/components/FAQ/FaqCloudHostingDesa";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import Artboard from "@/public/ArtboardHome.png";
@@ -48,7 +48,7 @@ function CloudHostingDesa() {
                 Layanan Infrastruktur Server untuk Digitalisasi Desa
               </h1>
               <h3 className="text-base">
-              Hosting Desa adalah Layanan Infrastruktur Server Berbasis Cloud yang di rancang khusus untuk Website Desa dengan Technology Terbaru dan jaminan uptime 99,99%.
+                Hosting Desa adalah Layanan Infrastruktur Server Berbasis Cloud yang di rancang khusus untuk Website Desa dengan Technology Terbaru dan jaminan uptime 99,99%.
               </h3>
               <Link href="#packages" className="w-fit rounded-lg border border-white bg-transparent px-12 py-3 text-xs font-semibold capitalize text-transparent text-white hover:border-[#f14d2e] hover:bg-[#f14d2e] lg:text-base">mulai sekarang</Link>
             </div>
@@ -108,7 +108,7 @@ function CloudHostingDesa() {
         </div>
       </section>
 
-      <FAQ />
+      <FaqCloudHostingDesa />
 
       <Commitments isBackgroundWhite={false} />
 
