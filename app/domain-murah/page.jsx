@@ -73,11 +73,10 @@ async function DomainMurah() {
               <h1
                 className={`font-ubuntu text-3xl font-bold text-transparent text-white lg:text-[40px] lg:leading-tight`}
               >
-                Online Bersama RumahHost Dengan Pelayanan Terbaik!
+               Karena semuanya dimulai dengan nama domain
               </h1>
               <h3 className="text-xs md:text-base">
-                Cloud Hosting Indonesia dengan performance terbaik Uptime server
-                terjamin, Ayo kita mulai sekarang.
+              Cek nama domain di sini, kemudian temukan domain impian Anda hanya dengan sekali klik. #SiapDariSekarang
               </h3>
               <Link
                 href="#pricing"
