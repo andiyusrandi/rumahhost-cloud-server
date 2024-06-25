@@ -75,15 +75,15 @@ function TablePackagesDesa() {
         <tbody>
           {tablePackageDesaDatas.map((data, index) => (
             <tr key={index}>
-              <td><p className="text-base lg:text-lg">{data.product}</p></td>
-              <td><p className="text-base font-medium lg:text-lg">{data.diskSpace} GB</p></td>
-              <td><p className="text-base font-medium lg:text-lg">{data.bandwidth}</p></td>
-              <td><p className="text-base font-medium lg:text-lg">{data.email} Akun</p></td>
-              <td><p className="text-base font-medium lg:text-lg">{data.database}</p></td>
-              <td><p className="text-base font-medium lg:text-lg">{data.ssl}</p></td>
-              <td><p className="text-base font-medium lg:text-lg">{data.addOn}</p></td>
-              <td className="price"><p className=" font-medium">Rp. {numeral(data.price).format("0,0")}</p></td>
-              <td>
+              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base lg:text-lg">{data.product}</p></td>
+              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.diskSpace} GB</p></td>
+              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.bandwidth}</p></td>
+              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.email} Akun</p></td>
+              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.database}</p></td>
+              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.ssl}</p></td>
+              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.addOn}</p></td>
+              <td style={{padding: "5px 5px 1.25rem 0.75rem"}} className="price"><p className=" font-medium">Rp. {numeral(data.price).format("0,0")}</p></td>
+              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}>
                 <button
                   // href={data.url}
                   // className="w-full rounded-lg border border-primary p-2 text-center text-lg font-semibold capitalize text-primary"

@@ -1,28 +1,13 @@
 "use client";
 
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
 import { serviceData } from "@/utils/data";
-
-const responsive = {
-  mobile: {
-    breakpoint: { max: 768, min: 0 },
-    items: 1,
-  },
-};
 
 export default function CarouselService() {
   return (
     <>
       <div className="block md:hidden">
-        {/* <Carousel
-          responsive={responsive}
-          infinite={true}
-          autoPlay={true}
-          transitionDuration={500}
-          arrows={false}
-        > */}
           {serviceData.map((data, index) => {
             return (
               <div

@@ -1,4 +1,5 @@
 import CloudHostingSSDPackages from "@/components/Section/CloudHostingSSDPackages";
+import CardProductHostingCTA from "@/components/Card/CardProductHostingCTA";
 import Commitments from "@/components/Section/Commitments";
 import ExploreProducts from "@/components/Section/ExploreProducts";
 import SearchDomain from "@/components/Section/SearchDomain";
@@ -6,8 +7,11 @@ import FaqCloudHostingSSD from "@/components/FAQ/FaqCloudHostingSSD";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import Artboards from "@/public/CloudHostingSSD.png";
+import ArtboardMountain from "@/public/ArtboardMountain.svg";
+import Advert from "@/public/Mesa de trabajo.png";
 import Image from "next/image";
 import Link from "next/link";
+import TableFeatureSSD from "@/components/Table/TableFeatureSSD";
 
 export const metadata = {
   title: "Cloud Hosting SSD",
@@ -125,7 +129,46 @@ async function CloudHostingSSD() {
 
       <CloudHostingSSDPackages products={product} />
 
-      <ExploreProducts />
+      <section
+        id="features"
+        className="relative my-6 flex flex-col gap-8 pb-5 pt-8 lg:pt-16"
+      >
+        <div className="container z-[1] flex flex-col gap-8 px-10">
+          <div className="flex flex-col items-center gap-3 text-center">
+            <h3 className="font-ubuntu text-[28px] font-bold leading-7 lg:text-4xl lg:leading-tight">
+              Fitur Lengkap
+            </h3>
+            <p className="text-sm md:text-base">
+              RumahHost hadir dengan resource terdedikasi dan dukungan tim
+              profesional. Nikmati kemudahan pengelolaan dengan performa
+              optimal!
+            </p>
+          </div>
+        </div>
+
+        <div className="container z-[1] flex flex-col gap-6 px-10">
+          <div className="flex flex-col items-center justify-between gap-4 xl:flex-row">
+            <div className="h-60 min-h-60 items-center justify-center lg:flex">
+              <Image
+                src={Advert}
+                alt="Advert"
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+            <CardProductHostingCTA datas={product} />
+          </div>
+          <TableFeatureSSD datas={product} />
+        </div>
+        <Image
+          src={ArtboardMountain}
+          alt=""
+          className="absolute left-0 right-0 top-0 z-0 w-full"
+        />
+      </section>
+
+      {/* <ExploreProducts /> */}
 
       <FaqCloudHostingSSD />
 

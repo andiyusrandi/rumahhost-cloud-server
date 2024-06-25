@@ -3,6 +3,7 @@
 import CarouselMain from "@/components/Carousel/CarouselMain";
 import { Icon } from "@iconify/react";
 import numeral from "numeral";
+import Link from "next/link";
 
 function CloudHostingWordpressPackages({ datas }) {
   return (
@@ -49,7 +50,7 @@ function CloudHostingWordpressPackages({ datas }) {
                     </p>
                   </div>
                   <div className="mb-10 w-full">
-                  <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
+                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
                       <p>Disk {data.feature.QUOTA / 1000} GB</p>
                       <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
                         <Icon icon="mdi:done" />
@@ -92,12 +93,12 @@ function CloudHostingWordpressPackages({ datas }) {
                       </div>
                     </div>
                   </div>
-                  <a
-                    href="#"
+                  <Link
+                    href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}`}
                     className="rounded-lg border border-white bg-primary p-3 text-lg font-semibold capitalize text-white"
                   >
                     Order Sekarang
-                  </a>
+                  </Link>
                 </div>
               ))}
             </CarouselMain>
@@ -125,7 +126,7 @@ function CloudHostingWordpressPackages({ datas }) {
                       <span className="text-xs "> / Bulan</span>
                     </p>
                   </div>
-                  <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-200"></hr>
+                  <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-200" />
                   <div className="mb-6 w-full">
                     <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
                       <p>Disk {data.feature.QUOTA / 1000} GB</p>
@@ -171,12 +172,12 @@ function CloudHostingWordpressPackages({ datas }) {
                     </div>
                   </div>
                 </div>
-                <a
-                  href="#"
+                <Link
+                  href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}`}
                   className="rounded-lg border border-white bg-primary p-3 text-lg font-semibold capitalize text-white"
                 >
                   Order Sekarang
-                </a>
+                </Link>
               </div>
             ))}
           </div>

@@ -5,7 +5,6 @@ import SearchDomain from "@/components/Section/SearchDomain";
 import FaqCloudHostingWP from "@/components/FAQ/FaqCloudHostingWP";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
-import Artboard from "@/public/ArtboardHome.png";
 import Wphero from "@/public/wp/wp-hero.svg";
 import Image from "next/image";
 import Link from "next/link";
