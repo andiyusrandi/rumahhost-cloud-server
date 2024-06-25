@@ -3,7 +3,7 @@ import EmailHostingFAQ from "@/components/FAQ/EmailHostingFAQ";
 import Commitments from "@/components/Section/Commitments";
 import EmailHostingMainFeatures from "@/components/Section/EmailHostingMainFeatures";
 import DotSquare from "@/public/DotsSquare.png";
-import EmailHostingImage from "@/public/EmailHostingHeader.png";
+import EmailHostingImage from "@/public/heroemailhosting.png";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import Image from "next/image";
@@ -16,11 +16,11 @@ export const metadata = {
 function EmailHosting() {
   return (
     <main>
-      <section className="bg-[#07122D] text-white">
+      <section className="bg-emailhosting text-white">
         <div className="container flex flex-col gap-8 pb-6 pt-20 md:flex-row md:gap-4">
           <div className="flex flex-1 flex-col items-center justify-center gap-8 text-center md:col-span-2 md:items-start md:text-left">
             <h1 className={`font-ubuntu text-3xl font-bold text-transparent text-white lg:text-[40px] lg:leading-tight`}>
-              Bisnis lebih profesional dengan email hosting
+             Tingkatkan Bisnis Anda dengan Layanan Profesional dari Email Hosting
             </h1>
             <p className="text-base">
               Berhenti menggunakan email pribadi, mulai gunakan email hosting
@@ -41,7 +41,7 @@ function EmailHosting() {
                 objectPosition: "center",
                 margin: "0 auto",
               }}
-              className="h-56 w-auto md:h-auto md:w-60 lg:w-80"
+              className="h-56 w-auto md:h-auto md:w-60 lg:w-[29rem]"
             />
           </div>
         </div>

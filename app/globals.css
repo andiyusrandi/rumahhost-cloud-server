@@ -32,6 +32,12 @@ table {
   background-image: url("https://dev.rumahhost.com/assets/frontend/img/demo/Wordpress-bg.png");
 }
 
+
+.bg-emailhosting {
+  background-size: cover;
+  background-image: url("https://dev.rumahhost.com/assets/frontend/img/demo/bg-emailhosting.png");
+}
+
 .bg-minion {
   background-size: cover;
   background-image: url("https://dev.rumahhost.com/assets/frontend/img/BgMinionDesktop.gif");
