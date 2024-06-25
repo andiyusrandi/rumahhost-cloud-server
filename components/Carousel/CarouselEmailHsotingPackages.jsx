@@ -15,7 +15,7 @@ function CarouselEmailHsotingPackages() {
           {emailHostingPackagesSliderData.map((data, index) => (
             <div
               key={index}
-              className={`flex-shrink-0 flex-grow basis-full rounded-lg px-6 py-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-primary text-white" : "bg-white"}`}
+              className={`custom-shadow flex-shrink-0 flex-grow basis-full rounded-lg px-6 py-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-primary text-white" : "bg-white"}`}
             >
               <div className="flex flex-col items-center justify-center gap-12">
                 <div className="w-full text-center">
@@ -88,7 +88,7 @@ function CarouselEmailHsotingPackages() {
         {emailHostingPackagesSliderData.map((data, index) => (
           <div
             key={index}
-            className={`flex-shrink flex-grow-0 basis-1/3 rounded-lg px-6 py-4 ${data.isPopular ? "bg-primary text-white" : "bg-white"}`}
+            className={`custom-shadow flex-shrink flex-grow-0 basis-1/3 rounded-lg px-6 py-4 ${data.isPopular ? "bg-primary text-white" : "bg-white"}`}
           >
             <div
               className={`flex flex-col items-center justify-center ${data.isPopular ? "gap-28" : "gap-12"}`}

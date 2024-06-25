@@ -144,10 +144,10 @@ function CloudHostingSSDPackages({ products }) {
                       <span className="text-lg font-bold">
                         {numeral(parseInt(data.pricing.IDR.annually) - (parseInt(data.pricing.IDR.annually) * (parseInt(data.promo.value) / 100))).format("0,0")}
                       </span>
-                      <span className="text-xs text-[#B5B5C3]"> / tahun</span>
+                      <span className={`text-xs font-medium ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}> / Tahun</span>
                     </p>
                     <p
-                      className={`font-semibold line-through ${data.isPopular ? "text-white" : "text-[#B5B5C3]"}`}
+                      className={`font-medium line-through ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
                     >
                       Rp.{numeral(data.pricing.IDR.annually).format("0,0")}
                     </p>

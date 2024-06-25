@@ -18,7 +18,7 @@ function CloudHostingWordpressPackages({ datas }) {
           </p>
         </div>
       </div>
-      <div className="rounded-b-[50%_2rem] rounded-t-[50%_2rem] bg-[#13263C] py-10">
+      <div className="rounded-b-[50%_2rem] rounded-t-[50%_2rem] py-10">
         <div className="container">
           <div className="block w-full lg:hidden">
             <CarouselMain
@@ -106,7 +106,7 @@ function CloudHostingWordpressPackages({ datas }) {
             {datas.map((data, index) => (
               <div
                 key={index}
-                className={`flex w-80 flex-col items-center justify-between rounded-lg p-4 ${data.isPopular ? "bg-primary" : "my-8 bg-white"}`}
+                className={`flex w-80 flex-col items-center justify-between rounded-lg p-4 custom-shadow ${data.isPopular ? "bg-primary" : "my-8 bg-white"}`}
               >
                 <div className="w-full">
                   <h5

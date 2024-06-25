@@ -54,8 +54,8 @@ function EmailHosting() {
           </h3>
           <div className="grid grid-cols-1 items-center justify-center gap-4 md:grid-cols-2 lg:grid-cols-3">
             <div className="h-40 w-full rounded-lg bg-white p-4 shadow-xl md:h-56">
-              <div className="mb-4 text-primary">
-                <span className="text-xl font-bold md:text-3xl">01</span>
+              <div className="mb-4 text-[#053069]">
+                <span className="text-xl font-bold md:text-3xl text-primary">01</span>
                 <h6 className="font-semibold text-xl">
                   Pilih layanan email hosting
                 </h6>
@@ -66,8 +66,8 @@ function EmailHosting() {
               </p>
             </div>
             <div className="h-40 w-full rounded-lg bg-white p-4 shadow-xl md:h-56">
-              <div className="mb-4 text-primary">
-                <span className="text-xl font-bold md:text-3xl">02</span>
+              <div className="mb-4 text-[#053069]">
+                <span className="text-xl font-bold md:text-3xl text-primary">02</span>
                 <h6 className="font-semibold text-xl">
                   Lanjutkan proses pembayaran
                 </h6>
@@ -78,8 +78,8 @@ function EmailHosting() {
               </p>
             </div>
             <div className="h-40 w-full rounded-lg bg-white p-4 shadow-xl md:h-56">
-              <div className="mb-4 text-primary">
-                <span className="text-xl font-bold md:text-3xl">03</span>
+              <div className="mb-4 text-[#053069]">
+                <span className="text-xl font-bold md:text-3xl text-primary">03</span>
                 <h6 className="font-semibold text-xl">
                   Setting Email anda
                 </h6>
@@ -93,7 +93,7 @@ function EmailHosting() {
         </div>
       </section>
 
-      <section className="mb-12 rounded-b-[50%_2rem] rounded-t-[50%_2rem] bg-[#13263C] py-8">
+      <section className="mb-12 rounded-b-[50%_2rem] rounded-t-[50%_2rem] bg-[] py-8">
         <div className="container">
           <h3 className="mb-12 text-center text-white text-[28px] leading-7 font-bold md:text-4xl">
             Pilih layanan email bisnis sesuai kebutuhan anda
