@@ -2,6 +2,7 @@ import numeral from "numeral";
 import ButtonServer from "@/components/Button/ButtonServer";
 import ButtonAction from "@/components/Button/ButtonAction";
 import CarouselMain from "../Carousel/CarouselMain";
+import Link from "next/link";
 
 function CardProductHostingCTA({ datas }) {
   return (
@@ -25,12 +26,18 @@ function CardProductHostingCTA({ datas }) {
                 </p>
               </div>
               <ButtonServer isPrimary={data.isPopular ? true : false}>Server Indonesia</ButtonServer>
-              <ButtonAction isPrimary={data.isPopular ? true : false}>Order sekarang</ButtonAction>
+              {/* <ButtonAction isPrimary={data.isPopular ? true : false}>Order sekarang</ButtonAction> */}
+              <Link
+                href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}&billingcycle=annually&promocode=${data.promo.code}`}
+                className={`flex-1 rounded-lg border p-[10px] text-sm font-semibold md:text-base ${data.isPopular ? "border-white text-white" : "border-primary text-primary"}`}
+              >
+                Order Sekarang
+              </Link>
             </div>
           ))}
         </CarouselMain>
       </div>
-      <div className="hidden grid-cols-3 gap-3 md:grid">
+      <div className={`hidden grid-cols-${datas.length} gap-3 md:grid`}>
         {datas.map((data, index) => (
           <div key={index} className={`flex h-full flex-col gap-6 rounded-lg border px-6 py-4 text-sm ${data.isPopular ? "text-white border-white bg-primary" : "text-primary border-primary"}`}>
             <div className="flex flex-col items-center gap-4">
@@ -44,7 +51,13 @@ function CardProductHostingCTA({ datas }) {
               </p>
             </div>
             <ButtonServer isPrimary={data.isPopular ? true : false}>Server Indonesia</ButtonServer>
-            <ButtonAction isPrimary={data.isPopular ? true : false}>Order sekarang</ButtonAction>
+            {/* <ButtonAction isPrimary={data.isPopular ? true : false}>Order sekarang</ButtonAction> */}
+            <Link
+              href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}&billingcycle=annually&promocode=${data.promo.code}`}
+              className={`flex-1 rounded-lg border p-[10px] text-sm font-semibold md:text-base ${data.isPopular ? "border-white text-white" : "border-primary text-primary"}`}
+            >
+              Order Sekarang
+            </Link>
           </div>
         ))}
       </div>

@@ -51,9 +51,12 @@ function SliderSearchDomain({ datas }) {
                           Rp. {numeral(data.register[1]).format("0,0")} / Tahun
                         </p>
                       </div>
-                      <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
-                        Pilih
-                      </button>
+                      <form action="https://client.rumahhost.com/cart.php?a=add&domain=register" method="POST">
+                        <input type="hidden" name="query" value={data.name} />
+                        <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
+                          Pilih
+                        </button>
+                      </form>
                     </div>
                   </div>
                   <div style={{borderTop: "1px solid #d8dce8"}}></div>

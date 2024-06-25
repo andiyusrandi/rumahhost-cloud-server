@@ -314,9 +314,12 @@ function SearchDomain({ carouselData, pricingData }) {
                       Tahun
                     </p>
                   </div>
-                  <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
-                    Pilih
-                  </button>
+                  <form action="https://client.rumahhost.com/cart.php?a=add&domain=register" method="POST">
+                    <input type="hidden" name="query" value={domain} />
+                    <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
+                      Pilih
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -379,9 +382,12 @@ function SearchDomain({ carouselData, pricingData }) {
                       <p className="font-semibold text-[#323548]">
                         Rp. {numeral(data.price).format("0,0")}
                       </p>
-                      <button className="w-full rounded-lg bg-slate-400 px-5 py-2 font-semibold text-white md:w-fit">
-                        Pilih
-                      </button>
+                      <form action="https://client.rumahhost.com/cart.php?a=add&domain=register" method="POST">
+                        <input type="hidden" name="query" value={`${keyword}.${data.ext}`} />
+                        <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
+                          Pilih
+                        </button>
+                      </form>
                     </div>
                   );
                 })}

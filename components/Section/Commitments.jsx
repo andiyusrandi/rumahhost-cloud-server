@@ -1,7 +1,6 @@
 "use client";
 
 import { commitmentData } from "@/utils/data";
-import CarouselCommitment from "../CarouselCommitment";
 import ArtboardMountain from "@/public/ArtboardMountain2.svg";
 import Image from "next/image";
 

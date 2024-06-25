@@ -3,8 +3,14 @@
 import CarouselMain from "@/components/Carousel/CarouselMain";
 import { Icon } from "@iconify/react";
 import numeral from "numeral";
+import Link from "next/link";
+import { useEffect } from "react";
 
 function CloudHostingSSDPackages({ products }) {
+  useEffect(() => {
+    console.log(products)
+  }, [])
+
   return (
     <section className="mb-12" id="pricing">
       <div className="container max-w-3xl">
@@ -29,7 +35,7 @@ function CloudHostingSSDPackages({ products }) {
               {products.map((data, index) => (
                 <div
                   key={index}
-                  className={`flex flex-shrink-0 flex-grow basis-full flex-col items-center rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-primary" : "bg-white"}`}
+                  className={`flex flex-shrink-0 flex-grow basis-full flex-col items-center rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-[#464646]" : "bg-white"}`}
                 >
                   <h5
                     className={`mb-2 text-center text-xl font-bold uppercase ${data.isPopular ? "text-white" : "text-black"}`}
@@ -113,12 +119,12 @@ function CloudHostingSSDPackages({ products }) {
                       </div>
                     </div>
                   </div>
-                  <a
-                    href="#"
+                  <Link
+                    href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}&billingcycle=annually&promocode=${data.promo.code}`}
                     className={`rounded-lg p-3 text-sm font-semibold capitalize ${data.isPopular ? "bg-white text-primary" : "bg-primary text-white"}`}
                   >
                     Order Sekarang
-                  </a>
+                  </Link>
                 </div>
               ))}
             </CarouselMain>
@@ -214,12 +220,12 @@ function CloudHostingSSDPackages({ products }) {
                     </div>
                   </div>
                 </div>
-                <a
-                  href="#"
+                <Link
+                  href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}&billingcycle=annually&promocode=${data.promo.code}`}
                   className={`rounded-lg p-3 text-sm font-semibold capitalize ${data.isPopular ? "bg-white text-primary" : "bg-[#464646] text-white"}`}
                 >
                   Order Sekarang
-                </a>
+                </Link>
               </div>
             ))}
           </div>
