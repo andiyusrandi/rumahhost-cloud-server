@@ -1,1 +1,30 @@
-tes
+#1. Susunan Menu Navigasi Header  
+    - Home
+    - Cloud Hosting 1. Minion Hosting
+                    2. Cloud Hosting Wordpress
+                    3. Cloud Hosting SSD Bussiness
+
+    
+    - Server        1. Managed Cloud VPS Hosting
+                    2. Cloud Server Desa 
+
+    - Domain Murah  
+    - Email         1. Email Hosting
+    - Services      1. SSL Certificates
+                    2. IT Virtual Box
+                    3. Website Builder
+    - Program       1. Program Affiliate
+                    2. Partner Reseller Hositng
+    - Promo
+
+    - Login
+
+
+
+
+#2.  Tambahkan Slider Fitur Unggulan di page 
+    1. http://localhost:3000/cloud-hosting-ssd
+    2  http://localhost:3000/cloud-hosting-wordpress
+    3. http://localhost:3000/cloud-vps-hosting
+
+
