@@ -29,7 +29,7 @@ function CarouselEmailHsotingPackages() {
                       Rp.{" "}
                     </span>
                     <span
-                      className={`text-xl font-bold ${data.isPopular ? "" : "text-primary"}`}
+                      className={`text-4xl font-bold ${data.isPopular ? "" : "text-primary"}`}
                     >
                       {numeral(data.currentPrice).format("0,0")}
                     </span>{" "}
@@ -102,7 +102,7 @@ function CarouselEmailHsotingPackages() {
                     Rp.{" "}
                   </span>
                   <span
-                    className={`text-xl font-bold ${data.isPopular ? "" : "text-primary"}`}
+                    className={`text-4xl font-bold ${data.isPopular ? "" : "text-primary"}`}
                   >
                     {numeral(data.currentPrice).format("0,0")}
                   </span>{" "}

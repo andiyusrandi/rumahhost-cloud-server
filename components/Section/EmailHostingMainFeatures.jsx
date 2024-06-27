@@ -34,7 +34,7 @@ function EmailHostingMainFeatures() {
   };
 
   return (
-    <section className="mb-12 bg-[#13263C]">
+    <section className="mb-12 bg-[#13263c21] py-7">
       <div className="container py-5">
         {/* Mobile */}
         <div className="block px-5 lg:hidden">

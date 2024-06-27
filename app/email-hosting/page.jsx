@@ -95,7 +95,7 @@ function EmailHosting() {
 
       <section className="mb-12 rounded-b-[50%_2rem] rounded-t-[50%_2rem] bg-[] py-8">
         <div className="container">
-          <h3 className="mb-12 text-center text-white text-[28px] leading-7 font-bold md:text-4xl">
+          <h3 className="mb-12 text-center bg-gradient-to-r from-blue-900 to-slate-900 bg-clip-text text-transparent text-[28px] leading-7 font-bold md:text-4xl">
             Pilih layanan email bisnis sesuai kebutuhan anda
           </h3>
 
