@@ -58,7 +58,7 @@ function CloudHostingSSDPackages({ products }) {
                       Rp.{numeral(data.pricing.IDR.annually).format("0,0")}
                     </p>
                     <p
-                      className={`block w-fit rounded px-2 py-1 text-sm font-semibold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
+                      className={`block w-full rounded px-2 py-1 text-sm font-semibold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
                     >
                       Promo - Hemat {numeral(data.promo.value).format("0,0")}%
                     </p>
@@ -158,7 +158,7 @@ function CloudHostingSSDPackages({ products }) {
                       Rp.{numeral(data.pricing.IDR.annually).format("0,0")}
                     </p>
                     <p
-                      className={`block w-fit rounded px-2 py-1 text-sm font-semibold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
+                      className={`block w-full rounded px-2 py-1 text-sm font-semibold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
                     >
                       Promo - Hemat {numeral(data.promo.value).format("0,0")}%
                     </p>

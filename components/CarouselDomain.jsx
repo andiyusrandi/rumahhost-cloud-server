@@ -37,7 +37,7 @@ export default function DomainSlider({ data }) {
               className="flex flex-[0_0_33.33%] select-none flex-col items-center"
             >
               <Image src={data.image} alt={data.alt} />
-              <p className="font-semibold text-[#989898]">Rp. {numeral(data.price).format("0,0")}</p>
+              <p className="subpixel-antialiased font-medium text-[#5e5c5c]">Rp. {numeral(data.price).format("0,0")}</p>
             </div>
           );
         })}

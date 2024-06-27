@@ -47,15 +47,21 @@ function SliderSearchDomain({ datas }) {
                     </span>
                     <div className="flex w-full flex-col items-center gap-4 md:w-fit md:flex-row md:gap-4">
                       <div className="text-center text-xs">
-                        <p className="text-lg font-bold text-[#323548] md:text-xl xl:text-2xl">
+                        <p className="text-base font-normal text-[#323548] md:text-xl xl:text-1xl">
                           Rp. {numeral(data.register[1]).format("0,0")} / Tahun
                         </p>
                       </div>
                       <form action="https://client.rumahhost.com/cart.php?a=add&domain=register" method="POST">
                         <input type="hidden" name="query" value={data.name} />
-                        <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
+                        {/* <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
                           Pilih
-                        </button>
+                        </button> */}
+                        <button class="text-white bg-[#6a4d30] hover:bg-[#6a4d39] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-[#6a4d30] dark:hover:bg-[#6a4d30] dark:focus:ring-[#6a4d30]">
+Pilih
+<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+</svg>
+</button>
                       </form>
                     </div>
                   </div>
@@ -68,7 +74,7 @@ function SliderSearchDomain({ datas }) {
       </div>
       {loaded && (
         <>
-          <div className="mx-auto mt-4 flex w-fit items-center gap-3">
+          <div className="mx-auto mt-4 flex w-fit py-5 items-center gap-3">
             <button
               onClick={() =>
                 setCurrentSlide(
@@ -91,7 +97,7 @@ function SliderSearchDomain({ datas }) {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`shadow-[0_2px_8px_rgba(48, 49, 53, 0.16)] flex h-10 min-w-10 cursor-pointer items-center justify-center rounded-lg border-0 ${currentSlide === index ? "bg-primary" : "bg-main"}`}
+                  className={`shadow-[0_2px_8px_rgba(48, 49, 53, 0.16)] flex h-10 min-w-10 cursor-pointer items-center justify-center rounded-lg border-0 ${currentSlide === index ? "bg-[#ffeae4]" : "bg-main"}`}
                 >
                   {index + 1}
                 </button>

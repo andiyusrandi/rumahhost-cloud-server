@@ -299,7 +299,7 @@ function SearchDomain({ carouselData, pricingData }) {
           {statusData.status === "available" && (
             <div className="w-full overflow-hidden rounded-md shadow-lg">
               <div className="bg-primary p-4">
-                <h1 className="text-center font-semibold text-white md:text-left">
+                <h1 className="text-center font-medium text-white md:text-left">
                   Selamat! Domain yang Anda Cari Tersedia
                 </h1>
               </div>
@@ -309,16 +309,22 @@ function SearchDomain({ carouselData, pricingData }) {
                 </span>
                 <div className="flex w-full flex-col items-center gap-4 md:w-fit md:flex-row md:gap-4">
                   <div className="text-center text-xs">
-                    <p className="text-lg font-bold text-[#323548]">
-                      Rp. {numeral(statusData.register[1]).format("0,0")} /
-                      Tahun
+                    <p className="text-lg font-medium text-black">
+                      Rp. {numeral(statusData.register[1]).format("0,0")} / tahun
                     </p>
                   </div>
                   <form action="https://client.rumahhost.com/cart.php?a=add&domain=register" method="POST">
                     <input type="hidden" name="query" value={domain} />
-                    <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
+                    {/* <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
                       Pilih
-                    </button>
+                    </button> */}
+      <button class="text-white bg-[#f14d2e] hover:bg-[#323649] focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#323649] dark:focus:ring-[#FF9119]/40 me-2 mb-2">
+      <svg class="w-[16px] h-[16px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.6 16.733c.234.269.548.456.895.534a1.4 1.4 0 0 0 1.75-.762c.172-.615-.446-1.287-1.242-1.481-.796-.194-1.41-.861-1.241-1.481a1.4 1.4 0 0 1 1.75-.762c.343.077.654.26.888.524m-1.358 4.017v.617m0-5.939v.725M4 15v4m3-6v6M6 8.5 10.5 5 14 7.5 18 4m0 0h-3.5M18 4v3m2 8a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"/>
+</svg>
+
+Pilih
+</button>
                   </form>
                 </div>
               </div>
@@ -366,8 +372,8 @@ function SearchDomain({ carouselData, pricingData }) {
 
           {otherExtStatusData.length > 0 && (
             <div className="mt-5 w-full overflow-hidden rounded-md shadow-lg">
-              <div className="bg-slate-400 p-4">
-                <h1 className="text-center font-semibold text-[#323548] md:text-left">
+              <div className="bg-[#004166] p-4">
+                <h1 className="text-center font-medium text-white md:text-left">
                   Ekstensi Populer Lainnya
                 </h1>
               </div>
@@ -379,14 +385,19 @@ function SearchDomain({ carouselData, pricingData }) {
                       className="flex select-none flex-col items-center gap-2"
                     >
                       <Image src={data.image} alt={data.alt} />
-                      <p className="font-semibold text-[#323548]">
+                      <p className="text-lg text-[#323548]">
                         Rp. {numeral(data.price).format("0,0")}
                       </p>
                       <form action="https://client.rumahhost.com/cart.php?a=add&domain=register" method="POST">
                         <input type="hidden" name="query" value={`${keyword}.${data.ext}`} />
-                        <button className="w-full rounded-lg bg-primary px-4 py-3 font-semibold text-white md:w-fit">
-                          Pilih
-                        </button>
+                        <button type="button" class="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2">
+                        <svg class="w-[16px] h-[16px] text-[#626890] dark:text-[#626890]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M12.832 3.445a1 1 0 0 0-1.664 0l-4 6A1 1 0 0 0 8 11h8a1 1 0 0 0 .832-1.555l-4-6Zm-1.664 17.11a1 1 0 0 0 1.664 0l4-6A1 1 0 0 0 16 13H8a1 1 0 0 0-.832 1.555l4 6Z" clip-rule="evenodd"/>
+</svg>
+Pilih
+</button>
+
+
                       </form>
                     </div>
                   );
@@ -397,8 +408,8 @@ function SearchDomain({ carouselData, pricingData }) {
 
           {suggestDomains.length > 0 && (
             <div className="mt-5 w-full overflow-hidden rounded-md shadow-lg">
-              <div className="bg-slate-400 p-4">
-                <h1 className="text-center font-semibold text-[#323548] md:text-left">
+              <div className="bg-[#694d30] p-4">
+                <h1 className="text-center font-normal text-white md:text-left">
                   Rekomendai Domain Lainnya
                 </h1>
               </div>
