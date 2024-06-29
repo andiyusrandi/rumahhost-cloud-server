@@ -9,13 +9,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Cloud Hosting Desa",
+  title: "Cloud Server Desa",
   description: "Layanan Infrastruktur Server Berbasis Cloud yang di rancang khusus untuk Website Desa dengan Technology Terbaru dan jaminan uptime 99,99%",
   alternates: {
-    canonical: '/cloud-hosting-desa',
+    canonical: '/cloud-server-desa',
   },
   openGraph: {
-    url: '/cloud-hosting-desa',
+    url: '/cloud-server-desa',
     siteName: 'RumahHost',
     type: 'website',
     locale: 'id_ID'

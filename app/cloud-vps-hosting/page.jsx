@@ -1,6 +1,7 @@
 import Commitments from "@/components/Section/Commitments";
 import TablePackagesVPS from "@/components/Table/TablePackagesVPS";
 import FaqCloudVps from "@/components/FAQ/FaqCloudVps";
+import FeatureHosting from "@/components/Section/FeatureHosting";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import ServerImage from "@/public/server.png";
@@ -80,6 +81,8 @@ function Server() {
           <TablePackagesVPS />
         </div>
       </section>
+
+      <FeatureHosting title={"Cloud VPS Hosting"} />
 
       <FaqCloudVps />
 

@@ -4,13 +4,8 @@ import CarouselMain from "@/components/Carousel/CarouselMain";
 import { Icon } from "@iconify/react";
 import numeral from "numeral";
 import Link from "next/link";
-import { useEffect } from "react";
 
 function CloudHostingSSDPackages({ products }) {
-  useEffect(() => {
-    console.log(products)
-  }, [])
-
   return (
     <section className="mb-12" id="pricing">
       <div className="container max-w-3xl">

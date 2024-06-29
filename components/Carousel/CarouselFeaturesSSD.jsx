@@ -1,12 +1,12 @@
 "use client";
 
-import { FeatureHostingData } from "@/utils/data";
+import { FeatureSSDData } from "@/utils/data";
 import { Icon } from "@iconify/react";
 import { useKeenSlider } from "keen-slider/react.esm.js"
 import { useState } from "react";
 import "keen-slider/keen-slider.min.css"
 
-function CarouselFeaturesHosting({}) {
+function CarouselFeaturesSSD({}) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [loaded, setLoaded] = useState(false)
   const [sliderRef, slider] = useKeenSlider({
@@ -37,7 +37,7 @@ function CarouselFeaturesHosting({}) {
     <div className="lg:col-span-4">
       <div className="lg:overflow-hidden overflow-x-scroll px-2.5 pb-2.5 -mx-2.5">
         <div className="keen-slider lg:overflow-hidden overflow-x-scroll" ref={sliderRef}>
-          {FeatureHostingData.map((data, index) => (
+          {FeatureSSDData.map((data, index) => (
             <div
               key={index}
               className="keen-slider__slide"
@@ -81,7 +81,7 @@ function CarouselFeaturesHosting({}) {
                 {(() => {
                   let buttons = [];
 
-                  for (let i = 0; i < FeatureHostingData.length; i++) {
+                  for (let i = 0; i < FeatureSSDData.length; i++) {
                     buttons.push(<button key={i} onClick={e => e.stopPropagation() || slider.moveToSlide(i)} className={`slide-bar ${i === currentSlide ? 'slide-bar-active' : ''}`}></button>)
                   }
 
@@ -91,7 +91,7 @@ function CarouselFeaturesHosting({}) {
 
               {/* Slider Number */}
               <div className="text-[#71747d] font-bold ml-10">
-                <span className="text-lg">{currentSlide + 1}/{FeatureHostingData.length}</span>
+                <span className="text-lg">{currentSlide + 1}/{FeatureSSDData.length}</span>
               </div>              
             </>
           )}
@@ -101,4 +101,4 @@ function CarouselFeaturesHosting({}) {
   );
 }
 
-export default CarouselFeaturesHosting;
+export default CarouselFeaturesSSD;

@@ -3,6 +3,7 @@ import Commitments from "@/components/Section/Commitments";
 import ExploreProducts from "@/components/Section/ExploreProducts";
 import SearchDomain from "@/components/Section/SearchDomain";
 import FaqCloudHostingWP from "@/components/FAQ/FaqCloudHostingWP";
+import FeatureHosting from "@/components/Section/FeatureHosting";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import Wphero from "@/public/wp/wp-hero.svg";
@@ -148,6 +149,8 @@ async function CloudHostingWordpress() {
       <CloudHostingWordpressPackages datas={products}/>
 
       <ExploreProducts />
+
+      <FeatureHosting title={"Cloud Hosting Wordpress"} />
 
       <FaqCloudHostingWP />
 

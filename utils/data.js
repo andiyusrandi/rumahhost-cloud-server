@@ -11,6 +11,7 @@ import CloudHostingSSD from "@/public/header/cloud_hosting_ssd.svg";
 import CloudHostingWeb from "@/public/header/cloud_hosting_website.svg";
 import EmailHosting from "@/public/header/email_hosting.svg";
 import Promo from "@/public/header/promo.svg";
+import CertificateSSL from "@/public/header/certificate_ssl.svg"
 import ResellerHosting from "@/public/header/reseller_hosting.svg";
 import Book from "@/public/icons/emojione-monotone_blue-book.svg";
 import Service from "@/public/icons/ep_service.svg";
@@ -32,7 +33,7 @@ export const headerItem = [
     subitem: [],
   },
   {
-    title: "hosting",
+    title: "Cloud Hosting",
     url: "#",
     subitem: [
       {
@@ -42,42 +43,17 @@ export const headerItem = [
         url: "/hosting-murah",
       },
       {
-        image: EmailHosting,
-        title: "Email Hosting",
-        desc: "Mulai gunakan email hosting agar pelanggan lebih dipercaya dan bisnis lebih dikenal!",
-        url: "/email-hosting",
-      },
-      {
-        image: ResellerHosting,
-        title: "Reseller Hosting",
-        desc: "Mulai berbisnis reseller hosting sekarang juga",
-        url: "/reseller-hosting",
-      },
-    ],
-  },
-  {
-    title: "cloud hosting",
-    url: "#",
-    subitem: [
-      {
-        image: CloudHostingSSD,
-        title: "Cloud Hosting SSD",
-        desc: "Performance tinggi dan waktu muat yang unggul dengan Cloud Hosting SSD, dapatkan diskon hingga 60%",
-        url: "/cloud-hosting-ssd",
-      },
-      {
         image: CloudHostingWeb,
         title: "Cloud Hosting Wordpress",
         desc: "Dilengkapi dengan fitur wordpress manager, performa lebih cepat 5x",
         url: "/cloud-hosting-wordpress",
       },
-
       {
-        image: CloudHostingDesa,
-        title: "Cloud Hosting Desa",
-        desc: "Pilih cloud hosting desa untuk mendukung bisnis anda lebih maju",
-        url: "/cloud-hosting-desa",
-      },
+        image: CloudHostingSSD,
+        title: "Cloud Hosting SSD Bussiness",
+        desc: "Performance tinggi dan waktu muat yang unggul dengan Cloud Hosting SSD, dapatkan diskon hingga 60%",
+        url: "/cloud-hosting-ssd",
+      },      
     ],
   },
   {
@@ -90,6 +66,12 @@ export const headerItem = [
         desc: "Dengan Cloud VPS Hosting, servermu akan berjalan lebih cepat  karna tidak terbagi dengan VPS lain",
         url: "/cloud-vps-hosting",
       },
+      {
+        image: CloudHostingDesa,
+        title: "Cloud Server Desa",
+        desc: "Pilih cloud server desa untuk mendukung bisnis anda lebih maju",
+        url: "/cloud-server-desa",
+      },
     ],
   },
   {
@@ -98,9 +80,28 @@ export const headerItem = [
     subitem: [],
   },
   {
+    title: "Email",
+    url: "#",
+    subitem: [
+      {
+        image: EmailHosting,
+        title: "Email Hosting",
+        desc: "Mulai gunakan email hosting agar pelanggan lebih dipercaya dan bisnis lebih dikenal!",
+        url: "/email-hosting",
+      },
+    ],
+  },
+  {
     title: "service",
     url: "#",
     subitem: [
+      {
+        // TODO: Change desc, and url for SSL Certificates
+        image: CertificateSSL,
+        title: "SSL Certificates",
+        desc: "Pengelolaan website agar tetap berada pada performa yang baik, terupdate dan terhindar dari masalah",
+        url: "/virtual-box",
+      },
       {
         image: CloudHostingSSD,
         title: "IT Virtual Box",
@@ -109,7 +110,7 @@ export const headerItem = [
       },
       {
         image: CloudHostingSSD,
-        title: "Build Website Fast",
+        title: "Website Builder",
         desc: "Pembangunan website dengan kinerja yang cepat dan hasil yang memuaskan",
         url: "/build-web",
       },
@@ -126,12 +127,17 @@ export const headerItem = [
         url: "/affiliate",
       },
       {
-        image: Promo,
-        title: "Promo",
-        desc: "Cek dan klaim kode promomu sekarang juga!",
-        url: "/promo",
+        image: ResellerHosting,
+        title: "Partner Reseller Hosting",
+        desc: "Mulai berbisnis reseller hosting sekarang juga",
+        url: "/reseller-hosting",
       },
     ],
+  },
+  {
+    title: "Promo",
+    url: "/promo",
+    subitem: [],
   },
 ];
 
@@ -1518,6 +1524,120 @@ export const emailHostingFAQData = [
 ];
 
 export const FeatureHostingData = [
+  {
+    icon: <Icon icon="iconoir:www" />,
+    title: "Domain Gratis Satu Tahun",
+    desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
+  },
+  {
+    icon: <Icon icon="mdi:server-shield" />,
+    title: "Sertifikat SSL Gratis",
+    desc: "Membeli hosting minion sudah termasuk gratis SSL, tentunya dapat menghemat biaya tahunan kamu",
+  },
+  {
+    icon: <Icon icon="bi:speedometer" />,
+    title: "Up to 80x Faster",
+    desc: "Dirancang untuk membuat website memiliki performa yang baik, 80x lebih cepat di akses dengan dukungan teknology terbarukan.",
+  },
+  {
+    icon: <Icon icon="mdi:database" />,
+    title: "Unlimited Database",
+    desc: "kamu gak usah khawatir lagi dengan database yang selalu dibatasi, kini kamu bisa dapat unlimited database semua jenis paket minion hosting !",
+  },
+  {
+    icon: <Icon icon="clarity:backup-line" />,
+    title: "Backup Data Mingguan",
+    desc: "Fitur backup mingguan ke server khusus untuk menjaga keamanan data.",
+  },
+  {
+    icon: <Icon icon="carbon:cics-program" />,
+    title: "Softaculous Auto-Installer",
+    desc: "Kemudahan instalasi berbagai macam CMS seperti WordPress hanya dalam beberapa klik.",
+  },
+  {
+    icon: <Icon icon="mdi:gear-outline" />,
+    title: "CloudLinux",
+    desc: "Memberikan limitasi serta keamanan tambahan untuk menjaga kestabilan server.",
+  },
+];
+
+export const FeatureSSDData = [
+  {
+    icon: <Icon icon="iconoir:www" />,
+    title: "Domain Gratis Satu Tahun",
+    desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
+  },
+  {
+    icon: <Icon icon="mdi:server-shield" />,
+    title: "Sertifikat SSL Gratis",
+    desc: "Membeli hosting minion sudah termasuk gratis SSL, tentunya dapat menghemat biaya tahunan kamu",
+  },
+  {
+    icon: <Icon icon="bi:speedometer" />,
+    title: "Up to 80x Faster",
+    desc: "Dirancang untuk membuat website memiliki performa yang baik, 80x lebih cepat di akses dengan dukungan teknology terbarukan.",
+  },
+  {
+    icon: <Icon icon="mdi:database" />,
+    title: "Unlimited Database",
+    desc: "kamu gak usah khawatir lagi dengan database yang selalu dibatasi, kini kamu bisa dapat unlimited database semua jenis paket minion hosting !",
+  },
+  {
+    icon: <Icon icon="clarity:backup-line" />,
+    title: "Backup Data Mingguan",
+    desc: "Fitur backup mingguan ke server khusus untuk menjaga keamanan data.",
+  },
+  {
+    icon: <Icon icon="carbon:cics-program" />,
+    title: "Softaculous Auto-Installer",
+    desc: "Kemudahan instalasi berbagai macam CMS seperti WordPress hanya dalam beberapa klik.",
+  },
+  {
+    icon: <Icon icon="mdi:gear-outline" />,
+    title: "CloudLinux",
+    desc: "Memberikan limitasi serta keamanan tambahan untuk menjaga kestabilan server.",
+  },
+];
+
+export const FeatureWordpressData = [
+  {
+    icon: <Icon icon="iconoir:www" />,
+    title: "Domain Gratis Satu Tahun",
+    desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
+  },
+  {
+    icon: <Icon icon="mdi:server-shield" />,
+    title: "Sertifikat SSL Gratis",
+    desc: "Membeli hosting minion sudah termasuk gratis SSL, tentunya dapat menghemat biaya tahunan kamu",
+  },
+  {
+    icon: <Icon icon="bi:speedometer" />,
+    title: "Up to 80x Faster",
+    desc: "Dirancang untuk membuat website memiliki performa yang baik, 80x lebih cepat di akses dengan dukungan teknology terbarukan.",
+  },
+  {
+    icon: <Icon icon="mdi:database" />,
+    title: "Unlimited Database",
+    desc: "kamu gak usah khawatir lagi dengan database yang selalu dibatasi, kini kamu bisa dapat unlimited database semua jenis paket minion hosting !",
+  },
+  {
+    icon: <Icon icon="clarity:backup-line" />,
+    title: "Backup Data Mingguan",
+    desc: "Fitur backup mingguan ke server khusus untuk menjaga keamanan data.",
+  },
+  {
+    icon: <Icon icon="carbon:cics-program" />,
+    title: "Softaculous Auto-Installer",
+    desc: "Kemudahan instalasi berbagai macam CMS seperti WordPress hanya dalam beberapa klik.",
+  },
+  {
+    icon: <Icon icon="mdi:gear-outline" />,
+    title: "CloudLinux",
+    desc: "Memberikan limitasi serta keamanan tambahan untuk menjaga kestabilan server.",
+  },
+];
+
+export const FeatureVPSData = [
   {
     icon: <Icon icon="iconoir:www" />,
     title: "Domain Gratis Satu Tahun",

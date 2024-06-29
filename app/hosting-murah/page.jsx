@@ -215,7 +215,7 @@ async function Hosting() {
         />
       </section>
 
-      <FeatureHosting />
+      <FeatureHosting title={"Minion Hosting"} />
 
       <FaqHostingMurah />
 

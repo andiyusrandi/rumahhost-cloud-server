@@ -1,6 +1,7 @@
 import CloudHostingSSDPackages from "@/components/Section/CloudHostingSSDPackages";
 import CardProductHostingCTA from "@/components/Card/CardProductHostingCTA";
 import Commitments from "@/components/Section/Commitments";
+import FeatureHosting from "@/components/Section/FeatureHosting";
 import ExploreProducts from "@/components/Section/ExploreProducts";
 import SearchDomain from "@/components/Section/SearchDomain";
 import FaqCloudHostingSSD from "@/components/FAQ/FaqCloudHostingSSD";
@@ -168,7 +169,7 @@ async function CloudHostingSSD() {
         />
       </section>
 
-      {/* <ExploreProducts /> */}
+      <FeatureHosting title={"Cloud Hosting SSD"} />
 
       <FaqCloudHostingSSD />
 
