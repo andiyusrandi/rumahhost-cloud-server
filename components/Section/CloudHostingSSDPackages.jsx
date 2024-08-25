@@ -19,7 +19,7 @@ function CloudHostingSSDPackages({ products }) {
           </p>
         </div>
       </div>
-      <div className="bg-[#f2f7fa] py-10">
+      <div className="bg-[#fff] py-10">
         <div className="container">
           <div className="block w-full lg:hidden">
             <CarouselMain
@@ -30,7 +30,7 @@ function CloudHostingSSDPackages({ products }) {
               {products.map((data, index) => (
                 <div
                   key={index}
-                  className={`flex flex-shrink-0 flex-grow basis-full flex-col items-center rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-[#464646]" : "bg-white"}`}
+                  className={`custom-shadow flex flex-shrink-0 flex-grow basis-full flex-col items-center rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-[#FF7D2A]" : "bg-white"}`}
                 >
                   <h5
                     className={`mb-2 text-center text-xl font-bold uppercase ${data.isPopular ? "text-white" : "text-black"}`}
@@ -53,7 +53,7 @@ function CloudHostingSSDPackages({ products }) {
                       Rp.{numeral(data.pricing.IDR.annually).format("0,0")}
                     </p>
                     <p
-                      className={`block w-full rounded px-2 py-1 text-sm font-semibold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
+                      className={`w-full rounded px-3 py-2 font-bold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
                     >
                       Promo - Hemat {numeral(data.promo.value).format("0,0")}%
                     </p>
@@ -116,7 +116,7 @@ function CloudHostingSSDPackages({ products }) {
                   </div>
                   <Link
                     href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}&billingcycle=annually&promocode=${data.promo.code}`}
-                    className={`rounded-lg p-3 text-sm font-semibold capitalize ${data.isPopular ? "bg-white text-primary" : "bg-primary text-white"}`}
+                    className={`rounded-lg border px-4 py-3 text-center font-semibold capitalize border-primary ${data.isPopular ? "bg-white text-primary" : "bg-primary text-white"}`}
                   >
                     Order Sekarang
                   </Link>
@@ -129,7 +129,7 @@ function CloudHostingSSDPackages({ products }) {
             {products.map((data, index) => (
               <div
                 key={index}
-                className={`flex flex-shrink-0 flex-grow basis-full flex-col items-center justify-between rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-[#464646]" : "my-8 bg-white"}`}
+                className={`custom-shadow flex flex-shrink-0 flex-grow basis-full flex-col items-center justify-between rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-[#FF7D2A]" : "my-8 bg-white"}`}
               >
                 <div className="w-full">
                   <h5
@@ -153,7 +153,7 @@ function CloudHostingSSDPackages({ products }) {
                       Rp.{numeral(data.pricing.IDR.annually).format("0,0")}
                     </p>
                     <p
-                      className={`block w-full rounded px-2 py-1 text-sm font-semibold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
+                      className={`w-full rounded px-3 py-2 font-bold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
                     >
                       Promo - Hemat {numeral(data.promo.value).format("0,0")}%
                     </p>
@@ -217,7 +217,7 @@ function CloudHostingSSDPackages({ products }) {
                 </div>
                 <Link
                   href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}&billingcycle=annually&promocode=${data.promo.code}`}
-                  className={`rounded-lg p-3 text-sm font-semibold capitalize ${data.isPopular ? "bg-white text-primary" : "bg-[#464646] text-white"}`}
+                  className={`rounded-lg border px-4 py-3 text-center font-semibold capitalize border-primary ${data.isPopular ? "text-white border-white" : "bg-[] text-primary"}`}
                 >
                   Order Sekarang
                 </Link>

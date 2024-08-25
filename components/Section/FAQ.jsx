@@ -16,7 +16,7 @@ function FAQ() {
             className="absolute left-0 top-1/2 -translate-x-1/3 -translate-y-1/2"
           />
           <h3 className="py-3 text-[28px] leading-10 font-semibold md:leading-none md:text[40px]">
-            Tanya Jawab (FAQ) Shared Web Hosting
+          Pertanyaan seputar Layanan Web Hosting RumahHost.com
           </h3>
         </div>
 

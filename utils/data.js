@@ -291,12 +291,11 @@ export const faqHostingMurahData = [
     ),
   },
   {
-    question: "Apa itu Domain?",
+    question: "Apakah harga Cloud Minion Hosting di RumahHost murah?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Domain</span> adalah alamat tempat
-        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
-        untuk menemukan dan mengidentifikasi website anda di Internet.
+        <span className="font-medium">Ya,</span> Harga Cloud Minion Hosting di RumahHost dirancang untuk menawarkan nilai terbaik.
+        Kami berkomitmen untuk menyediakan harga yang kompetitif di pasar hosting cloud
       </p>
     ),
   },
@@ -319,39 +318,80 @@ export const faqHostingMurahData = [
       </p>
     ),
   },
+  {
+    question: "Metode pembayaran apa saja yang diterima di RumahHost?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">
+        Kamu bisa melakukan melakukan pembayaran melalui: </span> 
+- Bank Transfer / Virtual Account: BCA, ATM Bersama, Prima atau Alto
+- QRIS Code: GO-PAY, OVO, Dana, LinkAja, m-BCA, dsb.
+- Credit Card: Visa, Mastercard atau JCB
+- LINE Pay e-cash
+- Mandiri e-cash
+
+      </p>
+    ),
+  },
 ]
 
 export const faqCloudHostingSsdData = [
   {
-    question: "Apa itu web hosting?",
+    question: "Apa itu Cloud Hosting SSD NVme?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
-        komputer yang tersambung dengan layanan internet dan berfungsi untuk
-        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
-        online.
+        <span className="font-medium">Cloud Hosting SSD NVme</span> adalah layanan hosting web yang menggunakan Solid State Drives (SSD) dengan teknologi NVMe (Non-Volatile Memory Express). NVMe adalah protokol yang dirancang khusus untuk memaksimalkan kecepatan dan kinerja SSD dengan mengurangi latensi dan meningkatkan kecepatan transfer data dibandingkan dengan SSD SATA.
       </p>
     ),
   },
   {
-    question: "Apa itu Domain?",
+    question: "keuntungan menggunakan Cloud Hosting SSD NVMe",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Domain</span> adalah alamat tempat
-        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
-        untuk menemukan dan mengidentifikasi website anda di Internet.
+        <span className="font-medium">1. Kecepatan Transfer Data yang Lebih Tinggi:</span> NVMe menawarkan kecepatan baca/tulis yang jauh lebih cepat dibandingkan dengan SSD SATA, 
+        memungkinkan website Anda untuk memuat lebih cepat dan meningkatkan kinerja secara keseluruhan.
+        <br></br>
+        <span className="font-medium">2. Latensi Rendah:</span> NVMe mengurangi latensi dan meningkatkan responsivitas server, 
+        yang berarti waktu respons aplikasi dan website Anda akan lebih cepat.
+        <br></br>
+        <span className="font-medium">3. Kinerja yang Lebih Baik pada Beban Kerja Tinggi:</span> NVMe dapat menangani lebih banyak IOPS (Input/Output Operations Per Second), 
+        yang sangat bermanfaat untuk website dengan lalu lintas tinggi atau aplikasi yang memerlukan akses data intensif.
+
       </p>
+  
     ),
   },
   {
-    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    question: "Bagaimana Cloud Hosting SSD NVMe berbeda dari Cloud Hosting HDD?",
     answer: (
       <p className="text-sm md:text-base">
-        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
-        <span className="font-medium">
-          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
+       {" "}
+        <span className="font-medium">          
         </span>
-        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+        Cloud Hosting SSD NVMe menawarkan kecepatan dan kinerja yang jauh lebih tinggi dibandingkan dengan Cloud Hosting HDD (Hard Disk Drive). 
+        HDD menggunakan piringan berputar yang lebih lambat, sedangkan SSD NVMe menggunakan memori flash dan protokol NVMe yang sangat cepat, menghasilkan waktu muat yang lebih singkat dan kecepatan transfer data yang lebih tinggi.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah Cloud Hosting SSD NVMe cocok untuk semua jenis website?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Ya</span>, Cloud Hosting SSD NVMe cocok untuk berbagai jenis website, termasuk situs e-commerce, 
+        aplikasi web, dan situs dengan lalu lintas tinggi. Jika Anda membutuhkan kinerja cepat, latensi rendah, dan kemampuan untuk menangani beban kerja intensif, Cloud Hosting SSD NVMe adalah pilihan yang sangat baik.
+      </p>
+    ),
+  },
+  {
+    question: "Apa saja manfaat tambahan dari menggunakan Cloud Hosting SSD NVMe?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">Peningkatan SEO dan Pengalaman Pengguna:</span>: Dengan kecepatan loading yang lebih cepat, 
+        website Anda dapat memberikan pengalaman pengguna yang lebih baik dan mungkin mendapatkan peringkat SEO yang lebih baik.
+        <br></br>
+        <span className="font-medium">Efisiensi Energi</span>: SSD NVMe cenderung lebih efisien dalam konsumsi energi dibandingkan HDD, yang dapat mengurangi biaya operasional dan dampak lingkungan.
+        <br></br>
+        <span className="font-medium">Kemampuan Skalabilitas</span>: Banyak layanan Cloud Hosting SSD NVMe menawarkan opsi skalabilitas mudah, memungkinkan Anda untuk meningkatkan sumber daya sesuai kebutuhan tanpa gangguan.
       </p>
     ),
   },
@@ -359,28 +399,45 @@ export const faqCloudHostingSsdData = [
 
 export const faqCloudHostingWpData = [
   {
-    question: "Apa itu web hosting?",
+    question: "Apa itu Cloud Hosting untuk WordPress?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
-        komputer yang tersambung dengan layanan internet dan berfungsi untuk
-        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
-        online.
+        <span className="font-medium">Cloud Hosting untuk WordPress</span> adalah layanan hosting web yang dioptimalkan khusus untuk menjalankan situs WordPress di lingkungan cloud. Ini menawarkan skalabilitas, kecepatan, dan fleksibilitas yang lebih baik dibandingkan dengan hosting tradisional, 
+        dengan memanfaatkan teknologi cloud untuk meningkatkan kinerja dan keamanan situs WordPress Anda.
       </p>
     ),
   },
   {
-    question: "Apa itu Domain?",
+    question: "Apa keuntungan menggunakan Cloud Hosting untuk WordPress?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Domain</span> adalah alamat tempat
-        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
-        untuk menemukan dan mengidentifikasi website anda di Internet.
+        <span className="font-medium">1. Kecepatan dan Kinerja Tinggi</span>: Cloud Hosting menawarkan kecepatan yang 
+        lebih cepat dan kinerja yang lebih baik berkat penggunaan teknologi SSD dan kemampuan untuk mendistribusikan beban secara efisien.
+        <br></br>
+        <span className="font-medium">2. Skalabilitas Mudah</span>: Anda dapat menyesuaikan sumber daya (seperti CPU, RAM, dan penyimpanan) 
+        sesuai dengan kebutuhan situs Anda tanpa downtime atau gangguan.
+        <br></br>
+        <span className="font-medium">3. Ketersediaan Tinggi</span>: Dengan redundansi dan replikasi data, 
+        cloud hosting memastikan situs WordPress Anda tetap online meskipun terjadi kegagalan server.
+        <br></br>
+        <span className="font-medium">4. Keamanan</span>: Cloud Hosting 
+        sering kali dilengkapi dengan fitur keamanan tambahan seperti firewall, pemantauan malware, dan pencadangan otomatis.
       </p>
     ),
   },
   {
-    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    question: "Apakah Cloud Hosting untuk WordPress cocok untuk semua jenis situs?",
+    answer: (
+      <p className="text-sm md:text-base">
+       {" "}
+        <span className="font-medium">
+          Ya</span>, Cloud Hosting untuk WordPress cocok untuk berbagai jenis situs, mulai dari blog pribadi dan portofolio hingga situs e-commerce dan bisnis besar. 
+          Ini sangat bermanfaat untuk situs dengan lalu lintas tinggi atau yang memerlukan kinerja tinggi dan keandalan.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah semua pembelian hosting Wordpress mendapatkan domain gratis?",
     answer: (
       <p className="text-sm md:text-base">
         RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
@@ -388,6 +445,17 @@ export const faqCloudHostingWpData = [
           Cloud Hosting SSD, WordPress Hosting, Cloud VPS
         </span>
         . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah bisa transfer hosting ke rumahhost dari penyedia lain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        {" "}
+        <span className="font-medium">Tentu</span>, tim support rumahhost akan membantu proses transfer hosting sampai selesai secara gratis.
+
+
       </p>
     ),
   },
@@ -550,26 +618,30 @@ export const faqData = [
     ),
   },
   {
-    question: "Apa saja layanan web hosting RumahHost?",
+    question: "Apa saja layanan Web hosting RumahHost?",
     answer: (
       <ul className="mx-4 list-disc">
-        <li className="text-sm font-medium md:text-base">Cloud Hosting</li>
+        <li className="text-sm font-medium md:text-base">Minion Hosting</li>
         <p className="text-sm md:text-base">
-          Level Shared Performance merupakan layanan hosting RumahHost yang
+          Minion Hosting merupakan layanan hosting RumahHost yang
           paling populer. menawarkan harga yang sangat terjangkau untuk paket
-          ini, mulai dari Rp15.000,- per bulan.
+          ini, mulai dari Rp7.000,- per bulan.
         </p>
-        <li className="font-medium">Wordpress Hosting</li>
+        <li className="font-medium">Cloud Wordpress Hosting</li>
         <p className="text-sm md:text-base">
           Nikmati performa WordPress Hosting yang bisa menampung trafik tinggi
-          dengan pengelolaan mudah seperti paket LSP. Didukung LiteSpeed,
+          dengan pengelolaan mudah. Didukung LiteSpeed,
           WordPress Accelerator, dan domain gratis, website Anda bisa memberikan
           performa terbaik dari kecepatan dan daya tampung.
         </p>
+        <li className="font-medium">Cloud Hosting SSD NVme</li>
+        <p className="text-sm md:text-base">
+        Cloud Hosting SSD Bussiness Kecepatan Akses Data yang Lebih Cepat: SSD mampu mengakses data dengan kecepatan yang lebih tinggi dibandingkan HDD, sehingga website Anda dapat memuat lebih cepat.
+        </p>
         <li className="font-medium">Cloud VPS</li>
         <p className="text-sm md:text-base">
-          Selain paket WordPress Hosting, RumahHost juga memiliki paket Virtual
-          Private Server (VPS). Dengan Cloud VPS Hosting, server kamu akan
+          Selain paket Hosting, RumahHost juga memiliki paket server: Virtual
+          Private Server (VPS). Dengan Cloud VPS Manage, server kamu akan
           berjalan lebih cepat dikarenakan semua sumber daya server tidak akan
           terbagi dengan VPS lain.
         </p>
@@ -588,7 +660,7 @@ export const faqData = [
           href="/cloud-hosting-ssd"
           className="text-secondary hover:text-primary"
         >
-          Cloud Hosting – Starter.
+          Cloud Hosting SSD NVme – Starter.
         </Link>
       </p>
     ),
