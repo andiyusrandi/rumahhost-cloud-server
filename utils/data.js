@@ -306,7 +306,7 @@ export const faqHostingMurahData = [
       <p className="text-sm md:text-base">
         {" "}
         <span className="font-medium">
-        Ya betul,</span> RumahHost memberikan domain gratis di paket minion hosting. Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+        Ya betul,</span> RumahHost memberikan domain gratis di paket minion hosting. Anda tinggal pilih domain kesayangan anda saat pembelian hosting
       </p>
     ),
   },
