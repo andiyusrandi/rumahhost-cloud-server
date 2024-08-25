@@ -283,13 +283,10 @@ export const commitmentData = [
 
 export const faqHostingMurahData = [
   {
-    question: "Apa itu web hosting?",
+    question: "Apa itu web minion hosting?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
-        komputer yang tersambung dengan layanan internet dan berfungsi untuk
-        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
-        online.
+        <span className="font-medium">Web Minion Hosting</span> adalah layanan hosting menggunakan panel DirectAdmin dan Cpanel dengan performa tinggi, kapasitas penyimpanan besar, gratis domain, dan berbagai kelengkapan fitur lain.
       </p>
     ),
   },
@@ -304,14 +301,21 @@ export const faqHostingMurahData = [
     ),
   },
   {
-    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    question: "Apakah semua pembelian minion hosting mendapatkan domain gratis?",
     answer: (
       <p className="text-sm md:text-base">
-        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
+        {" "}
         <span className="font-medium">
-          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
-        </span>
-        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+        Ya betul,</span> RumahHost memberikan domain gratis di paket minion hosting. Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah bisa transfer hosting ke rumahhost dari penyedia lain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium">
+        Tentu, </span> tim support rumahhost akan membantu proses transfer hosting sampai selesai secara gratis.
       </p>
     ),
   },
