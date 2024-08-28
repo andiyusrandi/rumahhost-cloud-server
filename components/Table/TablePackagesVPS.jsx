@@ -86,8 +86,7 @@ function TablePackagesVPS() {
                 style={{
                   objectFit: "contain",
                   objectPosition: "center",
-                  maxWidth: "28rem",
-                  width: "100px",
+                  width: "80px",
                   display: "inline"
                 }}
               />

@@ -5,7 +5,7 @@ import FeatureHosting from "@/components/Section/FeatureHosting";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import ServerImage from "@/public/server.png";
-import Iconvps from "@/public/icons/iconvps.svg";
+import Vpsheroimages from "@/public/icons/vpsheroimages.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -60,15 +60,15 @@ function Server() {
                 </span>
               </Link>
             </div>
-            <div className="relative items-center justify-center hidden lg:flex">
+            <div className="relative pt-20 items-center justify-center hidden lg:flex">
               <Image
-                src={ServerImage}
+                src={Vpsheroimages}
                 alt="ServerImage"
                 priority
                 style={{
                   objectFit: "contain",
                   objectPosition: "center",
-                  maxWidth: "28rem",
+                  maxWidth: "25rem",
                   width: "100%",
                 }}
               />

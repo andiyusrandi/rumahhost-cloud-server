@@ -499,35 +499,34 @@ export const faqCloudHostingDesaData = [
 
 export const faqCloudVpsData = [
   {
-    question: "Apa itu web hosting?",
+    question: "Apa itu Managed Cloud VPS Hosting?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
-        komputer yang tersambung dengan layanan internet dan berfungsi untuk
-        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
-        online.
+        <span className="font-medium">Managed Cloud VPS Hosting</span> adalah layanan hosting yang menyediakan server virtual pribadi (VPS) berbasis cloud dengan manajemen penuh oleh penyedia layanan. Ini berarti bahwa penyedia hosting akan mengelola dan memelihara server, termasuk pemantauan, pembaruan, keamanan, dan pemecahan masalah, sehingga Anda dapat fokus pada pengembangan 
+        aplikasi atau situs web Anda tanpa perlu khawatir tentang aspek teknis server.
       </p>
     ),
   },
   {
-    question: "Apa itu Domain?",
+    question: "Apa keuntungan menggunakan Managed Cloud VPS Hosting dibandingkan dengan VPS biasa?",
     answer: (
-      <p className="text-sm md:text-base">
-        <span className="font-medium">Domain</span> adalah alamat tempat
-        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
-        untuk menemukan dan mengidentifikasi website anda di Internet.
+      <p className="text-sm md:text-base list-disc">
+        <li><span className="font-medium">Pengelolaan Server</span> Penyedia layanan menangani pemeliharaan dan administrasi server, mengurangi beban kerja Anda.</li>
+        <li><span className="font-medium">Keamanan</span>: Penyedia biasanya menyediakan solusi keamanan canggih seperti pemantauan malware dan perlindungan DDoS.</li>
+        <li><span className="font-medium">Pembaruan Rutin</span>: Server secara otomatis mendapatkan pembaruan dan patch keamanan terbaru.</li>
+        <li><span className="font-medium">Dukungan Teknis</span>: Akses ke dukungan teknis ahli yang dapat membantu memecahkan masalah dan memberikan saran.</li>
+        <li><span className="font-medium">Skalabilitas</span>: Memungkinkan penyesuaian sumber daya dengan mudah sesuai kebutuhan.</li>
+        
       </p>
     ),
   },
   {
-    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    question: "Apakah saya bisa mengelola aplikasi dan situs web saya sendiri dengan Managed Cloud VPS Hosting?",
     answer: (
       <p className="text-sm md:text-base">
-        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
-        <span className="font-medium">
-          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
-        </span>
-        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+        {" "}
+        <span className="font-medium">Ya</span>, meskipun server dikelola oleh penyedia, Anda masih dapat mengelola aplikasi dan situs web Anda sendiri. Anda memiliki kontrol penuh atas konfigurasi dan pengaturan aplikasi yang Anda jalankan di server. Penyedia layanan akan menangani manajemen server tingkat rendah dan pemeliharaan, 
+        sementara Anda dapat fokus pada pengembangan dan pengelolaan aplikasi serta situs web Anda.
       </p>
     ),
   },
