@@ -77,20 +77,22 @@ function TablePackagesVPS() {
         <tbody>
           {tablePackageVPSDatas.map((data, index) => (
             <tr className="shadow-lg" key={index}>
-              <td><p className="text-base lg:text-lg">
-              <Image
-                src={Iconvps}
-                alt="ServerImageVPS"
-                className="w-10 h-10 rounded-full"
-                priority
-                style={{
-                  objectFit: "contain",
-                  objectPosition: "center",
-                  width: "80px",
-                  display: "inline"
-                }}
-              />
-                {data.product}</p></td>
+              <td className="md:flex md:flex-row md:justify-start md:gap-2 md:align-middle">
+                <Image
+                  src={Iconvps}
+                  alt="ServerImageVPS"
+                  className="w-10 h-10 rounded-full"
+                  priority
+                  style={{
+                    objectFit: "contain",
+                    objectPosition: "center",
+                    maxWidth: "28rem",
+                    width: "auto",
+                    display: "inline"
+                  }}
+                />
+                <p className="text-base lg:text-lg md:my-auto">{data.product}</p>
+              </td>
               <td><p className="text-base font-medium lg:text-lg">{data.diskSpace} GB</p></td>
               <td><p className="text-base font-medium lg:text-lg">{data.bandwidth} TB</p></td>
               <td><p className="text-base font-medium lg:text-lg">{data.ram} GB</p></td>
