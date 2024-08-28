@@ -5,6 +5,7 @@ import FeatureHosting from "@/components/Section/FeatureHosting";
 import ArtboardUMKM from "@/public/ArtUMKM.png";
 import CostumerImage from "@/public/Costumer-image-dekstop.png";
 import ServerImage from "@/public/server.png";
+import Iconvps from "@/public/icons/iconvps.svg";
 import Image from "next/image";
 import Link from "next/link";
 

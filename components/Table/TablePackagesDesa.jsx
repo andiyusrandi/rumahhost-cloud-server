@@ -74,7 +74,7 @@ function TablePackagesDesa() {
         </thead>
         <tbody>
           {tablePackageDesaDatas.map((data, index) => (
-            <tr key={index}>
+            <tr className="shadow-lg" key={index}>
               <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base lg:text-lg">{data.product}</p></td>
               <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.diskSpace} GB</p></td>
               <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.bandwidth}</p></td>

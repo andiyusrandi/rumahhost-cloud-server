@@ -1,6 +1,7 @@
 "use client";
 
 import BackgroundPackage from "@/public/Background Header.png";
+import Iconvps from "@/public/icons/iconvps.svg";
 import { tablePackageVPSDatas } from "@/utils/data";
 import Image from "next/image";
 import numeral from "numeral";
@@ -75,8 +76,22 @@ function TablePackagesVPS() {
         </thead>
         <tbody>
           {tablePackageVPSDatas.map((data, index) => (
-            <tr key={index}>
-              <td><p className="text-base lg:text-lg">{data.product}</p></td>
+            <tr className="shadow-lg" key={index}>
+              <td><p className="text-base lg:text-lg">
+              <Image
+                src={Iconvps}
+                alt="ServerImageVPS"
+                className="w-10 h-10 rounded-full"
+                priority
+                style={{
+                  objectFit: "contain",
+                  objectPosition: "center",
+                  maxWidth: "28rem",
+                  width: "100px",
+                  display: "inline"
+                }}
+              />
+                {data.product}</p></td>
               <td><p className="text-base font-medium lg:text-lg">{data.diskSpace} GB</p></td>
               <td><p className="text-base font-medium lg:text-lg">{data.bandwidth} TB</p></td>
               <td><p className="text-base font-medium lg:text-lg">{data.ram} GB</p></td>
