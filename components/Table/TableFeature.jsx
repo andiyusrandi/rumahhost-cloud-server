@@ -28,12 +28,12 @@ function TableFeature({ datas }) {
                 <td className="cell-bold">Hosting Exanior</td>
                 <td className="cell-bold">Hosting Superior</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td>Estimasi Visitor/Bulan</td>
                 <td className="cell-bold">± 60.000</td>
                 <td className="cell-bold">± 60.000</td>
                 <td className="cell-bold">± 60.000</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>Disk Space</td>
                 <td>
