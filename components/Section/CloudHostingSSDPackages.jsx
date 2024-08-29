@@ -45,10 +45,11 @@ function CloudHostingSSDPackages({ products }) {
                       <span className="text-lg font-bold">
                         {numeral(parseInt(data.pricing.IDR.annually) - (parseInt(data.pricing.IDR.annually) * (parseInt(data.promo.value) / 100))).format("0,0")}
                       </span>
-                      <span className="text-xs text-[#B5B5C3]"> / tahun</span>
+                      <span className={`text-xs text-[#5E6278] ${data.isPopular ? "text-white" : "text-[#fff]"}`}
+                    > / tahun</span>
                     </p>
                     <p
-                      className={`font-semibold line-through ${data.isPopular ? "text-white" : "text-[#B5B5C3]"}`}
+                      className={`font-semibold line-through ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
                     >
                       Rp.{numeral(data.pricing.IDR.annually).format("0,0")}
                     </p>
@@ -129,11 +130,11 @@ function CloudHostingSSDPackages({ products }) {
             {products.map((data, index) => (
               <div
                 key={index}
-                className={`custom-shadow flex flex-shrink-0 flex-grow basis-full flex-col items-center justify-between rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-[#FF7D2A]" : "my-8 bg-white"}`}
+                className={`custom-shadow flex flex-shrink-0 flex-grow basis-full flex-col items-center justify-between rounded-lg p-4 md:basis-[calc(50%-0.5rem)] ${data.isPopular ? "bg-[#FF7D2A]" : "bg-white"}`}
               >
                 <div className="w-full">
                   <h5
-                    className={`mb-2 text-center text-xl font-bold uppercase ${data.isPopular ? "text-white" : "text-black"}`}
+                    className={`mb-2 text-center text-3xl font-bold ${data.isPopular ? "text-white" : "text-black"}`}
                   >
                     {data.previewName}
                   </h5>
@@ -142,7 +143,7 @@ function CloudHostingSSDPackages({ products }) {
                       className={`text-sm font-semibold ${data.isPopular ? "text-white" : "text-primary"}`}
                     >
                       Rp.
-                      <span className="text-lg font-bold">
+                      <span className="text-3xl font-bold">
                         {numeral(parseInt(data.pricing.IDR.annually) - (parseInt(data.pricing.IDR.annually) * (parseInt(data.promo.value) / 100))).format("0,0")}
                       </span>
                       <span className={`text-xs font-medium ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}> / Tahun</span>
