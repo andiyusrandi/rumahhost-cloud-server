@@ -250,25 +250,25 @@ function TableFeature({ datas }) {
                 <tr>
                   <td>Attachment</td>
                   <td>
-                    <span className="cell-bold">50 MB</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered</span> E-mail Attachment
                   </td>
                   <td>
-                    <span className="cell-bold">50 MB</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered</span> E-mail Attachment
                   </td>
                   <td>
-                    <span className="cell-bold">50 MB</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered</span> E-mail Attachment
                   </td>
                 </tr>
                 <tr>
                   <td>Fitur Lain</td>
                   <td>
-                    <span className="cell-bold">50 MB</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered MB</span> E-mail Attachment
                   </td>
                   <td>
-                    <span className="cell-bold">50 MB</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered MB</span> E-mail Attachment
                   </td>
                   <td>
-                    <span className="cell-bold">50 MB</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered MB</span> E-mail Attachment
                   </td>
                 </tr>
               </tbody>
