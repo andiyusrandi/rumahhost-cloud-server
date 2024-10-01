@@ -8,6 +8,7 @@ function ListDomainPrice({ className, datas }) {
   const [dataLength, setDataLength] = useState(Object.keys(data).length);
   const [countCard, setCountCard] = useState(6);
   const [containerWidth, setContainerWidth] = useState(0);
+  console.log(datas)
 
   const containerCardRef = useRef();
 

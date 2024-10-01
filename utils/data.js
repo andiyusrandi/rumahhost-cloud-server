@@ -1472,19 +1472,19 @@ export const resellerHostingCardData = [
 ];
 
 export const resellerHostingFAQData = [
-  { question: "Apa itu reseller hosting?", answer: "" },
-  { question: "Apa itu WHM?", answer: "" },
-  { question: "Bagaimana cara memulai reselling?", answer: "" },
-  { question: "Bagaimana cara mendapatkan untung?", answer: "" },
+  { question: "Apa itu reseller hosting?", answer: "Reseller hosting adalah layanan yang memungkinkan individu atau perusahaan untuk menjual kembali layanan hosting kepada klien mereka, biasanya dengan menggunakan server dan infrastruktur dari penyedia hosting." },
+  { question: "Apa itu WHM?", answer: "WHM (Web Host Manager) adalah panel kontrol yang digunakan oleh penyedia layanan hosting untuk mengelola akun hosting dan menawarkan fitur kepada reseller, seperti pembuatan akun baru dan pengaturan pengelolaan server." },
+  { question: "Bagaimana cara memulai reselling?", answer: "Untuk memulai reselling, Anda perlu memilih paket reseller dari penyedia hosting, mengatur akun WHM, dan mulai menawarkan layanan hosting kepada klien Anda melalui situs web atau saluran pemasaran." },
+  { question: "Bagaimana cara mendapatkan untung?", answer: "Anda dapat mendapatkan untung dengan menetapkan harga layanan hosting Anda lebih tinggi daripada biaya yang Anda bayar kepada penyedia hosting, serta menawarkan layanan tambahan seperti dukungan teknis atau pengelolaan situs web." },
   {
     question:
       "Siapa yang akan menyediakan bantuan ke klien - saya atau RumahHost?",
-    answer: "",
+    answer: "Sebagai reseller, Anda akan menjadi titik kontak utama bagi klien Anda. Namun, RumahHost biasanya menyediakan dukungan teknis yang dapat Anda akses jika Anda membutuhkan bantuan lebih lanjut.",
   },
   {
     question:
       "Jika bisnis saya tumbuh, bisakah saya mengupgrade paket kapan pun?",
-    answer: "",
+    answer: "Ya, Anda dapat mengupgrade paket reseller Anda kapan saja untuk memenuhi kebutuhan pertumbuhan bisnis Anda, sesuai dengan kebijakan yang ditetapkan oleh RumahHost.",
   },
 ];
 
@@ -1584,18 +1584,18 @@ export const emailHostingMainFeatures = [
 ];
 
 export const emailHostingFAQData = [
-  { question: "Apa itu Email Hosting?", answer: "" },
-  { question: "Mengapa saya perlu menggunakan email hosting?", answer: "" },
+  { question: "Apa itu Email Hosting?", answer: "Email hosting adalah layanan yang menyediakan server untuk menyimpan dan mengelola email domain Anda sendiri, memberikan alamat email profesional." },
+  { question: "Mengapa saya perlu menggunakan email hosting?", answer: "Email hosting meningkatkan kredibilitas bisnis Anda, menawarkan keamanan lebih baik, dan memungkinkan akses ke fitur kolaborasi." },
   {
     question:
       "Apa Keuntungan menggunakan email bisnis dibandingkan email pribadi?",
-    answer: "",
+    answer: "Email bisnis terlihat lebih profesional, menawarkan kapasitas penyimpanan lebih besar, dan dukungan teknis yang lebih baik dibandingkan email pribadi.",
   },
   {
     question: "Bisakah saya memindahkan email ke RumahHost dari layanan lain?",
-    answer: "",
+    answer: "Ya, Anda dapat memindahkan email Anda ke RumahHost dengan mengikuti proses migrasi yang disediakan.",
   },
-  { question: "Paket Email apa yang tepat untuk Anda?", answer: "" },
+  { question: "Paket Email apa yang tepat untuk Anda?", answer: "Paket yang tepat bergantung pada kebutuhan bisnis Anda, seperti jumlah pengguna dan fitur yang diinginkan; Anda bisa konsultasi untuk menentukan pilihan terbaik." },
 ];
 
 export const FeatureHostingData = [

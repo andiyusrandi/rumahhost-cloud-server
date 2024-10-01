@@ -49,6 +49,7 @@ async function DomainMurah() {
   const datas = await getData({currencyid: 1, action: "GetTLDPricing"});
   const carouselData = await carouselDomain()
   const domainPricingData = await domainPricing()
+
   
   return (
     <main>
