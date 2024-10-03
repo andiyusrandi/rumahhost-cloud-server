@@ -60,22 +60,22 @@ function TableFeatureSSD({ datas }) {
               </tr>
               <tr>
                 <td>Inodes/Jumlah File</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
               </tr>
               <tr>
                 <td>Bandwidth</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
               </tr>
               <tr>
                 <td>Database</td>
-                <td>{datas[0].feature.MAXSQL === null ? 'Unlimited' : datas[0].feature.MAXSQL}</td>
-                <td>{datas[1].feature.MAXSQL === null ? 'Unlimited' : datas[1].feature.MAXSQL}</td>
+                <td>{datas[0].feature.MAXSQL === null ? '2' : datas[0].feature.MAXSQL}</td>
+                <td>{datas[1].feature.MAXSQL === null ? '5' : datas[1].feature.MAXSQL}</td>
                 <td>{datas[2].feature.MAXSQL === null ? 'Unlimited' : datas[2].feature.MAXSQL}</td>
                 <td>{datas[3].feature.MAXSQL === null ? 'Unlimited' : datas[3].feature.MAXSQL}</td>
               </tr>
@@ -88,8 +88,8 @@ function TableFeatureSSD({ datas }) {
               </tr>
               <tr>
                 <td>Sub Domain</td>
-                <td>{datas[0].feature.MAXSUB === null ? 'Unlimited' : datas[0].feature.MAXSUB}</td>
-                <td>{datas[1].feature.MAXSUB === null ? 'Unlimited' : datas[1].feature.MAXSUB}</td>
+                <td>{datas[0].feature.MAXSUB === null ? '2' : datas[0].feature.MAXSUB}</td>
+                <td>{datas[1].feature.MAXSUB === null ? '5' : datas[1].feature.MAXSUB}</td>
                 <td>{datas[2].feature.MAXSUB === null ? 'Unlimited' : datas[2].feature.MAXSUB}</td>
                 <td>{datas[3].feature.MAXSUB === null ? 'Unlimited' : datas[3].feature.MAXSUB}</td>
               </tr>

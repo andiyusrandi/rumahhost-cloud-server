@@ -54,15 +54,15 @@ function TableFeature({ datas }) {
               </tr>
               <tr>
                 <td>Inodes/Jumlah File</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
               </tr>
               <tr>
                 <td>Bandwidth</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
+                <td>Unmetered</td>
               </tr>
               <tr>
                 <td>Database</td>

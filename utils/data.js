@@ -463,38 +463,104 @@ export const faqCloudHostingWpData = [
 
 export const faqCloudHostingDesaData = [
   {
-    question: "Apa itu web hosting?",
+    question: "Apa itu Cloud Server Desa?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
-        komputer yang tersambung dengan layanan internet dan berfungsi untuk
-        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
-        online.
+        <span className="font-medium">Cloud Server Desa</span> adalah layanan hosting berbasis cloud yang dirancang khusus untuk mendukung kebutuhan website dan aplikasi di daerah desa. Layanan ini menawarkan kecepatan, keamanan, dan skalabilitas tinggi, sehingga ideal untuk usaha kecil, komunitas, dan organisasi di desa.
       </p>
     ),
   },
   {
-    question: "Apa itu Domain?",
+    question: "Apa keunggulan menggunakan Cloud Server Hosting Desa?",
     answer: (
-      <p className="text-sm md:text-base">
-        <span className="font-medium">Domain</span> adalah alamat tempat
-        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
-        untuk menemukan dan mengidentifikasi website anda di Internet.
-      </p>
+     <ul class="mx-4 list-disc">
+        <li class="text-sm font-medium md:text-base">Kinerja Tinggi</li>
+        <p class="text-sm md:text-base">Infrastruktur cloud memberikan kecepatan akses yang lebih baik.
+        </p>
+        <li class="font-medium">Skalabilitas</li>
+        <p class="text-sm md:text-base">Anda dapat dengan mudah menambah sumber daya sesuai kebutuhan.</p>
+        <li class="font-medium">Keamanan</li>
+        <p class="text-sm md:text-base">Data Anda akan dilindungi dengan sistem keamanan yang canggih.</p>
+        <li class="font-medium">Dukungan Lokal</li>
+        <p class="text-sm md:text-base">Layanan dan dukungan pelanggan yang memahami konteks lokal.</p>
+    </ul>
     ),
   },
   {
-    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    question: " Cloud Server Hosting Desa sangat cocok untuk digitalisasi desa?",
+    answer: (
+      <ul class="mx-4 list-disc">
+      <li class="text-sm font-medium md:text-base">1. Aksesibilitas</li>
+      <p class="text-sm md:text-base">Cloud Server memungkinkan akses yang lebih mudah ke data dan aplikasi dari berbagai lokasi. Ini penting untuk meningkatkan partisipasi masyarakat dalam program digitalisasi.
+      </p>
+      <li class="font-medium">2.Biaya Efisien</li>
+      <p class="text-sm md:text-base">Biaya yang lebih terjangkau dan fleksibel memungkinkan desa untuk mengalokasikan anggaran dengan lebih baik, sehingga dapat berinvestasi dalam teknologi lainnya.</p>
+      <li class="font-medium">3, Keamanan Data</li>
+      <p class="text-sm md:text-base">Dengan sistem keamanan yang canggih, Cloud Server dapat melindungi data penting desa, seperti informasi penduduk dan program pembangunan.</p>
+      <li class="font-medium">4. Skalabilitas</li>
+      <p class="text-sm md:text-base">Desa dapat dengan mudah menambah sumber daya sesuai kebutuhan, terutama saat proyek digitalisasi berkembang atau saat ada peningkatan pengguna.</p>
+
+      <li class="font-medium">5. Dukungan Komunitas</li>
+      <p class="text-sm md:text-base">Cloud Server Hosting Desa sering kali didukung oleh tim lokal yang memahami kebutuhan spesifik desa, sehingga memudahkan pelaksanaan dan pemeliharaan sistem.</p>
+      <li class="font-medium">6. Inovasi dan Kolaborasi</li>
+      <p class="text-sm md:text-base">Layanan cloud mendukung aplikasi kolaboratif yang memungkinkan masyarakat desa untuk berinovasi dan bekerja sama dalam berbagai proyek, dari pendidikan hingga pengembangan usaha.</p>
+      <li class="font-medium">7. Peningkatan Layanan Publik</li>
+      <p class="text-sm md:text-base">Dengan digitalisasi, layanan publik seperti administrasi, kesehatan, dan pendidikan dapat diakses lebih mudah dan efisien oleh warga desa.
+      </p>
+      <br></br>
+      <p class="text-sm md:text-base">Secara keseluruhan, Cloud Server Hosting Desa dapat menjadi pendorong yang signifikan dalam upaya digitalisasi desa, membawa manfaat jangka panjang bagi masyarakat.
+
+      </p>
+       </ul>
+    ),
+    
+  },
+  {
+    question: "Bagaimana cara mendaftar untuk Cloud Server Hosting Desa?",
     answer: (
       <p className="text-sm md:text-base">
-        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
-        <span className="font-medium">
-          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
-        </span>
-        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+        <span className="font-medium"></span>Anda bisa mendaftar melalui website kami. Cukup pilih paket yang sesuai, isi formulir pendaftaran, dan lakukan pembayaran. Setelah itu, Anda akan menerima akses ke akun hosting Anda.
       </p>
     ),
   },
+
+  {
+    question: "Apakah saya bisa memindahkan situs saya dari penyedia lain ke Cloud Hosting Desa?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium"></span>Tentu saja! Kami menyediakan layanan migrasi gratis untuk membantu Anda memindahkan situs Anda dengan mudah dan tanpa gangguan.
+      </p>
+    ),
+  },
+
+  {
+    question: "Apa yang harus saya lakukan jika mengalami masalah teknis?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium"></span>Kami menyediakan dukungan pelanggan 24/7. Anda dapat menghubungi tim dukungan melalui live chat, email, atau telepon. Kami siap membantu Anda menyelesaikan masalah dengan cepat.
+      </p>
+    ),
+  },
+
+  {
+    question: "Apakah ada jaminan uptime?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium"></span>Kami berkomitmen untuk memberikan jaminan uptime 99,9%. Ini berarti situs Anda akan selalu online dan dapat diakses oleh pengunjung.
+      </p>
+    ),
+  },
+
+  {
+    question: "Bagaimana cara membayar layanan Cloud Hosting Desa?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium"></span>Kami menerima berbagai metode pembayaran, termasuk transfer bank, kartu kredit, dan e-wallet. Anda bisa memilih metode yang paling nyaman bagi Anda saat mendaftar.
+      </p>
+    ),
+  },
+
+
 ]
 
 export const faqCloudVpsData = [
@@ -516,7 +582,6 @@ export const faqCloudVpsData = [
         <li><span className="font-medium">Pembaruan Rutin</span>: Server secara otomatis mendapatkan pembaruan dan patch keamanan terbaru.</li>
         <li><span className="font-medium">Dukungan Teknis</span>: Akses ke dukungan teknis ahli yang dapat membantu memecahkan masalah dan memberikan saran.</li>
         <li><span className="font-medium">Skalabilitas</span>: Memungkinkan penyesuaian sumber daya dengan mudah sesuai kebutuhan.</li>
-        
       </p>
     ),
   },
@@ -534,35 +599,53 @@ export const faqCloudVpsData = [
 
 export const faqDomainMurahData = [
   {
-    question: "Apa itu web hosting?",
-    answer: (
-      <p className="text-sm md:text-base">
-        <span className="font-medium">Web Hosting</span> adalah sebuah perangkat
-        komputer yang tersambung dengan layanan internet dan berfungsi untuk
-        menyimpan data-data website agar nantinya bisa diakses siapa saja secara
-        online.
-      </p>
-    ),
-  },
-  {
     question: "Apa itu Domain?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Domain</span> adalah alamat tempat
-        pengguna Internet dapat mengakses situs web Anda. Nama domain digunakan
-        untuk menemukan dan mengidentifikasi website anda di Internet.
+        <span className="font-medium">Domain</span> adalah alamat unik yang digunakan untuk mengidentifikasi sebuah situs web di internet. Contohnya, www.contoh.com adalah sebuah domain.
       </p>
     ),
   },
   {
-    question: "Apakah semua pembelian hosting mendapatkan domain gratis?",
+    question: "Mengapa saya perlu mendaftar domain?",
     answer: (
       <p className="text-sm md:text-base">
-        RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
+        <span className="font-medium"></span> Mendaftar domain memberikan identitas online untuk bisnis atau proyek Anda, memungkinkan orang menemukan dan mengakses situs Anda dengan mudah.
+      </p>
+    ),
+  },
+  {
+    question: "Apa perbedaan antara nama domain dan hosting?",
+    answer: (
+      <p className="text-sm md:text-base">
+        Nama domain adalah alamat situs web Anda, sementara hosting adalah layanan yang menyimpan data situs Anda dan membuatnya dapat diakses di internet.{" "}
         <span className="font-medium">
-          Cloud Hosting SSD, WordPress Hosting, Cloud VPS
         </span>
-        . Anda tinggal pilih domain kesayangan anda saat pembelian hosting.
+      </p>
+    ),
+  },
+  {
+    question: "Berapa lama saya bisa mendaftarkan domain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium"></span> Anda bisa mendaftarkan domain untuk periode minimum satu tahun, dan dapat memperpanjangnya hingga beberapa tahun ke depan.
+      </p>
+    ),
+  },
+  {
+    question: "Apakah ada biaya perpanjangan untuk domain?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium"></span> Ya, setelah periode pendaftaran berakhir, Anda perlu membayar biaya perpanjangan untuk mempertahankan kepemilikan domain Anda.
+      </p>
+    ),
+  },
+
+  {
+    question: "Apa yang harus saya lakukan jika nama domain yang saya inginkan sudah terdaftar?",
+    answer: (
+      <p className="text-sm md:text-base">
+        <span className="font-medium"></span> Anda bisa mencoba variasi lain dari nama tersebut atau menghubungi pemilik domain saat ini untuk menanyakan kemungkinan pembelian.
       </p>
     ),
   },
@@ -1637,11 +1720,11 @@ export const FeatureHostingData = [
 ];
 
 export const FeatureSSDData = [
-  {
-    icon: <Icon icon="iconoir:www" />,
-    title: "Domain Gratis Satu Tahun",
-    desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
-  },
+  // {
+  //   icon: <Icon icon="iconoir:www" />,
+  //   title: "Domain Gratis Satu Tahun",
+  //   desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
+  // },
   {
     icon: <Icon icon="mdi:server-shield" />,
     title: "Sertifikat SSL Gratis",
