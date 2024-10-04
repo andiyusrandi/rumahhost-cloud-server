@@ -54,7 +54,7 @@ function CardProductHostingCTA({ datas }) {
             {/* <ButtonAction isPrimary={data.isPopular ? true : false}>Order sekarang</ButtonAction> */}
             <Link
               href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}&billingcycle=annually&promocode=${data.promo.code}`}
-              className={`flex-1 rounded-lg border p-[10px] text-sm font-semibold md:text-base ${data.isPopular ? "border-white text-white" : "border-primary text-primary"}`}
+              className={`flex rounded-lg border p-[10px] text-sm font-semibold md:text-base ${data.isPopular ? "border-white text-white" : "border-primary text-primary"}`}
             >
               Order Sekarang
             </Link>

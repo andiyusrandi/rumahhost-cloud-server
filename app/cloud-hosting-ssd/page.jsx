@@ -100,7 +100,7 @@ async function CloudHostingSSD() {
                 Optimalkan Kinerja dengan Cloud Hosting SSD Berkualitas
               </h1>
               <h3 className="text-base">
-                Percayakan bisnis Anda pada Cloud Hosting SSD Terbaikkami. Nikmati kecepatan luar biasa, keandalan tak tertandingi, dan kinerja optimal yang akan membawa situs Andake level berikutnya.
+                Percayakan bisnis Anda pada Cloud Hosting SSD Terbaik kami. Nikmati kecepatan luar biasa, keandalan tak tertandingi, dan kinerja optimal yang akan membawa situs Andake level berikutnya.
               </h3>
               <Link
                 href="#pricing"

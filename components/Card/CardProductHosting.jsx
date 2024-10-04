@@ -136,7 +136,7 @@ function CardProductHosting({ datas }) {
                     </Box>
                   </Box>
                   <Box className="flex items-center justify-between">
-                    <Box>{data.feature.MAXPARK == null ? 'Unlimited Parked Domains' : `Max Parked Domains 1`}</Box>
+                    <Box>Max Parked Domains {data.feature.MAXADDON == 0 && data.feature.MAXPARK == 0 ? '-/-' : data.feature.MAXADDON == null && data.feature.MAXPARK == null ? 'Unlimited' : `${data.feature.MAXADDON}/${data.feature.MAXPARK}`}</Box>
                     <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
                       <MdDone size={18} />
                     </Box>
@@ -284,7 +284,7 @@ function CardProductHosting({ datas }) {
                   </Box>
                 </Box>
                 <Box className="flex items-center justify-between">
-                  <Box>{data.feature.MAXPARK == null ? 'Unlimited Parked Domains' : `Max Parked Domains 1`}</Box>
+                <Box>Max Parked Domains {data.feature.MAXADDON == 0 && data.feature.MAXPARK == 0 ? '-/-' : data.feature.MAXADDON == null && data.feature.MAXPARK == null ? 'Unlimited' : `${data.feature.MAXADDON}/${data.feature.MAXPARK}`}</Box>
                   <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
                     <MdDone size={18} />
                   </Box>
