@@ -6,6 +6,7 @@ import numeral from "numeral";
 import Link from "next/link";
 
 function CloudHostingWordpressPackages({ datas }) {
+  // console.log(datas)
   return (
     <section className="mb-12" id="pricing">
       <div className="container max-w-3xl">

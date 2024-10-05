@@ -66,9 +66,6 @@ const datas = async () => {
       whmcs: {
         gid: 6,
         action: "GetProducts"
-      },
-      whm: {
-        url: 'https://rumahhost.com:2087/json-api/getpkginfo?'
       }
     }),
   });
