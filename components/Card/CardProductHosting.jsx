@@ -23,6 +23,7 @@ import Link from "next/link";
 import CarouselMain from "../Carousel/CarouselMain";
 
 function CardProductHosting({ datas }) {  
+  console.log(datas)
   return (
     <>
       <div className="w-full lg:hidden">
@@ -272,13 +273,13 @@ function CardProductHosting({ datas }) {
                   </Box>
                 </Box>
                 <Box className="flex items-center justify-between">
-                  <Box>{data.feature.MAX_EMAILACCT_QUOTA === "unlimited" ? "Unlimited Akun Email" : `Akun Email ${data.feature.MAX_EMAILACCT_QUOTA}`}</Box>
+                  <Box>{data.feature.MAXPOP == null ? "Unlimited Akun Email" : `Akun Email ${data.feature.MAXPOP}`}</Box>
                   <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
                     <MdDone size={18} />
                   </Box>
                 </Box>
                 <Box className="flex items-center justify-between">
-                  <Box>{data.feature.MAXFTP== null ? 'Unlimited Akun FTP' : `Akun FTP ${data.feature.MAXFTP}`}</Box>
+                  <Box>{data.feature.MAXFTP == null ? 'Unlimited Akun FTP' : `Akun FTP ${data.feature.MAXFTP}`}</Box>
                   <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
                     <MdDone size={18} />
                   </Box>
