@@ -6,7 +6,7 @@ import numeral from "numeral";
 import Link from "next/link";
 
 function CloudHostingWordpressPackages({ datas }) {
-  // console.log(datas)
+  console.log(datas)
   return (
     <section className="mb-12" id="pricing">
       <div className="container max-w-3xl">
@@ -52,19 +52,19 @@ function CloudHostingWordpressPackages({ datas }) {
                   </div>
                   <div className="mb-10 w-full">
                     <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>Disk {data.feature.QUOTA / 1000} GB</p>
+                      <p>Disk {data.type === 'other' ? (data.feature.QUOTA / 1000) : (data.feature.space / 1024)} GB</p>
                       <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
                     <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>RAM {data.previewName === "PERSONAL" ? '4' : data.previewName === "SMALL TEAM" ? '6' : '10'} GB</p>
+                      <p>RAM {data.type === 'other' ? (data.previewName === "PERSONAL" ? '4' : data.previewName === "SMALL TEAM" ? '6' : '10') : data.feature.ram / 1024} GB</p>
                       <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
                     <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>CPU CORE {data.previewName === "PERSONAL" ? '2' : data.previewName === "SMALL TEAM" ? '3' : '5'}</p>
+                      <p>CPU CORE {data.type === 'other' ? (data.previewName === "PERSONAL" ? '2' : data.previewName === "SMALL TEAM" ? '3' : '5') : data.feature.cores}</p>
                       <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
                         <Icon icon="mdi:done" />
                       </div>
@@ -130,19 +130,19 @@ function CloudHostingWordpressPackages({ datas }) {
                   <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-200" />
                   <div className="mb-6 w-full">
                     <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>Disk {data.feature.QUOTA / 1000} GB</p>
+                      <p>Disk {data.type === 'other' ? (data.feature.QUOTA / 1000) : (data.feature.space / 1024)} GB</p>
                       <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
                     <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>RAM {data.previewName === "PERSONAL" ? '4' : data.previewName === "SMALL TEAM" ? '6' : '10'} GB</p>
+                      <p>RAM {data.type === 'other' ? (data.previewName === "PERSONAL" ? '4' : data.previewName === "SMALL TEAM" ? '6' : '10') : data.feature.ram / 1024} GB</p>
                       <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
                     <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>CPU CORE {data.previewName === "PERSONAL" ? '2' : data.previewName === "SMALL TEAM" ? '3' : '5'}</p>
+                      <p>CPU CORE {data.type === 'other' ? (data.previewName === "PERSONAL" ? '2' : data.previewName === "SMALL TEAM" ? '3' : '5') : data.feature.cores}</p>
                       <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
                         <Icon icon="mdi:done" />
                       </div>
