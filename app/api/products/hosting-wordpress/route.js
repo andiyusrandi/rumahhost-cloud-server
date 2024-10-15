@@ -7,14 +7,14 @@ import { resellerClubQueryString } from "@/services/resellerclub-api";
 export async function POST(req) {
   try {
     const body = await req.json();
-    const whmcs = body.whmcs
+    const whmcs = body.whmcs;
 
     const queryString = whmcsQueryString(whmcs);
     const response = await axios.post(queryString);
 
     const data = response.data;
-    const products = data.products.product
-    
+    const products = data.products.product;
+
     // const productWithAdditionalData = await Promise.all(products.filter(product => product.type !== "hostingaccount").map(async (product) => {
     //   let productName = product.name
     //   if (productName.includes('WORDPRESS')) productName = productName.replace('WORDPRESS ', '')
@@ -43,37 +43,46 @@ export async function POST(req) {
     //   }
     // }))
 
-    const productWithAdditionalData = await Promise.all(products.map(async (product) => {
-      let productName = product.name;
-      if (productName.includes('WORDPRESS')) productName = productName.replace('WORDPRESS ', '');
-    
-      let formattedProductName = productName.charAt(0).toUpperCase() + productName.slice(1).toLowerCase();
-      if (formattedProductName === 'Personal') formattedProductName = 'Wordpress-Personal';
-      if (formattedProductName === 'Enterprise') formattedProductName = 'Wordpress-Enterprice'; // Fixed typo here
-      if (formattedProductName === 'Small team') formattedProductName = 'Wordpress Small';
-    
-      let productFeature;
-    
-      // Only run whmResponse if product.type is 'other'
-      if (product.type === 'other') {
-        const queryStringWhm = whmQueryString({ pkg: `rumahhos_${formattedProductName}` }, 'getpkginfo');
-        const whmResponse = await axios.get(queryStringWhm, {
-          headers: {
-            'Authorization': `whm ${process.env.WHM_USERNAME}:${process.env.WHM_API_TOKEN}`
-          }
-        });
-    
-        const whmResponseData = await whmResponse.data;
-        productFeature = whmResponseData.data.pkg;
-      } else {
-        const rcUrl = "https://httpapi.com/api/products/plan-details.json?"
+    const productWithAdditionalData = await Promise.all(
+      products.map(async (product) => {
+        let productName = product.name;
+        if (productName.includes("WORDPRESS"))
+          productName = productName.replace("WORDPRESS ", "");
 
-        const queryStringRc = resellerClubQueryString(rcUrl, {"product-key": "wordpresshostingusa"});
+        let formattedProductName =
+          productName.charAt(0).toUpperCase() +
+          productName.slice(1).toLowerCase();
+        if (formattedProductName === "Personal")
+          formattedProductName = "Wordpress-Personal";
+        if (formattedProductName === "Enterprise")
+          formattedProductName = "Wordpress-Enterprice"; // Fixed typo here
+        if (formattedProductName === "Small team")
+          formattedProductName = "Wordpress Small";
+
+        let productFeature;
+
+        // Only run whmResponse if product.type is 'other'
+        // if (product.type === 'other') {
+        //   const queryStringWhm = whmQueryString({ pkg: `rumahhos_${formattedProductName}` }, 'getpkginfo');
+        //   const whmResponse = await axios.get(queryStringWhm, {
+        //     headers: {
+        //       'Authorization': `whm ${process.env.WHM_USERNAME}:${process.env.WHM_API_TOKEN}`
+        //     }
+        //   });
+
+        //   const whmResponseData = await whmResponse.data;
+        //   productFeature = whmResponseData.data.pkg;
+        // } else {
+        const rcUrl = "https://httpapi.com/api/products/plan-details.json?";
+
+        const queryStringRc = resellerClubQueryString(rcUrl, {
+          "product-key": "wordpresshostingusa",
+        });
 
         const response = await axios.get(queryStringRc);
         const plans = response.data;
         // const filteredPlans = Object.values(plans.wordpresshostingusa).filter(plan => plan.hosting_type === productDescription);
-        const rcId = product.description
+        const rcId = product.description;
         const filteredPlan = plans.wordpresshostingusa;
         const specificPlan = filteredPlan[rcId];
         // const plan = filteredPlan.filter(plan => plan == rcId)
@@ -107,18 +116,18 @@ export async function POST(req) {
           // "WP_TOOLKIT_PROVISION_NEW_SITE": "0",
           // "CGI": 1,
           // "_PACKAGE_EXTENSIONS": "wp-toolkit"
-        }
-      }
-    
-      return {
-        ...product,
-        previewName: productName,
-        isPopular: product.name === "SMALL TEAM", // Simplified condition
-        feature: productFeature
-      };
-    }));
-    
-    
+        };
+        // }
+
+        return {
+          ...product,
+          previewName: productName,
+          isPopular: product.name === "SMALL TEAM", // Simplified condition
+          feature: productFeature,
+        };
+      }),
+    );
+
     return NextResponse.json(productWithAdditionalData, { status: 200 });
   } catch (error) {
     console.log(error);
