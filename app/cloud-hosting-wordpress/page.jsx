@@ -1,5 +1,6 @@
 import CloudHostingWordpressPackages from "@/components/Section/CloudHostingWordpressPackages";
 import Commitments from "@/components/Section/Commitments";
+import ExploreFeatureWP from "@/components/Section/ExploreFeatureWP";
 import ExploreProducts from "@/components/Section/ExploreProducts";
 import SearchDomain from "@/components/Section/SearchDomain";
 import FaqCloudHostingWP from "@/components/FAQ/FaqCloudHostingWP";
@@ -145,9 +146,13 @@ async function CloudHostingWordpress() {
 
       <CloudHostingWordpressPackages datas={products}/>
 
-      <ExploreProducts />
+      <ExploreFeatureWP />
 
       <FeatureHosting title={"Cloud Hosting Wordpress"} />
+
+      <br></br>
+
+      <ExploreProducts />
 
       <FaqCloudHostingWP />
 

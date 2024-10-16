@@ -19,10 +19,10 @@ function TableFeature({ datas }) {
         <div className="mx-2 rounded-lg bg-[#DEF0FF] p-2 text-center text-xl font-semibold capitalize">
           fitur utama
         </div>
-        <div className="overflow-x-auto whitespace-nowrap md:whitespace-normal">
+        <div className="overflow-x-auto whitespace-nowrap md:whitespace-normal ">
           <table>
             <tbody>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Nama Paket</td>
                 <td className="cell-bold">Hosting Junior</td>
                 <td className="cell-bold">Hosting Exanior</td>
@@ -34,7 +34,7 @@ function TableFeature({ datas }) {
                 <td className="cell-bold">± 60.000</td>
                 <td className="cell-bold">± 60.000</td>
               </tr> */}
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Disk Space</td>
                 <td>
                   <span className="cell-bold">{datas[0].feature.QUOTA / 1000}GB</span> SSD Storage
@@ -46,43 +46,43 @@ function TableFeature({ datas }) {
                   <span className="cell-bold">{datas[2].feature.QUOTA / 1000}GB</span> SSD Storage
                 </td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>SSL Grade-A</td>
                 <td>Free</td>
                 <td>Free</td>
                 <td>Free</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Inodes/Jumlah File</td>
                 <td>Unmetered</td>
                 <td>Unmetered</td>
                 <td>Unmetered</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Bandwidth</td>
                 <td>Unmetered</td>
                 <td>Unmetered</td>
                 <td>Unmetered</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Database</td>
                 <td>{datas[0].feature.MAXSQL == null ? 'Unlimited' : datas[0].feature.MAXSQL}</td>
                 <td>{datas[1].feature.MAXSQL == null ? 'Unlimited' : datas[1].feature.MAXSQL}</td>
                 <td>{datas[2].feature.MAXSQL == null ? 'Unlimited' : datas[2].feature.MAXSQL}</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Addon Domain</td>
                 <td>{datas[0].feature.MAXADDON}</td>
                 <td>{datas[1].feature.MAXADDON}</td>
                 <td>{datas[2].feature.MAXADDON}</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Sub Domain</td>
                 <td>{datas[0].feature.MAXSUB == null ? 'Unlimited' : datas[0].feature.MAXSUB}</td>
                 <td>{datas[1].feature.MAXSUB == null ? 'Unlimited' : datas[1].feature.MAXSUB}</td>
                 <td>{datas[2].feature.MAXSUB == null ? 'Unlimited' : datas[2].feature.MAXSUB}</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Lokasi Server</td>
                 <td>
                   <div className="flex items-center justify-center">
@@ -187,13 +187,13 @@ function TableFeature({ datas }) {
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Max Team User (cPanel Sharing)</td>
                 <td>{datas[0].feature.MAX_TEAM_USERS}</td>
                 <td>{datas[1].feature.MAX_TEAM_USERS}</td>
                 <td>{datas[2].feature.MAX_TEAM_USERS}</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Percentage CPU</td>
                 <td>100%</td>
                 <td>100%</td>
@@ -205,19 +205,19 @@ function TableFeature({ datas }) {
                 <td>1 GB</td>
                 <td>2 GB</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Untuk Kecepatan Websitemu</td>
                 <td>Nginx, Redis, PHPX-Ray</td>
                 <td>Nginx, Redis, PHPX-Ray</td>
                 <td>Nginx, Redis, PHPX-Ray</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Untuk Keamanan Websitemu</td>
                 <td>Imunify360, Backup Acronis</td>
                 <td>Imunify360, Backup Acronis</td>
                 <td>Imunify360, Backup Acronis</td>
               </tr>
-              <tr>
+              <tr className="border border-slate-200 lg:border-none">
                 <td>Developer Tools</td>
                 <td>Golang, Node.js,Python, Git, Ruby</td>
                 <td>Golang, Node.js,Python, Git, Ruby</td>
@@ -235,19 +235,19 @@ function TableFeature({ datas }) {
           <div className="overflow-x-auto whitespace-nowrap md:whitespace-normal">
             <table>
               <tbody>
-                <tr>
+                <tr className="border border-slate-200 lg:border-none">
                   <td>Akun Email</td>
                   <td className="capitalize">{datas[0].feature.MAX_EMAILACCT_QUOTA}</td>
                   <td className="capitalize">{datas[1].feature.MAX_EMAILACCT_QUOTA}</td>
                   <td className="capitalize">{datas[2].feature.MAX_EMAILACCT_QUOTA}</td>
                 </tr>
-                <tr>
+                <tr className="border border-slate-200 lg:border-none">
                   <td>Sendmail/Hour</td>
                   <td>{datas[0].feature.MAX_EMAIL_PER_HOUR === "0" ? 'Unlimited' : `${datas[0].feature.MAX_EMAIL_PER_HOUR}/Jam`}</td>
                   <td>{datas[1].feature.MAX_EMAIL_PER_HOUR === "0" ? 'Unlimited' : `${datas[1].feature.MAX_EMAIL_PER_HOUR}/Jam`}</td>
                   <td>{datas[2].feature.MAX_EMAIL_PER_HOUR === "0" ? 'Unlimited' : `${datas[2].feature.MAX_EMAIL_PER_HOUR}/Jam`}</td>
                 </tr>
-                <tr>
+                <tr className="border border-slate-200 lg:border-none">
                   <td>Attachment</td>
                   <td>
                     <span className="cell-bold">Unmetered</span> E-mail Attachment
@@ -259,7 +259,7 @@ function TableFeature({ datas }) {
                     <span className="cell-bold">Unmetered</span> E-mail Attachment
                   </td>
                 </tr>
-                <tr>
+                <tr className="border border-slate-200 lg:border-none">
                   <td>Fitur Lain</td>
                   <td>
                     <span className="cell-bold">Unmetered MB</span> E-mail Attachment

@@ -1683,75 +1683,82 @@ export const emailHostingFAQData = [
 
 export const FeatureHostingData = [
   {
-    icon: <Icon icon="iconoir:www" />,
+    icon: <Icon icon="stash:domain" color="#ff6900"/>,
     title: "Domain Gratis Satu Tahun",
     desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
+    backgroundImage: "https://images.unsplash.com/photo-1520294891400-6818cdd83ce1?q=80&w=2911&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    icon: <Icon icon="mdi:server-shield" />,
+    icon: <Icon icon="la:expeditedssl" color="#ff6900"/>,
     title: "Sertifikat SSL Gratis",
     desc: "Membeli hosting minion sudah termasuk gratis SSL, tentunya dapat menghemat biaya tahunan kamu",
+    backgroundImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+    
   },
   {
-    icon: <Icon icon="bi:speedometer" />,
+    icon: <Icon icon="material-symbols:speed-outline" color="#ff6900"/>,
     title: "Up to 80x Faster",
     desc: "Dirancang untuk membuat website memiliki performa yang baik, 80x lebih cepat di akses dengan dukungan teknology terbarukan.",
+    backgroundImage: "https://images.unsplash.com/photo-1698249173956-43c9c3dcd2f3?q=80&w=2940&auto=format&fit=crop",
   },
   {
-    icon: <Icon icon="mdi:database" />,
+    icon: <Icon icon="mdi:database" color="#ff6900"/>,
     title: "Unlimited Database",
     desc: "kamu gak usah khawatir lagi dengan database yang selalu dibatasi, kini kamu bisa dapat unlimited database semua jenis paket minion hosting !",
+    backgroundImage: "https://images.unsplash.com/photo-1653179241439-c4c10083879a?q=80&w=2830&auto=format&fit=crop",
   },
   {
-    icon: <Icon icon="clarity:backup-line" />,
+    icon: <Icon icon="clarity:backup-line" color="#ff6900"/>,
     title: "Backup Data Mingguan",
     desc: "Fitur backup mingguan ke server khusus untuk menjaga keamanan data.",
+    backgroundImage: "https://images.unsplash.com/photo-1508427062913-eba39b5aaf59?q=80&w=2787&auto=format&fit=crop",
   },
   {
-    icon: <Icon icon="carbon:cics-program" />,
+    icon: <Icon icon="carbon:cics-program" color="#ff6900"/>,
     title: "Softaculous Auto-Installer",
     desc: "Kemudahan instalasi berbagai macam CMS seperti WordPress hanya dalam beberapa klik.",
+    backgroundImage: "https://media.istockphoto.com/id/1317628358/photo/open-road-and-hourglass.webp?a=1&b=1&s=612x612&w=0&k=20&c=qH8VQLnXERavL4rbN6XuS4tHhfPewDGjRtO6cIAdSjc=",
   },
   {
-    icon: <Icon icon="mdi:gear-outline" />,
+    icon: <Icon icon="mdi:gear-outline" color="#ff6900"/>,
     title: "CloudLinux",
     desc: "Memberikan limitasi serta keamanan tambahan untuk menjaga kestabilan server.",
   },
 ];
 
 export const FeatureSSDData = [
-  // {
-  //   icon: <Icon icon="iconoir:www" />,
-  //   title: "Domain Gratis Satu Tahun",
-  //   desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
-  // },
   {
-    icon: <Icon icon="mdi:server-shield" />,
+    icon: <Icon icon="stash:domain" color="#ff6900"/>,
+    title: "Domain Gratis Satu Tahun",
+    desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
+  },
+  {
+    icon: <Icon icon="la:expeditedssl" color="#ff6900"/>,
     title: "Sertifikat SSL Gratis",
     desc: "Membeli hosting minion sudah termasuk gratis SSL, tentunya dapat menghemat biaya tahunan kamu",
   },
   {
-    icon: <Icon icon="bi:speedometer" />,
+    icon: <Icon icon="material-symbols:speed-outline" color="#ff6900"/>,
     title: "Up to 80x Faster",
     desc: "Dirancang untuk membuat website memiliki performa yang baik, 80x lebih cepat di akses dengan dukungan teknology terbarukan.",
   },
   {
-    icon: <Icon icon="mdi:database" />,
+    icon: <Icon icon="mdi:database" color="#ff6900"/>,
     title: "Unlimited Database",
     desc: "kamu gak usah khawatir lagi dengan database yang selalu dibatasi, kini kamu bisa dapat unlimited database semua jenis paket minion hosting !",
   },
   {
-    icon: <Icon icon="clarity:backup-line" />,
+    icon: <Icon icon="clarity:backup-line" color="#ff6900"/>,
     title: "Backup Data Mingguan",
     desc: "Fitur backup mingguan ke server khusus untuk menjaga keamanan data.",
   },
   {
-    icon: <Icon icon="carbon:cics-program" />,
+    icon: <Icon icon="carbon:cics-program" color="#ff6900"/>,
     title: "Softaculous Auto-Installer",
     desc: "Kemudahan instalasi berbagai macam CMS seperti WordPress hanya dalam beberapa klik.",
   },
   {
-    icon: <Icon icon="mdi:gear-outline" />,
+    icon: <Icon icon="mdi:gear-outline" color="#ff6900"/>,
     title: "CloudLinux",
     desc: "Memberikan limitasi serta keamanan tambahan untuk menjaga kestabilan server.",
   },
@@ -1759,39 +1766,29 @@ export const FeatureSSDData = [
 
 export const FeatureWordpressData = [
   {
-    icon: <Icon icon="iconoir:www" />,
-    title: "Domain Gratis Satu Tahun",
-    desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
+    icon: <Icon icon="carbon:dashboard" color="#ff6900"/>,
+    title: "Dasbor Intuitif",
+    desc: "Paket Hosting Wordpress dari Rumahhost menyediakan panel kontrol kaya fitur untuk mengelola website Wordpress, email, sertifikat SSL & lainnya, serta memantau penggunaan Core CPU dan RAM pada paket.",
   },
   {
-    icon: <Icon icon="mdi:server-shield" />,
-    title: "Sertifikat SSL Gratis",
-    desc: "Membeli hosting minion sudah termasuk gratis SSL, tentunya dapat menghemat biaya tahunan kamu",
+    icon: <Icon icon="arcticons:themes-app-icons" color="#ff6900"/>,
+    title: "Tema Wordpress siap pakai",
+    desc: "Pilih lebih dari 25,000+ tema yang tersedia untuk segala jenis bisnis, portfolio, atau blog.",
   },
   {
-    icon: <Icon icon="bi:speedometer" />,
-    title: "Up to 80x Faster",
-    desc: "Dirancang untuk membuat website memiliki performa yang baik, 80x lebih cepat di akses dengan dukungan teknology terbarukan.",
+    icon: <Icon icon="wi:cloud-up" color="#ff6900"/>,
+    title: "Scaling Instan",
+    desc: "Tidak perlu memindahkan hosting Anda seiring dengan berkembangnya traffic. Tambahkan sumber daya Anda hanya dengan mengklik tombol - secara instan tambah RAM dan CPU tanpa reboot.",
   },
   {
-    icon: <Icon icon="mdi:database" />,
-    title: "Unlimited Database",
-    desc: "kamu gak usah khawatir lagi dengan database yang selalu dibatasi, kini kamu bisa dapat unlimited database semua jenis paket minion hosting !",
+    icon: <Icon icon="solar:server-square-update-line-duotone" color="#ff6900"/>,
+    title: "Safeguarded",
+    desc: "Industri terkemuka kami menggunakan sistem penyimpanan Ceph based untuk menyimpan data website Anda pada 3 perangkat berbeda untuk memastikan redundansi and keamanan.",
   },
   {
-    icon: <Icon icon="clarity:backup-line" />,
-    title: "Backup Data Mingguan",
-    desc: "Fitur backup mingguan ke server khusus untuk menjaga keamanan data.",
-  },
-  {
-    icon: <Icon icon="carbon:cics-program" />,
-    title: "Softaculous Auto-Installer",
-    desc: "Kemudahan instalasi berbagai macam CMS seperti WordPress hanya dalam beberapa klik.",
-  },
-  {
-    icon: <Icon icon="mdi:gear-outline" />,
-    title: "CloudLinux",
-    desc: "Memberikan limitasi serta keamanan tambahan untuk menjaga kestabilan server.",
+    icon: <Icon icon="clarity:backup-line" color="#ff6900"/>,
+    title: "Backup Data Otomatis",
+    desc: "Website yang di-host oleh paket Hosting Wordpress dari RumahHost dengan Security Suite terintegrasi disertai Codeguard, solusi backup populer berbasis Cloud. Siapkan backup otomatis di Cloud untuk semua blogmu, dan kembalikan data hanya dengan beberapa klik!",
   },
 ];
 

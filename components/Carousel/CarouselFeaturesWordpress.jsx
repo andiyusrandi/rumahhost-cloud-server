@@ -45,7 +45,7 @@ function CarouselFeaturesWordpress({}) {
               <div className="flex flex-col text-center p-5 bg-main h-[400px] rounded-xl items-center shadow-[0_16px_40px_0_rgba(53, 64, 90, .1)]">
                 <span className="text-6xl text-secondary mt-5">{data.icon}</span>
                 <h5 className="my-4 text-[#212529] text-lg font-semibold capitalize md:text-xl">{data.title}</h5>
-                <p className="text-sm md:text-base">{data.desc}</p>
+                <p className="text-sm md:text-base text-left">{data.desc}</p>
               </div>
             </div>
           ))}

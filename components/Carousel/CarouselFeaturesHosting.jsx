@@ -42,10 +42,26 @@ function CarouselFeaturesHosting({}) {
               key={index}
               className="keen-slider__slide"
             >
-              <div className="flex flex-col text-center p-5 bg-main h-[400px] rounded-xl items-center shadow-[0_16px_40px_0_rgba(53, 64, 90, .1)]">
-                <span className="text-6xl text-secondary mt-5">{data.icon}</span>
-                <h5 className="my-4 text-[#212529] text-lg font-semibold capitalize md:text-xl">{data.title}</h5>
-                <p className="text-sm md:text-base">{data.desc}</p>
+              <div className="flex flex-col text-center p-5 bg-main h-[400px] rounded-xl items-center shadow-[0_16px_40px_0_rgba(53, 64, 90, .1)]"
+              style={{
+                backgroundImage: `url(${data.backgroundImage})`, 
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+              >
+                {/* Overlay */}
+                <div
+                  className="absolute inset-0 bg-black opacity-50 rounded-xl" 
+                  style={{
+                    zIndex: 1, 
+                  }}
+                ></div>
+
+                  <div className="relative z-10"> 
+                  <span className="text-6xl text-secondary mt-5">{data.icon}</span>
+                  <h5 className="my-4 text-[#fff] text-lg font-semibold capitalize md:text-xl">{data.title}</h5>
+                  <p className="text-sm md:text-base text-[#ccd6df]">{data.desc}</p>
+                </div>
               </div>
             </div>
           ))}
