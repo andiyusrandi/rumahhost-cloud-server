@@ -79,7 +79,7 @@ const datas = async () => {
   return data
 }
 
-async function CloudHostingWordpress() {
+  async function CloudHostingWordpress() {
   const products = await datas()
   const carouselData = await carouselDomain()
   const domainPricingData = await domainPricing()
