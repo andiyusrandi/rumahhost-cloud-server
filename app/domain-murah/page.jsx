@@ -78,7 +78,7 @@ async function DomainMurah() {
       href="#"
       className="border border-white-700 dark:border-gray-300 rounded-lg py-2 px-4 text-white-400 dark:text-gray-300 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400"
     >
-      Forget about spending hundreds $
+      Lebih dari <b>200.000</b> Nama Domain Terdaftar di Sini
     </a>
     <h1 className="mx-auto max-w-4xl font-display text-2xl font-bold tracking-normal text-white-300 dark:text-gray-300 sm:text-5xl md:text-6xl lg:text-6xl">
       Karena semuanya dimulai
