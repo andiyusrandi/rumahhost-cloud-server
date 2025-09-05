@@ -1,0 +1,33 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 727" width="1280" height="727">
+	<title>hero-img-domain-svg</title>
+	<defs>
+		<image  width="1280" height="727" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAALXAQMAAADotn+tAAAAAXNSR0IB2cksfwAAAANQTFRFMjVIWqMHMAAAAIhJREFUeJztwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgyyUYAAfv/m+IAAAAASUVORK5CYII="/>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1"> <feGaussianBlur stdDeviation="100"/> </filter>
+	</defs>
+	<style>
+		.s0 { opacity: .5;filter: url(#f1);fill: #17171b } 
+		.s1 { opacity: .8;filter: url(#f1);fill: #323548 } 
+		.s2 { opacity: .3;filter: url(#f1);fill: #323548 } 
+		.s3 { opacity: .9;filter: url(#f1);fill: #323548 } 
+		.s4 { fill: #9e9e9e } 
+		.s5 { opacity: .1;fill: #9e9e9e } 
+	</style>
+	<use id="Lapisan 1" href="#img1" x="0" y="0"/>
+	<g id="Layer">
+		<path id="Layer" class="s0" d="m176.5 869c-264.6 0-478.5-117.3-478.5-262.5 0-145.2 213.9-262.5 478.5-262.5 264.6 0 478.5 117.3 478.5 262.5 0 145.2-213.9 262.5-478.5 262.5z"/>
+	</g>
+	<g id="Layer">
+		<path id="Layer" class="s1" d="m747 830c-72.4 0-131-57.4-131-128.5 0-71.1 58.6-128.5 131-128.5 72.4 0 131 57.4 131 128.5 0 71.1-58.6 128.5-131 128.5z"/>
+	</g>
+	<g id="Layer">
+		<path id="Layer" class="s2" d="m1248 313c-138.3 0-250-103-250-230.5 0-127.5 111.8-230.5 250-230.5 138.3 0 250 103 250 230.5 0 127.5-111.8 230.5-250 230.5z"/>
+	</g>
+	<g id="Layer">
+		<path id="Layer" class="s3" d="m1052 945c-119.4 0-216-95-216-212.5 0-117.5 96.6-212.5 216-212.5 119.4 0 216 95 216 212.5 0 117.5-96.6 212.5-216 212.5z"/>
+	</g>
+	<g id="Layer" style="opacity: .1">
+		<path id="Layer" fill-rule="evenodd" class="s4" d="m219.5 265.9c-94 0-170.3 75-170.3 167.4v267.9h-136.2v-267.9c0-166.4 137.2-301.3 306.5-301.3 169.3 0 306.5 134.9 306.5 301.3h-136.2c0-92.4-76.3-167.4-170.3-167.4z"/>
+		<path id="Layer" class="s4" d="m219.5 526.1c-48.4 0-87.6-39.2-87.6-87.6 0-48.4 39.2-87.6 87.6-87.6 48.4 0 87.6 39.2 87.6 87.6 0 48.4-39.2 87.6-87.6 87.6z"/>
+	</g>
+	<path id="Layer" fill-rule="evenodd" class="s5" d="m830.6 512c-16.1-74.2-3.6-141.4 10.2-176l109.3 43.7c-5.8 14.4-15.3 57.6-4.5 107.2 10.2 46.8 38.7 101.1 111.9 143.8 40 23.3 98.8 25.9 156.8 7.6 59.1-18.7 99.8-53.2 112.5-82.9l108.2 46.3c-31.4 73.3-108.4 124.6-185.3 148.8-78.1 24.6-173.8 27.2-251.5-18.1-103.4-60.3-150.8-143.4-167.6-220.4z"/>
+</svg>

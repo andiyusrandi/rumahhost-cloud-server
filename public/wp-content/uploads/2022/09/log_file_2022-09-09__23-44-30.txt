@@ -1,0 +1,61 @@
+
+---Upload files---
+Content file was not uploaded. Error: No file provided.
+
+---Upload files---
+Customizer file was not uploaded. Error: No file provided.
+
+---Upload files---
+The import files were successfully uploaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://rumahhost.com
+Data file = not defined!
+Widget file = /home/rumahhos/domains/rumahhost.com/public_html/wp-content/uploads/2022/09/widgets.wie
+Customizer file = not defined!
+Redux files:
+redux -> /home/rumahhos/domains/rumahhost.com/public_html/wp-content/uploads/2022/09/redux.json 
+
+
+---Importing widgets---
+mobile-menu-sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+
+single-sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+
+footer-1-sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+
+footer-2-sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+
+footer-3-sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+
+footer-4-sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+Blok - No Title - Imported to Inactive
+
+
+
+---Importing Redux settings---
+The Redux option name: redux, was not found in this WP site, so it was not imported!
