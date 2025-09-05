@@ -188,7 +188,7 @@ export const productsData = [
   },
   {
     icon: <AiOutlineCloudServer size={36} className="text-primary" />,
-    title: "Manage Cloud VPS",
+    title: "Manage Cloudclear VPS",
     body: "Dengan Cloud VPS Hosting, server kamu akan berjalan lebih cepat dikarenakan semua sumber daya server tidak akan terbagi dengan VPS lain. Tersedia berbagai pilihan kapasitas penyimpanan yang sangat besar hingga 1283 GB.",
     link: "/cloud-vps-hosting",
     price: "1.260.000",
