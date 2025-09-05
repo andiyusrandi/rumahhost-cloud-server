@@ -1,9 +1,12 @@
 export function resellerClubQueryString(url, params) {
     const searchParams = new URLSearchParams();
 
+    const RC_ID=1247332
+    const RC_API_KEY="NteZotVoOt2sPNnjfc5guyGsUbNS6aSQ"
+    
     let query = {
-      'auth-userid': process.env.RC_ID,
-      'api-key': process.env.RC_API_KEY
+      'auth-userid': RC_ID,
+      'api-key': RC_API_KEY
     }
   
     query = { ...query, ...params };

@@ -10,8 +10,9 @@ export const viewport = {
   initialScale: 1,
 }
 
+const DEV_URL = "http://localhost:3000";
 export const metadata = {
-  metadataBase: process.env.DEV_URL,
+  metadataBase: DEV_URL,
   icons: {
     icon: [
       {url: '/icon/favicon-16x16.png', type: 'image/png', sizes: '16x16'},

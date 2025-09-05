@@ -6,22 +6,25 @@ import ArtboardMountain from "@/public/ArtboardMountain.svg";
 import DotSquare from "@/public/DotsSquare.png";
 import RumahHost from "@/public/Logo Rumah Host 2.png";
 import Shape from "@/public/Shape.svg";
-import Server from "@/public/server.png";
+// import Server from "@/public/server.png";
+import Iconetx from "@/public/iconetx.png";
+import Iconetx2 from "@/public/iconetx2.png";
 import UMKM from "@/public/umkm.png";
 import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
   title: "Tentang Kami",
-  description: "Rumahhost.com adalah penyedia layanan web hosting yang telah beroperasi sejak tahun 2019. Dengan pengalaman yang panjang, kami telah melayani ribuan.",
+  description:
+    "Rumahhost.com adalah penyedia layanan web hosting yang telah beroperasi sejak tahun 2019. Dengan pengalaman yang panjang, kami telah melayani ribuan.",
   alternates: {
-    canonical: '/tentang-kami',
+    canonical: "/tentang-kami",
   },
   openGraph: {
-    url: '/tentang-kami',
-    siteName: 'RumahHost',
-    type: 'article',
-    locale: 'id_ID'
+    url: "/tentang-kami",
+    siteName: "RumahHost",
+    type: "article",
+    locale: "id_ID",
   },
 };
 
@@ -29,7 +32,7 @@ function AboutUs() {
   return (
     <main>
       <section className="relative overflow-hidden bg-[#07122D] pb-10 pt-20 lg:py-20">
-        <div className="container flex flex-col items-center gap-4 lg:flex-row-reverse">
+        <div className="container mt-8 flex flex-col items-center gap-4 lg:flex-row-reverse">
           <div className="relative flex h-44 w-fit items-center justify-center p-4 lg:h-fit lg:w-[40%]">
             <Image
               src={RumahHost}
@@ -53,12 +56,10 @@ function AboutUs() {
               Uptime server terjamin dengan Technologi Upper class
             </p>
             <Link
-              href="#"
-              className="w-fit rounded-lg bg-white px-8 py-4 font-semibold shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]"
+              href="https://client.rumahhost.com/login"
+              className="mt-12 w-fit rounded-lg border border-white bg-transparent px-12 py-3 text-xs font-semibold capitalize text-transparent text-white hover:border-[#f14d2e] hover:bg-[#f14d2e] lg:text-base"
             >
-              <span className="bg-gradient-to-r from-[#FF7D2A] to-[#377BF6] bg-clip-text text-transparent">
-                HUBUNGI KAMI
-              </span>
+              Daftar Sekarng
             </Link>
           </div>
         </div>
@@ -104,7 +105,7 @@ function AboutUs() {
           </div>
           <div className="relative flex w-full items-center justify-center md:w-1/2">
             <Image
-              src={Server}
+              src={Iconetx}
               alt=""
               className="w-full"
               style={{
@@ -128,12 +129,13 @@ function AboutUs() {
           </div>
           <div className="relative flex w-full items-center justify-center p-4 md:w-[45%] lg:p-8">
             <Image
-              src={UMKM}
+              src={Iconetx2}
               alt=""
               className="w-full"
               style={{
                 objectFit: "contain",
                 objectPosition: "center",
+                height: "350px",
               }}
             />
           </div>

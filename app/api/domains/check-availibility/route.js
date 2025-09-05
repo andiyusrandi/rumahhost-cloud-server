@@ -8,6 +8,9 @@ export async function POST(req) {
     const url = "https://domaincheck.httpapi.com/api/domains/available.json?"
 
     const queryString = resellerClubQueryString(url, body);
+    console.log(url);
+    console.log(body);
+    console.log(queryString);
 
     const response = await axios.get(queryString);
     const data = response.data;

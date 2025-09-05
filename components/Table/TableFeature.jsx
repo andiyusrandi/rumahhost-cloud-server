@@ -9,6 +9,17 @@ import { useState } from "react";
 function TableFeature({ datas }) {
   const [showEmail, setShowEmail] = useState(false);
 
+  if (!datas || datas.length < 3) {
+    return <div>Data fitur hosting tidak tersedia atau kurang lengkap.</div>;
+  }
+
+  const allHaveFeature = datas
+    .slice(0, 3)
+    .every((item) => item && item.feature);
+  if (!allHaveFeature) {
+    return <div>Data fitur hosting tidak valid (feature missing).</div>;
+  }
+
   const handleShowEmail = () => {
     setShowEmail(!showEmail);
   };
@@ -37,13 +48,22 @@ function TableFeature({ datas }) {
               <tr className="border border-slate-200 lg:border-none">
                 <td>Disk Space</td>
                 <td>
-                  <span className="cell-bold">{datas[0].feature.QUOTA / 1000}GB</span> SSD Storage
+                  <span className="cell-bold">
+                    {datas[0].feature.QUOTA / 1000} GB
+                  </span>{" "}
+                  SSD Storage
                 </td>
                 <td>
-                  <span className="cell-bold">{datas[1].feature.QUOTA / 1000}GB</span> SSD Storage
+                  <span className="cell-bold">
+                    {datas[1].feature.QUOTA / 1000}GB
+                  </span>{" "}
+                  SSD Storage
                 </td>
                 <td>
-                  <span className="cell-bold">{datas[2].feature.QUOTA / 1000}GB</span> SSD Storage
+                  <span className="cell-bold">
+                    {datas[2].feature.QUOTA / 1000}GB
+                  </span>{" "}
+                  SSD Storage
                 </td>
               </tr>
               <tr className="border border-slate-200 lg:border-none">
@@ -66,9 +86,21 @@ function TableFeature({ datas }) {
               </tr>
               <tr className="border border-slate-200 lg:border-none">
                 <td>Database</td>
-                <td>{datas[0].feature.MAXSQL == null ? 'Unlimited' : datas[0].feature.MAXSQL}</td>
-                <td>{datas[1].feature.MAXSQL == null ? 'Unlimited' : datas[1].feature.MAXSQL}</td>
-                <td>{datas[2].feature.MAXSQL == null ? 'Unlimited' : datas[2].feature.MAXSQL}</td>
+                <td>
+                  {datas[0].feature.MAXSQL == null
+                    ? "Unlimited"
+                    : datas[0].feature.MAXSQL}
+                </td>
+                <td>
+                  {datas[1].feature.MAXSQL == null
+                    ? "Unlimited"
+                    : datas[1].feature.MAXSQL}
+                </td>
+                <td>
+                  {datas[2].feature.MAXSQL == null
+                    ? "Unlimited"
+                    : datas[2].feature.MAXSQL}
+                </td>
               </tr>
               <tr className="border border-slate-200 lg:border-none">
                 <td>Addon Domain</td>
@@ -78,9 +110,21 @@ function TableFeature({ datas }) {
               </tr>
               <tr className="border border-slate-200 lg:border-none">
                 <td>Sub Domain</td>
-                <td>{datas[0].feature.MAXSUB == null ? 'Unlimited' : datas[0].feature.MAXSUB}</td>
-                <td>{datas[1].feature.MAXSUB == null ? 'Unlimited' : datas[1].feature.MAXSUB}</td>
-                <td>{datas[2].feature.MAXSUB == null ? 'Unlimited' : datas[2].feature.MAXSUB}</td>
+                <td>
+                  {datas[0].feature.MAXSUB == null
+                    ? "Unlimited"
+                    : datas[0].feature.MAXSUB}
+                </td>
+                <td>
+                  {datas[1].feature.MAXSUB == null
+                    ? "Unlimited"
+                    : datas[1].feature.MAXSUB}
+                </td>
+                <td>
+                  {datas[2].feature.MAXSUB == null
+                    ? "Unlimited"
+                    : datas[2].feature.MAXSUB}
+                </td>
               </tr>
               <tr className="border border-slate-200 lg:border-none">
                 <td>Lokasi Server</td>
@@ -237,38 +281,62 @@ function TableFeature({ datas }) {
               <tbody>
                 <tr className="border border-slate-200 lg:border-none">
                   <td>Akun Email</td>
-                  <td className="capitalize">{datas[0].feature.MAX_EMAILACCT_QUOTA}</td>
-                  <td className="capitalize">{datas[1].feature.MAX_EMAILACCT_QUOTA}</td>
-                  <td className="capitalize">{datas[2].feature.MAX_EMAILACCT_QUOTA}</td>
+                  <td className="capitalize">
+                    {datas[0].feature.MAX_EMAILACCT_QUOTA}
+                  </td>
+                  <td className="capitalize">
+                    {datas[1].feature.MAX_EMAILACCT_QUOTA}
+                  </td>
+                  <td className="capitalize">
+                    {datas[2].feature.MAX_EMAILACCT_QUOTA}
+                  </td>
                 </tr>
                 <tr className="border border-slate-200 lg:border-none">
                   <td>Sendmail/Hour</td>
-                  <td>{datas[0].feature.MAX_EMAIL_PER_HOUR === "0" ? 'Unlimited' : `${datas[0].feature.MAX_EMAIL_PER_HOUR}/Jam`}</td>
-                  <td>{datas[1].feature.MAX_EMAIL_PER_HOUR === "0" ? 'Unlimited' : `${datas[1].feature.MAX_EMAIL_PER_HOUR}/Jam`}</td>
-                  <td>{datas[2].feature.MAX_EMAIL_PER_HOUR === "0" ? 'Unlimited' : `${datas[2].feature.MAX_EMAIL_PER_HOUR}/Jam`}</td>
+                  <td>
+                    {datas[0].feature.MAX_EMAIL_PER_HOUR === "0"
+                      ? "Unlimited"
+                      : `${datas[0].feature.MAX_EMAIL_PER_HOUR}/Jam`}
+                  </td>
+                  <td>
+                    {datas[1].feature.MAX_EMAIL_PER_HOUR === "0"
+                      ? "Unlimited"
+                      : `${datas[1].feature.MAX_EMAIL_PER_HOUR}/Jam`}
+                  </td>
+                  <td>
+                    {datas[2].feature.MAX_EMAIL_PER_HOUR === "0"
+                      ? "Unlimited"
+                      : `${datas[2].feature.MAX_EMAIL_PER_HOUR}/Jam`}
+                  </td>
                 </tr>
                 <tr className="border border-slate-200 lg:border-none">
                   <td>Attachment</td>
                   <td>
-                    <span className="cell-bold">Unmetered</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered</span> E-mail
+                    Attachment
                   </td>
                   <td>
-                    <span className="cell-bold">Unmetered</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered</span> E-mail
+                    Attachment
                   </td>
                   <td>
-                    <span className="cell-bold">Unmetered</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered</span> E-mail
+                    Attachment
                   </td>
                 </tr>
                 <tr className="border border-slate-200 lg:border-none">
                   <td>Fitur Lain</td>
                   <td>
-                    <span className="cell-bold">Unmetered MB</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered MB</span> E-mail
+                    Attachment
                   </td>
                   <td>
-                    <span className="cell-bold">Unmetered MB</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered MB</span> E-mail
+                    Attachment
                   </td>
                   <td>
-                    <span className="cell-bold">Unmetered MB</span> E-mail Attachment
+                    <span className="cell-bold">Unmetered MB</span> E-mail
+                    Attachment
                   </td>
                 </tr>
               </tbody>

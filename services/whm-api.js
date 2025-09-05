@@ -1,8 +1,10 @@
 export function whmQueryString(params, method) {
     const searchParams = new URLSearchParams();
     
+    const WHM_API_VERSION = '1';
+
     let whm = {
-        'api.version': process.env.WHM_API_VERSION,
+        'api.version': WHM_API_VERSION,
     };
   
     whm = { ...whm, ...params };

@@ -12,7 +12,7 @@ function ExploreFeatureWP() {
             </p>
           </div>
           <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[#09090b]">
+            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[rgb(50_54_73)]">
               <div
                 aria-hidden="true"
                 className="from-primary-500 absolute inset-0 aspect-video -translate-y-1/2 rounded-full border bg-gradient-to-b to-white opacity-25 blur-2xl duration-300 group-hover:-translate-y-1/4 dark:from-white dark:to-white dark:opacity-5 dark:group-hover:opacity-10"
@@ -45,7 +45,7 @@ function ExploreFeatureWP() {
             </div>
             <div
               href="#"
-              className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[#09090b]"
+              className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[rgb(50_54_73)]"
             >
               <div
                 aria-hidden="true"
@@ -78,7 +78,7 @@ function ExploreFeatureWP() {
                 </div>
               </div>
             </div>
-            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[#09090b]">
+            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[rgb(50_54_73)]">
               <div
                 aria-hidden="true"
                 className="from-danger-500 absolute inset-0 aspect-video -translate-y-1/2 rounded-full border bg-gradient-to-b to-white opacity-25 blur-2xl duration-300 group-hover:-translate-y-1/4 dark:from-white dark:to-white dark:opacity-5 dark:group-hover:opacity-10"
@@ -117,7 +117,7 @@ function ExploreFeatureWP() {
                 </div>
               </div>
             </div>
-            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[#09090b]">
+            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[rgb(50_54_73)]">
               <div
                 aria-hidden="true"
                 className="absolute inset-0 aspect-video -translate-y-1/2 rounded-full border bg-gradient-to-b from-gray-500 to-white opacity-25 blur-2xl duration-300 group-hover:-translate-y-1/4 dark:from-white dark:to-white dark:opacity-5 dark:group-hover:opacity-10"
@@ -152,7 +152,7 @@ function ExploreFeatureWP() {
                 </div>
               </div>
             </div>
-            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[#09090b]">
+            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[rgb(50_54_73)]">
               <div
                 aria-hidden="true"
                 className="from-warning-500 absolute inset-0 aspect-video -translate-y-1/2 rounded-full border bg-gradient-to-b to-white opacity-25 blur-2xl duration-300 group-hover:-translate-y-1/4 dark:from-white dark:to-white dark:opacity-5 dark:group-hover:opacity-10"
@@ -184,7 +184,7 @@ function ExploreFeatureWP() {
                 </div>
               </div>
             </div>
-            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[#09090b]">
+            <div className="group relative overflow-hidden rounded-[10px] border border-[--ui-light-border-color] bg-white p-[2rem] dark:border-[--ui-dark-border-color] dark:bg-[rgb(50_54_73)]">
               <div
                 aria-hidden="true"
                 className="from-info-500 absolute inset-0 aspect-video -translate-y-1/2 rounded-full border bg-gradient-to-b to-white opacity-25 blur-2xl duration-300 group-hover:-translate-y-1/4 dark:from-white dark:to-white dark:opacity-5 dark:group-hover:opacity-10"

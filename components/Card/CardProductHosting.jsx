@@ -22,8 +22,11 @@ import Image from "next/image";
 import Link from "next/link";
 import CarouselMain from "../Carousel/CarouselMain";
 
-function CardProductHosting({ datas }) {  
-  console.log(datas)
+function CardProductHosting({ datas }) {
+  // console.log(datas)
+  if (!Array.isArray(datas)) {
+    return <div>No data available</div>;
+  }
   return (
     <>
       <div className="w-full lg:hidden">
@@ -37,7 +40,7 @@ function CardProductHosting({ datas }) {
               as={Card}
               key={index}
               bgColor={data.isPopular ? "#FF7D2A" : "white"}
-              className={`my-4 flex-shrink-0 flex-grow-0 basis-full custom-shadow md:basis-[calc(50%-0.5rem)]`}
+              className={`custom-shadow my-4 flex-shrink-0 flex-grow-0 basis-full md:basis-[calc(50%-0.5rem)]`}
               boxShadow="md"
               padding="1rem"
               borderRadius="0.75rem"
@@ -72,7 +75,11 @@ function CardProductHosting({ datas }) {
                   >
                     Rp.
                     <Text as="span" className={`font-roboto text-4xl`}>
-                      {numeral(parseInt(data.pricing.IDR.annually) - (parseInt(data.pricing.IDR.annually) * (parseInt(data.promo.value) / 100))).format("0,0")}
+                      {numeral(
+                        parseInt(data.pricing.IDR.annually) -
+                          parseInt(data.pricing.IDR.annually) *
+                            (parseInt(data.promo.value) / 100),
+                      ).format("0,0")}
                     </Text>
                     <Text
                       as="span"
@@ -94,7 +101,11 @@ function CardProductHosting({ datas }) {
                   <Box
                     className={`w-full rounded px-3 py-2 font-bold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
                   >
-                    Promo {numeral(data.promo.value).format("0,0")}% - Hemat Rp.{numeral(parseInt(data.pricing.IDR.annually) * (parseInt(data.promo.value) / 100)).format("0,0")}
+                    Promo {numeral(data.promo.value).format("0,0")}% - Hemat Rp.
+                    {numeral(
+                      parseInt(data.pricing.IDR.annually) *
+                        (parseInt(data.promo.value) / 100),
+                    ).format("0,0")}
                   </Box>
                 </Box>
                 <Box
@@ -102,43 +113,81 @@ function CardProductHosting({ datas }) {
                 >
                   <Box className="flex items-center justify-between">
                     <Box>Disk {data.feature.QUOTA / 1000} GB</Box>
-                    <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <Box
+                      className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                    >
                       <MdDone size={18} />
                     </Box>
                   </Box>
                   <Box className="flex items-center justify-between">
                     <Box>Unmetered Bandwidth</Box>
-                    <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <Box
+                      className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                    >
                       <MdDone size={18} />
                     </Box>
                   </Box>
                   <Box className="flex items-center justify-between">
-                    <Box>{data.feature.MAXSQL== null ? 'Unlimited Database' : `Database ${data.feature.MAXSQL}`}</Box>
-                    <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <Box>
+                      {data.feature.MAXSQL == null
+                        ? "Unlimited Database"
+                        : `Database ${data.feature.MAXSQL}`}
+                    </Box>
+                    <Box
+                      className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                    >
                       <MdDone size={18} />
                     </Box>
                   </Box>
                   <Box className="flex items-center justify-between">
-                    <Box>{data.feature.MAXSUB== null ? 'Unlimited Subdomain' : `Subdomain ${data.feature.MAXSUB}`}</Box>
-                    <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <Box>
+                      {data.feature.MAXSUB == null
+                        ? "Unlimited Subdomain"
+                        : `Subdomain ${data.feature.MAXSUB}`}
+                    </Box>
+                    <Box
+                      className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                    >
                       <MdDone size={18} />
                     </Box>
                   </Box>
                   <Box className="flex items-center justify-between">
-                    <Box>{data.feature.MAX_EMAILACCT_QUOTA === "unlimited" ? "Unlimited Akun Email" : `Akun Email ${data.feature.MAX_EMAILACCT_QUOTA}`}</Box>
-                    <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <Box>
+                      {data.feature.MAX_EMAILACCT_QUOTA === "unlimited"
+                        ? "Unlimited Akun Email"
+                        : `Akun Email ${data.feature.MAX_EMAILACCT_QUOTA}`}
+                    </Box>
+                    <Box
+                      className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                    >
                       <MdDone size={18} />
                     </Box>
                   </Box>
                   <Box className="flex items-center justify-between">
-                    <Box>{data.feature.MAXFTP== null ? 'Unlimited Akun FTP' : `Akun FTP ${data.feature.MAXFTP}`}</Box>
-                    <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <Box>
+                      {data.feature.MAXFTP == null
+                        ? "Unlimited Akun FTP"
+                        : `Akun FTP ${data.feature.MAXFTP}`}
+                    </Box>
+                    <Box
+                      className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                    >
                       <MdDone size={18} />
                     </Box>
                   </Box>
                   <Box className="flex items-center justify-between">
-                    <Box>Max Parked Domains {data.feature.MAXADDON == 0 && data.feature.MAXPARK == 0 ? '-/-' : data.feature.MAXADDON == null && data.feature.MAXPARK == null ? 'Unlimited' : `${data.feature.MAXADDON}/${data.feature.MAXPARK}`}</Box>
-                    <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <Box>
+                      Max Parked Domains{" "}
+                      {data.feature.MAXADDON == 0 && data.feature.MAXPARK == 0
+                        ? "-/-"
+                        : data.feature.MAXADDON == null &&
+                            data.feature.MAXPARK == null
+                          ? "Unlimited"
+                          : `${data.feature.MAXADDON}/${data.feature.MAXPARK}`}
+                    </Box>
+                    <Box
+                      className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                    >
                       <MdDone size={18} />
                     </Box>
                   </Box>
@@ -220,7 +269,11 @@ function CardProductHosting({ datas }) {
                 >
                   Rp.
                   <Text as="span" className={`font-roboto text-4xl`}>
-                    {numeral(parseInt(data.pricing.IDR.annually) - (parseInt(data.pricing.IDR.annually) * (parseInt(data.promo.value) / 100))).format("0,0")}
+                    {numeral(
+                      parseInt(data.pricing.IDR.annually) -
+                        parseInt(data.pricing.IDR.annually) *
+                          (parseInt(data.promo.value) / 100),
+                    ).format("0,0")}
                   </Text>
                   <Text
                     as="span"
@@ -242,7 +295,11 @@ function CardProductHosting({ datas }) {
                 <Box
                   className={`w-full rounded px-3 py-2 font-bold ${data.isPopular ? "bg-white text-primary" : "bg-[#5e6278] text-white"}`}
                 >
-                  Promo {numeral(data.promo.value).format("0,0")}% - Hemat Rp.{numeral(parseInt(data.pricing.IDR.annually) * (parseInt(data.promo.value) / 100)).format("0,0")}
+                  Promo {numeral(data.promo.value).format("0,0")}% - Hemat Rp.
+                  {numeral(
+                    parseInt(data.pricing.IDR.annually) *
+                      (parseInt(data.promo.value) / 100),
+                  ).format("0,0")}
                 </Box>
               </Box>
               <Box
@@ -250,43 +307,81 @@ function CardProductHosting({ datas }) {
               >
                 <Box className="flex items-center justify-between">
                   <Box>Disk {data.feature.QUOTA / 1000} GB</Box>
-                  <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                  <Box
+                    className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                  >
                     <MdDone size={18} />
                   </Box>
                 </Box>
                 <Box className="flex items-center justify-between">
                   <Box>Unmetered Bandwidth</Box>
-                  <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                  <Box
+                    className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                  >
                     <MdDone size={18} />
                   </Box>
                 </Box>
                 <Box className="flex items-center justify-between">
-                  <Box>{data.feature.MAXSQL== null ? 'Unlimited Database' : `Database ${data.feature.MAXSQL}`}</Box>
-                  <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                  <Box>
+                    {data.feature.MAXSQL == null
+                      ? "Unlimited Database"
+                      : `Database ${data.feature.MAXSQL}`}
+                  </Box>
+                  <Box
+                    className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                  >
                     <MdDone size={18} />
                   </Box>
                 </Box>
                 <Box className="flex items-center justify-between">
-                  <Box>{data.feature.MAXSUB== null ? 'Unlimited Subdomain' : `Subdomain ${data.feature.MAXSUB}`}</Box>
-                  <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                  <Box>
+                    {data.feature.MAXSUB == null
+                      ? "Unlimited Subdomain"
+                      : `Subdomain ${data.feature.MAXSUB}`}
+                  </Box>
+                  <Box
+                    className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                  >
                     <MdDone size={18} />
                   </Box>
                 </Box>
                 <Box className="flex items-center justify-between">
-                  <Box>{data.feature.MAXPOP == null ? "Unlimited Akun Email" : `Akun Email ${data.feature.MAXPOP}`}</Box>
-                  <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                  <Box>
+                    {data.feature.MAXPOP == null
+                      ? "Unlimited Akun Email"
+                      : `Akun Email ${data.feature.MAXPOP}`}
+                  </Box>
+                  <Box
+                    className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                  >
                     <MdDone size={18} />
                   </Box>
                 </Box>
                 <Box className="flex items-center justify-between">
-                  <Box>{data.feature.MAXFTP == null ? 'Unlimited Akun FTP' : `Akun FTP ${data.feature.MAXFTP}`}</Box>
-                  <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                  <Box>
+                    {data.feature.MAXFTP == null
+                      ? "Unlimited Akun FTP"
+                      : `Akun FTP ${data.feature.MAXFTP}`}
+                  </Box>
+                  <Box
+                    className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                  >
                     <MdDone size={18} />
                   </Box>
                 </Box>
                 <Box className="flex items-center justify-between">
-                <Box>Max Parked Domains {data.feature.MAXADDON == 0 && data.feature.MAXPARK == 0 ? '-/-' : data.feature.MAXADDON == null && data.feature.MAXPARK == null ? 'Unlimited' : `${data.feature.MAXADDON}/${data.feature.MAXPARK}`}</Box>
-                  <Box className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}>
+                  <Box>
+                    Max Parked Domains{" "}
+                    {data.feature.MAXADDON == 0 && data.feature.MAXPARK == 0
+                      ? "-/-"
+                      : data.feature.MAXADDON == null &&
+                          data.feature.MAXPARK == null
+                        ? "Unlimited"
+                        : `${data.feature.MAXADDON}/${data.feature.MAXPARK}`}
+                  </Box>
+                  <Box
+                    className={`aspect-square rounded-full p-1 ${data.isPopular ? "bg-[#F8FAFC]/30 text-white" : "bg-primary/30 text-primary"}`}
+                  >
                     <MdDone size={18} />
                   </Box>
                 </Box>

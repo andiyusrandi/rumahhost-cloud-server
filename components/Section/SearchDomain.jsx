@@ -29,7 +29,6 @@ const checkAvailibility = async (param) => {
     },
     body: JSON.stringify(param),
   });
-
   if (!response.ok) {
     throw new Error(`HTTP error! Status: ${response.status}`);
   }
@@ -73,102 +72,254 @@ function SearchDomain({ carouselData, pricingData }) {
     inputRef.current.focus();
   };
 
+  // const checkDomain = async () => {
+  //   setOverlay(false);
+  //   setIsLoading(!isLoading);
+
+  //   let checkStatus = await checkAvailibility({
+  //     domain: domain,
+  //     action: "DomainWhoIs",
+  //   });
+
+  //   const otherStatus = await Promise.all(
+  //     extensions
+  //       .filter((value) => {
+  //         return value != ext;
+  //       })
+  //       .map(async (value) => {
+  //         const otherStatus = await checkAvailibility({
+  //           domain: `${keyword}.${value}`,
+  //           action: "DomainWhoIs",
+  //         });
+
+  //         let otherData = {};
+  //         if (Array.isArray(carouselData?.data)) {
+  //           carouselData.data.forEach((data) => {
+  //             if (data.ext == value) {
+  //               otherData = data;
+  //             }
+  //           });
+  //         } else if (Array.isArray(carouselData)) {
+  //           carouselData.forEach((data) => {
+  //             if (data.ext == value) {
+  //               otherData = data;
+  //             }
+  //           });
+  //         }
+
+  //         return { ...otherStatus, ...otherData };
+  //       }),
+  //   );
+
+  //   const otherStatusAvailable = otherStatus.filter((data) => {
+  //     return data.status === "available";
+  //   });
+
+  //   if (pricingData && typeof pricingData === 'object') {
+  //     for (const [key, value] of Object.entries(pricingData.data || pricingData)) {
+  //       if (ext == key) {
+  //         checkStatus = { ...checkStatus, ...value };
+  //       }
+  //     }
+  //   }
+
+  //   const suggestDomains = await getSuggestDomains({ keyword: keyword });
+  //   let suggestDomainsArray = [];
+
+  //   for (const [key, value] of Object.entries(suggestDomains)) {
+  //     let newObj = {};
+
+  //     if (value.status === "available") {
+  //       newObj = { name: key, ...value };
+  //     }
+
+  //     suggestDomainsArray.push(newObj);
+  //   }
+
+  //   const suggests = suggestDomainsArray
+  //   .filter((data) => {
+  //     if (!data.name) return false; // filter objek kosong
+  //     const suggestDomainParts = data.name.split(".");
+  //     const suggestExt = suggestDomainParts.length > 1 ? suggestDomainParts.slice(1).join(".") : "";
+
+  //     let availableDomain = [];
+  //     if (pricingData && typeof pricingData === 'object') {
+  //       availableDomain = Object.keys(pricingData.data || pricingData);
+  //     }
+
+  //     return availableDomain.includes(suggestExt);
+  //   })
+  //   .map((data) => {
+  //     const suggestDomainParts = data.name.split(".");
+  //     const suggestExt = suggestDomainParts.length > 1 ? suggestDomainParts.slice(1).join(".") : "";
+  //     let suggest = { ...data };
+
+  //     if (pricingData && typeof pricingData === 'object') {
+  //       for (const [key, value] of Object.entries(pricingData.data || pricingData)) {
+  //         if (suggestExt === key) {
+  //           suggest = { ...suggest, ...value };
+  //           break;
+  //         }
+  //       }
+  //     }
+  //     return suggest;
+  //   });
+
+  //   setStatusData(checkStatus);
+  //   setSuggestDomains(suggests);
+  //   setOtherExtStatusData(otherStatusAvailable);
+
+  //   setTimeout(() => setIsLoading(false), 2000);
+  // };
+
   const checkDomain = async () => {
-    setOverlay(false);
-    setIsLoading(!isLoading);
+    try {
+      setOverlay(false);
+      setIsLoading(true); // Ubah ke true langsung, bukan toggle
 
-    let checkStatus = await checkAvailibility({
-      domain: domain,
-      action: "DomainWhoIs",
-    });
-
-    const otherStatus = await Promise.all(
-      extensions
-        .filter((value) => {
-          return value != ext;
-        })
-        .map(async (value) => {
-          const otherStatus = await checkAvailibility({
-            domain: `${keyword}.${value}`,
-            action: "DomainWhoIs",
-          });
-
-          let otherData = {};
-          carouselData.map((data) => {
-            if (data.ext == value) {
-              otherData = data;
-            }
-
-            return {};
-          });
-
-          return { ...otherStatus, ...otherData };
-        }),
-    );
-
-    const otherStatusAvailable = otherStatus.filter((data) => {
-      return data.status === "available";
-    });
-
-    for (const [key, value] of Object.entries(pricingData)) {
-      if (ext == key) {
-        checkStatus = { ...checkStatus, ...value };
-      }
-    }
-
-    const suggestDomains = await getSuggestDomains({ keyword: keyword });
-    let suggestDomainsArray = [];
-
-    for (const [key, value] of Object.entries(suggestDomains)) {
-      let newObj = {};
-
-      if (value.status === "available") {
-        newObj = { name: key, ...value };
+      // Coba ambil data domain
+      let checkStatus;
+      try {
+        checkStatus = await checkAvailibility({
+          domain: domain,
+          action: "DomainWhoIs",
+        });
+      } catch (error) {
+        console.error("Error checking domain:", error);
+        checkStatus = { status: "error", message: "Gagal memeriksa domain" };
       }
 
-      suggestDomainsArray.push(newObj);
-    }
+      // Coba ambil data ekstensi lain dengan penanganan error
+      let otherStatusData = [];
+      try {
+        const otherStatus = await Promise.all(
+          extensions
+            .filter((value) => value != ext)
+            .map(async (value) => {
+              try {
+                const otherStatus = await checkAvailibility({
+                  domain: `${keyword}.${value}`,
+                  action: "DomainWhoIs",
+                });
 
-    const suggests = suggestDomainsArray
-      .filter((data) => {
-        const suggestDomain = data.name.split(".");
-        let suggestExt = `${suggestDomain[1]}`;
-        if (suggestDomain.length == 1) {
-          suggestExt = `${suggestDomain[1]}.${suggestDomain[2]}`;
-        }
+                let otherData = {};
+                if (Array.isArray(carouselData?.data)) {
+                  carouselData.data.forEach((data) => {
+                    if (data.ext == value) {
+                      otherData = data;
+                    }
+                  });
+                } else if (Array.isArray(carouselData)) {
+                  carouselData.forEach((data) => {
+                    if (data.ext == value) {
+                      otherData = data;
+                    }
+                  });
+                }
 
-        let availableDomain = [];
-        for (const [key, value] of Object.entries(pricingData)) {
-          availableDomain.push(key);
-        }
+                return { ...otherStatus, ...otherData };
+              } catch (error) {
+                console.error(`Error checking ${value} extension:`, error);
+                return { status: "error", ext: value };
+              }
+            })
+        );
 
-        if (availableDomain.includes(suggestExt)) {
-          return data;
-        }
-      })
-      .map((data, index) => {
-        const suggestDomain = data.name.split(".");
-        let suggestExt = `${suggestDomain[1]}`;
-        let suggest = { ...data };
+        otherStatusData = otherStatus.filter((data) => {
+          return data.status === "available";
+        });
+      } catch (error) {
+        console.error("Error checking other extensions:", error);
+        otherStatusData = [];
+      }
 
-        if (suggestDomain.length == 1) {
-          suggestExt = `${suggestDomain[1]}.${suggestDomain[2]}`;
-        }
-
-        for (const [key, value] of Object.entries(pricingData)) {
-          if (suggestExt == key) {
-            suggest = { ...suggest, ...value };
+      // Tambahkan data pricing ke status domain
+      if (pricingData && typeof pricingData === 'object') {
+        for (const [key, value] of Object.entries(pricingData.data || pricingData)) {
+          if (ext == key) {
+            checkStatus = { ...checkStatus, ...value };
           }
         }
+      }
 
-        return suggest;
-      });
+      // Pastikan checkStatus memiliki properti register
+      if (!checkStatus.register) {
+        checkStatus.register = [0, 0];
+      }
 
-    setStatusData(checkStatus);
-    setSuggestDomains(suggests);
-    setOtherExtStatusData(otherStatusAvailable);
+      // Coba dapatkan domain rekomendasi
+      let suggests = [];
+      try {
+        const suggestDomains = await getSuggestDomains({ keyword: keyword });
+        let suggestDomainsArray = [];
 
-    setTimeout(setIsLoading(false), 2000);
+        for (const [key, value] of Object.entries(suggestDomains || {})) {
+          let newObj = {};
+          if (value && value.status === "available") {
+            newObj = { name: key, ...value };
+          }
+          suggestDomainsArray.push(newObj);
+        }
+
+        suggests = suggestDomainsArray
+          .filter((data) => {
+            if (!data || !data.name) return false;
+            
+            const suggestDomain = data.name.split(".");
+            if (suggestDomain.length < 2) return false;
+            
+            let suggestExt = `${suggestDomain[1]}`;
+            if (suggestDomain.length > 2) {
+              suggestExt = `${suggestDomain[1]}.${suggestDomain[2]}`;
+            }
+
+            let availableDomain = [];
+            if (pricingData && typeof pricingData === 'object') {
+              for (const [key, value] of Object.entries(pricingData.data || pricingData)) {
+                availableDomain.push(key);
+              }
+            }
+
+            return availableDomain.includes(suggestExt);
+          })
+          .map((data) => {
+            const suggestDomain = data.name.split(".");
+            let suggestExt = `${suggestDomain[1]}`;
+            let suggest = { ...data };
+
+            if (suggestDomain.length > 2) {
+              suggestExt = `${suggestDomain[1]}.${suggestDomain[2]}`;
+            }
+
+            if (pricingData && typeof pricingData === 'object') {
+              for (const [key, value] of Object.entries(pricingData.data || pricingData)) {
+                if (suggestExt == key) {
+                  suggest = { ...suggest, ...value };
+                }
+              }
+            }
+
+            return suggest;
+          });
+      } catch (error) {
+        console.error("Error getting domain suggestions:", error);
+        suggests = [];
+      }
+
+      // Update state setelah semua data siap
+      setStatusData(checkStatus);
+      setSuggestDomains(suggests);
+      setOtherExtStatusData(otherStatusData);
+    } catch (error) {
+      console.error("Error in checkDomain function:", error);
+      // Set status data dengan pesan error
+      setStatusData({ status: "error", message: "Terjadi kesalahan saat memeriksa domain" });
+      setSuggestDomains([]);
+      setOtherExtStatusData([]);
+    } finally {
+      // Pastikan loading state selalu dimatikan
+      setTimeout(() => setIsLoading(false), 1000);
+    }
   };
 
   const handleInput = (e) => {
@@ -291,12 +442,12 @@ function SearchDomain({ carouselData, pricingData }) {
             )}
           </button>
         </div>
-        <CarouselDomain data={carouselData} />
+        <CarouselDomain data={carouselData?.data || carouselData || []} />
       </div>
 
       {statusData && (
         <div className="mx-auto mt-5 w-full max-w-3xl">
-          {statusData.status === "available" && (
+          {statusData?.status === "available" && (
             <div className="w-full overflow-hidden rounded-md shadow-lg">
               <div className="bg-primary p-4">
                 <h1 className="text-center font-medium text-white md:text-left">
@@ -335,7 +486,7 @@ function SearchDomain({ carouselData, pricingData }) {
             </div>
           )}
 
-          {statusData.status === "unavailable" && (
+          {statusData?.status === "unavailable" && (
             <div className="w-full overflow-hidden rounded-md shadow-lg">
               <div className="bg-slate-400 p-4">
                 <h1 className="text-center font-semibold text-[#323548] md:text-left">
@@ -374,7 +525,7 @@ function SearchDomain({ carouselData, pricingData }) {
             </div>
           )}
 
-          {otherExtStatusData.length > 0 && (
+          {Array.isArray(otherExtStatusData) && otherExtStatusData.length > 0 && (
             <div className="mt-5 w-full overflow-hidden rounded-md shadow-lg">
               <div className="bg-[#004166] p-4">
                 <h1 className="text-center font-medium text-white md:text-left">
@@ -394,7 +545,7 @@ function SearchDomain({ carouselData, pricingData }) {
                       </p>
                       <form action="https://client.rumahhost.com/cart.php?a=add&domain=register" method="POST">
                         <input type="hidden" name="query" value={`${keyword}.${data.ext}`} />
-                        <button type="button" class="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2">
+                        <button type="button" className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2">
                         <svg
                             id="shopping-cart"
                             xmlns="http://www.w3.org/2000/svg"
@@ -415,7 +566,7 @@ function SearchDomain({ carouselData, pricingData }) {
             </div>
           )}
 
-          {suggestDomains.length > 0 && (
+          {Array.isArray(suggestDomains) && suggestDomains.length > 0 && (
             <div className="mt-5 w-full overflow-hidden rounded-md shadow-lg">
               <div className="bg-[#694d30] p-4">
                 <h1 className="text-center font-normal text-white md:text-left">

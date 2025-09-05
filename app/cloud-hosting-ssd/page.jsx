@@ -16,23 +16,26 @@ import TableFeatureSSD from "@/components/Table/TableFeatureSSD";
 
 export const metadata = {
   title: "Cloud Hosting SSD",
-  description: "Cloud Hosting murah terbaik untuk kebutuhan website anda, buat websitemu lebih cepat dan Dapatkan Gratis Domain dan SSL Diskon Up to 60%.",
+  description:
+    "Cloud Hosting murah terbaik untuk kebutuhan website anda, buat websitemu lebih cepat dan Dapatkan Gratis Domain dan SSL Diskon Up to 60%.",
   alternates: {
-    canonical: '/cloud-hosting-ssd',
+    canonical: "/cloud-hosting-ssd",
   },
   openGraph: {
-    url: '/cloud-hosting-ssd',
-    siteName: 'RumahHost',
-    type: 'website',
-    locale: 'id_ID'
+    url: "/cloud-hosting-ssd",
+    siteName: "RumahHost",
+    type: "website",
+    locale: "id_ID",
   },
 };
 
+const DEV_URL = "http://localhost:3000";
+
 const carouselDomain = async () => {
-  const response = await fetch(process.env.DEV_URL + "/api/domains/get-carousel-pricing", {
-    method: 'POST',
+  const response = await fetch(DEV_URL + "/api/domains/get-carousel-pricing", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   });
 
@@ -40,15 +43,15 @@ const carouselDomain = async () => {
     throw new Error(`HTTP error! Status: ${response.status}`);
   }
 
-  const data = await response.json()
-  return data
-}
+  const data = await response.json();
+  return data;
+};
 
 const domainPricing = async () => {
-  const response = await fetch(process.env.DEV_URL + "/api/domains/get-tld-pricing", {
-    method: 'POST',
+  const response = await fetch(DEV_URL + "/api/domains/get-tld-pricing", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   });
 
@@ -56,36 +59,65 @@ const domainPricing = async () => {
     throw new Error(`HTTP error! Status: ${response.status}`);
   }
 
-  const data = await response.json()
-  return data
-}
+  const data = await response.json();
+  return data;
+};
 
 const products = async () => {
-  const response = await fetch(process.env.DEV_URL + "/api/products/hosting-ssd", {
-    method: 'POST',
+  const response = await fetch(DEV_URL + "/api/products/hosting-ssd", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
       whmcs: {
         gid: 3,
-        action: "GetProducts"
+        action: "GetProducts",
       },
       whm: {
-        url: 'https://rumahhost.com:2087/json-api/getpkginfo?'
-      }
+        url: "https://rumahhost.com:2087/json-api/getpkginfo?",
+      },
     }),
   });
 
-  const data = await response.json()
+  const data = await response.json();
 
   return data;
-}
+};
+
+export const dynamic = "force-dynamic"; // <<< tambahkan ini
 
 async function CloudHostingSSD() {
-  const carouselData = await carouselDomain()
-  const domainPricingData = await domainPricing()
-  const product = await products()
+  // Bisa tambahkan try-catch jika ingin lebih aman
+  let carouselData = null;
+  let domainPricingData = null;
+  let product = null;
+
+  try {
+    carouselData = await carouselDomain();
+  } catch (e) {
+    console.error("Fetch carouselDomain failed:", e);
+  }
+
+  try {
+    domainPricingData = await domainPricing();
+  } catch (e) {
+    console.error("Fetch domainPricing failed:", e);
+  }
+
+  try {
+    product = await products();
+  } catch (e) {
+    console.error("Fetch products failed:", e);
+  }
+
+  if (!carouselData || !domainPricingData || !product) {
+    return (
+      <main className="container py-10 text-center">
+        <p>Data gagal dimuat. Silakan coba lagi nanti.</p>
+      </main>
+    );
+  }
 
   return (
     <main>
@@ -100,11 +132,13 @@ async function CloudHostingSSD() {
                 Optimalkan Kinerja dengan Cloud Hosting SSD Berkualitas
               </h1>
               <h3 className="text-base">
-                Percayakan bisnis Anda pada Cloud Hosting SSD Terbaik kami. Nikmati kecepatan luar biasa, keandalan tak tertandingi, dan kinerja optimal yang akan membawa situs Andake level berikutnya.
+                Percayakan bisnis Anda pada Cloud Hosting SSD Terbaik kami.
+                Nikmati kecepatan luar biasa, keandalan tak tertandingi, dan
+                kinerja optimal yang akan membawa situs Andake level berikutnya.
               </h3>
               <Link
                 href="#pricing"
-                className="w-fit rounded-lg border border-white bg-transparent text-white px-12 py-3 text-xs font-semibold capitalize text-transparent md:text-base hover:bg-[#f14d2e] hover:border-[#f14d2e]"
+                className="w-fit rounded-lg border border-white bg-transparent px-12 py-3 text-xs font-semibold capitalize text-transparent text-white hover:border-[#f14d2e] hover:bg-[#f14d2e] md:text-base"
               >
                 mulai sekarang
               </Link>
@@ -126,7 +160,10 @@ async function CloudHostingSSD() {
         </div>
       </section>
 
-      <SearchDomain carouselData={carouselData} pricingData={domainPricingData} />
+      <SearchDomain
+        carouselData={carouselData}
+        pricingData={domainPricingData}
+      />
 
       <CloudHostingSSDPackages products={product} />
 
@@ -175,9 +212,11 @@ async function CloudHostingSSD() {
 
       <Commitments isBackgroundWhite={false} />
 
-      <section className="mt-5 md:mt-10 lg:mt-20 flex flex-col gap-8">
+      <section className="mt-5 flex flex-col gap-8 md:mt-10 lg:mt-20">
         <div className="container flex flex-col items-center gap-2">
-          <h3 className="text-3xl md:text-[40px] font-semibold">Dipercaya Ribuan Klien</h3>
+          <h3 className="text-3xl font-semibold md:text-[40px]">
+            Dipercaya Ribuan Klien
+          </h3>
           <div className="relative aspect-[4/1] w-[75%]">
             <Image
               src={CostumerImage}
@@ -192,33 +231,33 @@ async function CloudHostingSSD() {
           </div>
         </div>
 
-        <div className="container rounded-xl py-3 bg-transparent">
+        <div className="container rounded-xl bg-transparent py-3">
           <div
-            className={`relative grid grid-cols-1 gap-4 rounded-xl px-4 py-4 z-[-1] lg:px-6 lg:h-[272px]  lg:grid-cols-3 bg-umkm`}
+            className={`bg-umkm relative z-[-1] grid grid-cols-1 gap-4 rounded-xl px-4 py-4 lg:h-[272px]  lg:grid-cols-3 lg:px-6`}
           >
-            <div className="flex flex-col items-center text-center lg:pl-9 lg:py-10 lg:text-left lg:justify-between gap-4 lg:col-span-2 lg:items-start">
-              <div className="flex flex-col gap-2 text-center lg:text-left pt-5 lg:pt-0">
-                <h3 className="font-semibold text-3xl text-white lg:text-[40px]">
+            <div className="flex flex-col items-center gap-4 text-center lg:col-span-2 lg:items-start lg:justify-between lg:py-10 lg:pl-9 lg:text-left">
+              <div className="flex flex-col gap-2 pt-5 text-center lg:pt-0 lg:text-left">
+                <h3 className="text-3xl font-semibold text-white lg:text-[40px]">
                   Bikin Website UMKM
                 </h3>
-                <p className="text-base text-white lg:text-lg lg:mt-3 lg:w-[80%]">
-                  Layanan pembuatan website impian untuk para pelaku bisnis, UMKM
-                  serta Perusahaan. harga murah hasil terbaik. kami membantu anda
-                  Go Online Sekarang
+                <p className="text-base text-white lg:mt-3 lg:w-[80%] lg:text-lg">
+                  Layanan pembuatan website impian untuk para pelaku bisnis,
+                  UMKM serta Perusahaan. harga murah hasil terbaik. kami
+                  membantu anda Go Online Sekarang
                 </p>
               </div>
-              <button className="flex items-center justify-center rounded-lg border border-none px-3 py-2 text-sm font-semibold text-white bg-primary lg:text-base  hover:bg-[#ff7d2aba] hover:custom-shadow">
+              <button className="hover:custom-shadow flex items-center justify-center rounded-lg border border-none bg-primary px-3 py-2 text-sm font-semibold text-white  hover:bg-[#ff7d2aba] lg:text-base">
                 Mulai Sekarang
               </button>
             </div>
-            <div className="relative mx-auto -mb-20 h-[300px] w-[300px] lg:absolute lg:bottom-0 lg:right-0 lg:aspect-square lg:w-[431px] lg:h-[431px] lg:-mb-[96px] lg:translate-x-6">
+            <div className="relative mx-auto -mb-20 h-[300px] w-[300px] lg:absolute lg:bottom-0 lg:right-0 lg:-mb-[96px] lg:aspect-square lg:h-[431px] lg:w-[431px] lg:translate-x-6">
               <Image
                 src={ArtboardUMKM}
                 alt="Artboard UMKM"
                 fill
                 style={{
                   objectFit: "contain",
-                  objectPosition: "bottom center"
+                  objectPosition: "bottom center",
                 }}
               />
             </div>

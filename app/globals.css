@@ -29,35 +29,35 @@ table {
 
 .bg__hero-wordpress {
   background-size: cover;
-  background-image: url("https://dev.rumahhost.com/assets/frontend/img/demo/Wordpress-bg.png");
+  background-image: url("/assets/frontend/img/demo/Wordpress-bg.png");
 }
 
 
 .bg-emailhosting {
   background-size: cover;
-  background-image: url("https://dev.rumahhost.com/assets/frontend/img/demo/bg-emailhosting.png");
+  background-image: url("/assets/frontend/img/demo/bg-emailhosting.png");
 }
 
 .bg-minion {
   background-size: cover;
-  background-image: url("https://dev.rumahhost.com/assets/frontend/img/BgMinionDesktop.gif");
+  background-image: url("/assets/frontend/img/BgMinionDesktop.gif");
 }
 
 .bg-home {
   background-size: cover;
-  background-image: url("https://dev.rumahhost.com/assets/frontend/img/BgNew.png");
+  background-image: url("/assets/frontend/img/BgNew.png");
   margin-top: -1px;
 }
 
 .bg-umkm {
   background-size: cover;
-  background-image: url("https://dev.rumahhost.com/assets/frontend/img/BgUmkm.gif");
+  background-image: url("/assets/frontend/img/BgUmkm.gif");
   background-repeat: no-repeat;
 }
 
 .bg-cloud-ssd {
   background-size: cover;
-  background-image: url("https://dev.rumahhost.com/assets/frontend/img/BgCloud.png");
+  background-image: url("/assets/frontend/img/BgCloud.png");
 }
 
 @media only screen and (max-width: 600px) {

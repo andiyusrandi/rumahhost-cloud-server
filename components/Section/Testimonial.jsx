@@ -4,9 +4,11 @@ import CostumerImage from "@/public/Costumer-image-dekstop.png";
 
 function Testimonial({ isBackgroundWhite = false }) {
   return (
-    <section className="mt-5 md:mt-10 lg:mt-20 flex flex-col gap-8">
+    <section className="mt-5 flex flex-col gap-8 md:mt-10 lg:mt-20">
       <div className="container flex flex-col items-center gap-2">
-        <h3 className="text-3xl md:text-[40px] font-semibold">Dipercaya Ribuan Klien</h3>
+        <h3 className="text-3xl font-semibold md:text-[40px]">
+          Dipercaya Ribuan Klien
+        </h3>
         <div className="relative aspect-[4/1] w-[75%]">
           <Image
             src={CostumerImage}
@@ -21,7 +23,11 @@ function Testimonial({ isBackgroundWhite = false }) {
         </div>
       </div>
 
-      <div
+      <br></br>
+      <br></br>
+      <br></br>
+
+      {/* <div
         className={`container rounded-xl py-3 ${isBackgroundWhite ? "bg-white" : "bg-main"}`}
       >
         <h3 className="mb-6 px-10 text-center text-xl lg:text-2xl font-semibold">
@@ -29,7 +35,7 @@ function Testimonial({ isBackgroundWhite = false }) {
         </h3>
 
         <CarouselFeedback />
-      </div>
+      </div> */}
     </section>
   );
 }

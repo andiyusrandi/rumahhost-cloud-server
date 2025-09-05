@@ -11,7 +11,7 @@ import CloudHostingSSD from "@/public/header/cloud_hosting_ssd.svg";
 import CloudHostingWeb from "@/public/header/cloud_hosting_website.svg";
 import EmailHosting from "@/public/header/email_hosting.svg";
 import Promo from "@/public/header/promo.svg";
-import CertificateSSL from "@/public/header/certificate_ssl.svg"
+import CertificateSSL from "@/public/header/certificate_ssl.svg";
 import ResellerHosting from "@/public/header/reseller_hosting.svg";
 import Book from "@/public/icons/emojione-monotone_blue-book.svg";
 import Service from "@/public/icons/ep_service.svg";
@@ -53,7 +53,7 @@ export const headerItem = [
         title: "Cloud Hosting SSD Bussiness",
         desc: "Performance tinggi dan waktu muat yang unggul dengan Cloud Hosting SSD, dapatkan diskon hingga 60%",
         url: "/cloud-hosting-ssd",
-      },      
+      },
     ],
   },
   {
@@ -286,7 +286,10 @@ export const faqHostingMurahData = [
     question: "Apa itu web minion hosting?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Web Minion Hosting</span> adalah layanan hosting menggunakan panel DirectAdmin dan Cpanel dengan performa tinggi, kapasitas penyimpanan besar, gratis domain, dan berbagai kelengkapan fitur lain.
+        <span className="font-medium">Web Minion Hosting</span> adalah layanan
+        hosting menggunakan panel DirectAdmin dan Cpanel dengan performa tinggi,
+        kapasitas penyimpanan besar, gratis domain, dan berbagai kelengkapan
+        fitur lain.
       </p>
     ),
   },
@@ -294,18 +297,21 @@ export const faqHostingMurahData = [
     question: "Apakah harga Cloud Minion Hosting di RumahHost murah?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Ya,</span> Harga Cloud Minion Hosting di RumahHost dirancang untuk menawarkan nilai terbaik.
-        Kami berkomitmen untuk menyediakan harga yang kompetitif di pasar hosting cloud
+        <span className="font-medium">Ya,</span> Harga Cloud Minion Hosting di
+        RumahHost dirancang untuk menawarkan nilai terbaik. Kami berkomitmen
+        untuk menyediakan harga yang kompetitif di pasar hosting cloud
       </p>
     ),
   },
   {
-    question: "Apakah semua pembelian minion hosting mendapatkan domain gratis?",
+    question:
+      "Apakah semua pembelian minion hosting mendapatkan domain gratis?",
     answer: (
       <p className="text-sm md:text-base">
         {" "}
-        <span className="font-medium">
-        Ya betul,</span> RumahHost memberikan domain gratis di paket minion hosting. Anda tinggal pilih domain kesayangan anda saat pembelian hosting
+        <span className="font-medium">Ya betul,</span> RumahHost memberikan
+        domain gratis di paket minion hosting. Anda tinggal pilih domain
+        kesayangan anda saat pembelian hosting
       </p>
     ),
   },
@@ -313,8 +319,8 @@ export const faqHostingMurahData = [
     question: "Apakah bisa transfer hosting ke rumahhost dari penyedia lain?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">
-        Tentu, </span> tim support rumahhost akan membantu proses transfer hosting sampai selesai secara gratis.
+        <span className="font-medium">Tentu, </span> tim support rumahhost akan
+        membantu proses transfer hosting sampai selesai secara gratis.
       </p>
     ),
   },
@@ -323,24 +329,27 @@ export const faqHostingMurahData = [
     answer: (
       <p className="text-sm md:text-base">
         <span className="font-medium">
-        Kamu bisa melakukan melakukan pembayaran melalui: </span> 
-- Bank Transfer / Virtual Account: BCA, ATM Bersama, Prima atau Alto
-- QRIS Code: GO-PAY, OVO, Dana, LinkAja, m-BCA, dsb.
-- Credit Card: Visa, Mastercard atau JCB
-- LINE Pay e-cash
-- Mandiri e-cash
-
+          Kamu bisa melakukan melakukan pembayaran melalui:{" "}
+        </span>
+        - Bank Transfer / Virtual Account: BCA, ATM Bersama, Prima atau Alto -
+        QRIS Code: GO-PAY, OVO, Dana, LinkAja, m-BCA, dsb. - Credit Card: Visa,
+        Mastercard atau JCB - LINE Pay e-cash - Mandiri e-cash
       </p>
     ),
   },
-]
+];
 
 export const faqCloudHostingSsdData = [
   {
     question: "Apa itu Cloud Hosting SSD NVme?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Cloud Hosting SSD NVme</span> adalah layanan hosting web yang menggunakan Solid State Drives (SSD) dengan teknologi NVMe (Non-Volatile Memory Express). NVMe adalah protokol yang dirancang khusus untuk memaksimalkan kecepatan dan kinerja SSD dengan mengurangi latensi dan meningkatkan kecepatan transfer data dibandingkan dengan SSD SATA.
+        <span className="font-medium">Cloud Hosting SSD NVme</span> adalah
+        layanan hosting web yang menggunakan Solid State Drives (SSD) dengan
+        teknologi NVMe (Non-Volatile Memory Express). NVMe adalah protokol yang
+        dirancang khusus untuk memaksimalkan kecepatan dan kinerja SSD dengan
+        mengurangi latensi dan meningkatkan kecepatan transfer data dibandingkan
+        dengan SSD SATA.
       </p>
     ),
   },
@@ -348,28 +357,39 @@ export const faqCloudHostingSsdData = [
     question: "keuntungan menggunakan Cloud Hosting SSD NVMe",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">1. Kecepatan Transfer Data yang Lebih Tinggi:</span> NVMe menawarkan kecepatan baca/tulis yang jauh lebih cepat dibandingkan dengan SSD SATA, 
-        memungkinkan website Anda untuk memuat lebih cepat dan meningkatkan kinerja secara keseluruhan.
+        <span className="font-medium">
+          1. Kecepatan Transfer Data yang Lebih Tinggi:
+        </span>{" "}
+        NVMe menawarkan kecepatan baca/tulis yang jauh lebih cepat dibandingkan
+        dengan SSD SATA, memungkinkan website Anda untuk memuat lebih cepat dan
+        meningkatkan kinerja secara keseluruhan.
         <br></br>
-        <span className="font-medium">2. Latensi Rendah:</span> NVMe mengurangi latensi dan meningkatkan responsivitas server, 
-        yang berarti waktu respons aplikasi dan website Anda akan lebih cepat.
+        <span className="font-medium">2. Latensi Rendah:</span> NVMe mengurangi
+        latensi dan meningkatkan responsivitas server, yang berarti waktu
+        respons aplikasi dan website Anda akan lebih cepat.
         <br></br>
-        <span className="font-medium">3. Kinerja yang Lebih Baik pada Beban Kerja Tinggi:</span> NVMe dapat menangani lebih banyak IOPS (Input/Output Operations Per Second), 
-        yang sangat bermanfaat untuk website dengan lalu lintas tinggi atau aplikasi yang memerlukan akses data intensif.
-
+        <span className="font-medium">
+          3. Kinerja yang Lebih Baik pada Beban Kerja Tinggi:
+        </span>{" "}
+        NVMe dapat menangani lebih banyak IOPS (Input/Output Operations Per
+        Second), yang sangat bermanfaat untuk website dengan lalu lintas tinggi
+        atau aplikasi yang memerlukan akses data intensif.
       </p>
-  
     ),
   },
   {
-    question: "Bagaimana Cloud Hosting SSD NVMe berbeda dari Cloud Hosting HDD?",
+    question:
+      "Bagaimana Cloud Hosting SSD NVMe berbeda dari Cloud Hosting HDD?",
     answer: (
       <p className="text-sm md:text-base">
-       {" "}
-        <span className="font-medium">          
-        </span>
-        Cloud Hosting SSD NVMe menawarkan kecepatan dan kinerja yang jauh lebih tinggi dibandingkan dengan Cloud Hosting HDD (Hard Disk Drive). 
-        HDD menggunakan piringan berputar yang lebih lambat, sedangkan SSD NVMe menggunakan memori flash dan protokol NVMe yang sangat cepat, menghasilkan waktu muat yang lebih singkat dan kecepatan transfer data yang lebih tinggi.
+        {" "}
+        <span className="font-medium"></span>
+        Cloud Hosting SSD NVMe menawarkan kecepatan dan kinerja yang jauh lebih
+        tinggi dibandingkan dengan Cloud Hosting HDD (Hard Disk Drive). HDD
+        menggunakan piringan berputar yang lebih lambat, sedangkan SSD NVMe
+        menggunakan memori flash dan protokol NVMe yang sangat cepat,
+        menghasilkan waktu muat yang lebih singkat dan kecepatan transfer data
+        yang lebih tinggi.
       </p>
     ),
   },
@@ -377,33 +397,50 @@ export const faqCloudHostingSsdData = [
     question: "Apakah Cloud Hosting SSD NVMe cocok untuk semua jenis website?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Ya</span>, Cloud Hosting SSD NVMe cocok untuk berbagai jenis website, termasuk situs e-commerce, 
-        aplikasi web, dan situs dengan lalu lintas tinggi. Jika Anda membutuhkan kinerja cepat, latensi rendah, dan kemampuan untuk menangani beban kerja intensif, Cloud Hosting SSD NVMe adalah pilihan yang sangat baik.
+        <span className="font-medium">Ya</span>, Cloud Hosting SSD NVMe cocok
+        untuk berbagai jenis website, termasuk situs e-commerce, aplikasi web,
+        dan situs dengan lalu lintas tinggi. Jika Anda membutuhkan kinerja
+        cepat, latensi rendah, dan kemampuan untuk menangani beban kerja
+        intensif, Cloud Hosting SSD NVMe adalah pilihan yang sangat baik.
       </p>
     ),
   },
   {
-    question: "Apa saja manfaat tambahan dari menggunakan Cloud Hosting SSD NVMe?",
+    question:
+      "Apa saja manfaat tambahan dari menggunakan Cloud Hosting SSD NVMe?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Peningkatan SEO dan Pengalaman Pengguna:</span>: Dengan kecepatan loading yang lebih cepat, 
-        website Anda dapat memberikan pengalaman pengguna yang lebih baik dan mungkin mendapatkan peringkat SEO yang lebih baik.
+        <span className="font-medium">
+          Peningkatan SEO dan Pengalaman Pengguna:
+        </span>
+        : Dengan kecepatan loading yang lebih cepat, website Anda dapat
+        memberikan pengalaman pengguna yang lebih baik dan mungkin mendapatkan
+        peringkat SEO yang lebih baik.
         <br></br>
-        <span className="font-medium">Efisiensi Energi</span>: SSD NVMe cenderung lebih efisien dalam konsumsi energi dibandingkan HDD, yang dapat mengurangi biaya operasional dan dampak lingkungan.
+        <span className="font-medium">Efisiensi Energi</span>: SSD NVMe
+        cenderung lebih efisien dalam konsumsi energi dibandingkan HDD, yang
+        dapat mengurangi biaya operasional dan dampak lingkungan.
         <br></br>
-        <span className="font-medium">Kemampuan Skalabilitas</span>: Banyak layanan Cloud Hosting SSD NVMe menawarkan opsi skalabilitas mudah, memungkinkan Anda untuk meningkatkan sumber daya sesuai kebutuhan tanpa gangguan.
+        <span className="font-medium">Kemampuan Skalabilitas</span>: Banyak
+        layanan Cloud Hosting SSD NVMe menawarkan opsi skalabilitas mudah,
+        memungkinkan Anda untuk meningkatkan sumber daya sesuai kebutuhan tanpa
+        gangguan.
       </p>
     ),
   },
-]
+];
 
 export const faqCloudHostingWpData = [
   {
     question: "Apa itu Cloud Hosting untuk WordPress?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Cloud Hosting untuk WordPress</span> adalah layanan hosting web yang dioptimalkan khusus untuk menjalankan situs WordPress di lingkungan cloud. Ini menawarkan skalabilitas, kecepatan, dan fleksibilitas yang lebih baik dibandingkan dengan hosting tradisional, 
-        dengan memanfaatkan teknologi cloud untuk meningkatkan kinerja dan keamanan situs WordPress Anda.
+        <span className="font-medium">Cloud Hosting untuk WordPress</span>{" "}
+        adalah layanan hosting web yang dioptimalkan khusus untuk menjalankan
+        situs WordPress di lingkungan cloud. Ini menawarkan skalabilitas,
+        kecepatan, dan fleksibilitas yang lebih baik dibandingkan dengan hosting
+        tradisional, dengan memanfaatkan teknologi cloud untuk meningkatkan
+        kinerja dan keamanan situs WordPress Anda.
       </p>
     ),
   },
@@ -411,33 +448,42 @@ export const faqCloudHostingWpData = [
     question: "Apa keuntungan menggunakan Cloud Hosting untuk WordPress?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">1. Kecepatan dan Kinerja Tinggi</span>: Cloud Hosting menawarkan kecepatan yang 
-        lebih cepat dan kinerja yang lebih baik berkat penggunaan teknologi SSD dan kemampuan untuk mendistribusikan beban secara efisien.
+        <span className="font-medium">1. Kecepatan dan Kinerja Tinggi</span>:
+        Cloud Hosting menawarkan kecepatan yang lebih cepat dan kinerja yang
+        lebih baik berkat penggunaan teknologi SSD dan kemampuan untuk
+        mendistribusikan beban secara efisien.
         <br></br>
-        <span className="font-medium">2. Skalabilitas Mudah</span>: Anda dapat menyesuaikan sumber daya (seperti CPU, RAM, dan penyimpanan) 
-        sesuai dengan kebutuhan situs Anda tanpa downtime atau gangguan.
+        <span className="font-medium">2. Skalabilitas Mudah</span>: Anda dapat
+        menyesuaikan sumber daya (seperti CPU, RAM, dan penyimpanan) sesuai
+        dengan kebutuhan situs Anda tanpa downtime atau gangguan.
         <br></br>
-        <span className="font-medium">3. Ketersediaan Tinggi</span>: Dengan redundansi dan replikasi data, 
-        cloud hosting memastikan situs WordPress Anda tetap online meskipun terjadi kegagalan server.
+        <span className="font-medium">3. Ketersediaan Tinggi</span>: Dengan
+        redundansi dan replikasi data, cloud hosting memastikan situs WordPress
+        Anda tetap online meskipun terjadi kegagalan server.
         <br></br>
-        <span className="font-medium">4. Keamanan</span>: Cloud Hosting 
-        sering kali dilengkapi dengan fitur keamanan tambahan seperti firewall, pemantauan malware, dan pencadangan otomatis.
+        <span className="font-medium">4. Keamanan</span>: Cloud Hosting sering
+        kali dilengkapi dengan fitur keamanan tambahan seperti firewall,
+        pemantauan malware, dan pencadangan otomatis.
       </p>
     ),
   },
   {
-    question: "Apakah Cloud Hosting untuk WordPress cocok untuk semua jenis situs?",
+    question:
+      "Apakah Cloud Hosting untuk WordPress cocok untuk semua jenis situs?",
     answer: (
       <p className="text-sm md:text-base">
-       {" "}
-        <span className="font-medium">
-          Ya</span>, Cloud Hosting untuk WordPress cocok untuk berbagai jenis situs, mulai dari blog pribadi dan portofolio hingga situs e-commerce dan bisnis besar. 
-          Ini sangat bermanfaat untuk situs dengan lalu lintas tinggi atau yang memerlukan kinerja tinggi dan keandalan.
+        {" "}
+        <span className="font-medium">Ya</span>, Cloud Hosting untuk WordPress
+        cocok untuk berbagai jenis situs, mulai dari blog pribadi dan portofolio
+        hingga situs e-commerce dan bisnis besar. Ini sangat bermanfaat untuk
+        situs dengan lalu lintas tinggi atau yang memerlukan kinerja tinggi dan
+        keandalan.
       </p>
     ),
   },
   {
-    question: "Apakah semua pembelian hosting Wordpress mendapatkan domain gratis?",
+    question:
+      "Apakah semua pembelian hosting Wordpress mendapatkan domain gratis?",
     answer: (
       <p className="text-sm md:text-base">
         RumahHost memberikan domain gratis di paket hosting tertentu diantaranya{" "}
@@ -453,82 +499,124 @@ export const faqCloudHostingWpData = [
     answer: (
       <p className="text-sm md:text-base">
         {" "}
-        <span className="font-medium">Tentu</span>, tim support rumahhost akan membantu proses transfer hosting sampai selesai secara gratis.
-
-
+        <span className="font-medium">Tentu</span>, tim support rumahhost akan
+        membantu proses transfer hosting sampai selesai secara gratis.
       </p>
     ),
   },
-]
+];
 
 export const faqCloudHostingDesaData = [
   {
     question: "Apa itu Cloud Server Desa?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Cloud Server Desa</span> adalah layanan hosting berbasis cloud yang dirancang khusus untuk mendukung kebutuhan website dan aplikasi di daerah desa. Layanan ini menawarkan kecepatan, keamanan, dan skalabilitas tinggi, sehingga ideal untuk usaha kecil, komunitas, dan organisasi di desa.
+        <span className="font-medium">Cloud Server Desa</span> adalah layanan
+        hosting berbasis cloud yang dirancang khusus untuk mendukung kebutuhan
+        website dan aplikasi di daerah desa. Layanan ini menawarkan kecepatan,
+        keamanan, dan skalabilitas tinggi, sehingga ideal untuk usaha kecil,
+        komunitas, dan organisasi di desa.
       </p>
     ),
   },
   {
     question: "Apa keunggulan menggunakan Cloud Server Hosting Desa?",
     answer: (
-     <ul class="mx-4 list-disc">
+      <ul class="mx-4 list-disc">
         <li class="text-sm font-medium md:text-base">Kinerja Tinggi</li>
-        <p class="text-sm md:text-base">Infrastruktur cloud memberikan kecepatan akses yang lebih baik.
+        <p class="text-sm md:text-base">
+          Infrastruktur cloud memberikan kecepatan akses yang lebih baik.
         </p>
         <li class="font-medium">Skalabilitas</li>
-        <p class="text-sm md:text-base">Anda dapat dengan mudah menambah sumber daya sesuai kebutuhan.</p>
+        <p class="text-sm md:text-base">
+          Anda dapat dengan mudah menambah sumber daya sesuai kebutuhan.
+        </p>
         <li class="font-medium">Keamanan</li>
-        <p class="text-sm md:text-base">Data Anda akan dilindungi dengan sistem keamanan yang canggih.</p>
+        <p class="text-sm md:text-base">
+          Data Anda akan dilindungi dengan sistem keamanan yang canggih.
+        </p>
         <li class="font-medium">Dukungan Lokal</li>
-        <p class="text-sm md:text-base">Layanan dan dukungan pelanggan yang memahami konteks lokal.</p>
-    </ul>
+        <p class="text-sm md:text-base">
+          Layanan dan dukungan pelanggan yang memahami konteks lokal.
+        </p>
+      </ul>
     ),
   },
   {
-    question: " Cloud Server Hosting Desa sangat cocok untuk digitalisasi desa?",
+    question:
+      " Cloud Server Hosting Desa sangat cocok untuk digitalisasi desa?",
     answer: (
       <ul class="mx-4 list-disc">
-      <li class="text-sm font-medium md:text-base">1. Aksesibilitas</li>
-      <p class="text-sm md:text-base">Cloud Server memungkinkan akses yang lebih mudah ke data dan aplikasi dari berbagai lokasi. Ini penting untuk meningkatkan partisipasi masyarakat dalam program digitalisasi.
-      </p>
-      <li class="font-medium">2.Biaya Efisien</li>
-      <p class="text-sm md:text-base">Biaya yang lebih terjangkau dan fleksibel memungkinkan desa untuk mengalokasikan anggaran dengan lebih baik, sehingga dapat berinvestasi dalam teknologi lainnya.</p>
-      <li class="font-medium">3, Keamanan Data</li>
-      <p class="text-sm md:text-base">Dengan sistem keamanan yang canggih, Cloud Server dapat melindungi data penting desa, seperti informasi penduduk dan program pembangunan.</p>
-      <li class="font-medium">4. Skalabilitas</li>
-      <p class="text-sm md:text-base">Desa dapat dengan mudah menambah sumber daya sesuai kebutuhan, terutama saat proyek digitalisasi berkembang atau saat ada peningkatan pengguna.</p>
+        <li class="text-sm font-medium md:text-base">1. Aksesibilitas</li>
+        <p class="text-sm md:text-base">
+          Cloud Server memungkinkan akses yang lebih mudah ke data dan aplikasi
+          dari berbagai lokasi. Ini penting untuk meningkatkan partisipasi
+          masyarakat dalam program digitalisasi.
+        </p>
+        <li class="font-medium">2.Biaya Efisien</li>
+        <p class="text-sm md:text-base">
+          Biaya yang lebih terjangkau dan fleksibel memungkinkan desa untuk
+          mengalokasikan anggaran dengan lebih baik, sehingga dapat berinvestasi
+          dalam teknologi lainnya.
+        </p>
+        <li class="font-medium">3, Keamanan Data</li>
+        <p class="text-sm md:text-base">
+          Dengan sistem keamanan yang canggih, Cloud Server dapat melindungi
+          data penting desa, seperti informasi penduduk dan program pembangunan.
+        </p>
+        <li class="font-medium">4. Skalabilitas</li>
+        <p class="text-sm md:text-base">
+          Desa dapat dengan mudah menambah sumber daya sesuai kebutuhan,
+          terutama saat proyek digitalisasi berkembang atau saat ada peningkatan
+          pengguna.
+        </p>
 
-      <li class="font-medium">5. Dukungan Komunitas</li>
-      <p class="text-sm md:text-base">Cloud Server Hosting Desa sering kali didukung oleh tim lokal yang memahami kebutuhan spesifik desa, sehingga memudahkan pelaksanaan dan pemeliharaan sistem.</p>
-      <li class="font-medium">6. Inovasi dan Kolaborasi</li>
-      <p class="text-sm md:text-base">Layanan cloud mendukung aplikasi kolaboratif yang memungkinkan masyarakat desa untuk berinovasi dan bekerja sama dalam berbagai proyek, dari pendidikan hingga pengembangan usaha.</p>
-      <li class="font-medium">7. Peningkatan Layanan Publik</li>
-      <p class="text-sm md:text-base">Dengan digitalisasi, layanan publik seperti administrasi, kesehatan, dan pendidikan dapat diakses lebih mudah dan efisien oleh warga desa.
-      </p>
-      <br></br>
-      <p class="text-sm md:text-base">Secara keseluruhan, Cloud Server Hosting Desa dapat menjadi pendorong yang signifikan dalam upaya digitalisasi desa, membawa manfaat jangka panjang bagi masyarakat.
-
-      </p>
-       </ul>
+        <li class="font-medium">5. Dukungan Komunitas</li>
+        <p class="text-sm md:text-base">
+          Cloud Server Hosting Desa sering kali didukung oleh tim lokal yang
+          memahami kebutuhan spesifik desa, sehingga memudahkan pelaksanaan dan
+          pemeliharaan sistem.
+        </p>
+        <li class="font-medium">6. Inovasi dan Kolaborasi</li>
+        <p class="text-sm md:text-base">
+          Layanan cloud mendukung aplikasi kolaboratif yang memungkinkan
+          masyarakat desa untuk berinovasi dan bekerja sama dalam berbagai
+          proyek, dari pendidikan hingga pengembangan usaha.
+        </p>
+        <li class="font-medium">7. Peningkatan Layanan Publik</li>
+        <p class="text-sm md:text-base">
+          Dengan digitalisasi, layanan publik seperti administrasi, kesehatan,
+          dan pendidikan dapat diakses lebih mudah dan efisien oleh warga desa.
+        </p>
+        <br></br>
+        <p class="text-sm md:text-base">
+          Secara keseluruhan, Cloud Server Hosting Desa dapat menjadi pendorong
+          yang signifikan dalam upaya digitalisasi desa, membawa manfaat jangka
+          panjang bagi masyarakat.
+        </p>
+      </ul>
     ),
-    
   },
   {
     question: "Bagaimana cara mendaftar untuk Cloud Server Hosting Desa?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium"></span>Anda bisa mendaftar melalui website kami. Cukup pilih paket yang sesuai, isi formulir pendaftaran, dan lakukan pembayaran. Setelah itu, Anda akan menerima akses ke akun hosting Anda.
+        <span className="font-medium"></span>Anda bisa mendaftar melalui website
+        kami. Cukup pilih paket yang sesuai, isi formulir pendaftaran, dan
+        lakukan pembayaran. Setelah itu, Anda akan menerima akses ke akun
+        hosting Anda.
       </p>
     ),
   },
 
   {
-    question: "Apakah saya bisa memindahkan situs saya dari penyedia lain ke Cloud Hosting Desa?",
+    question:
+      "Apakah saya bisa memindahkan situs saya dari penyedia lain ke Cloud Hosting Desa?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium"></span>Tentu saja! Kami menyediakan layanan migrasi gratis untuk membantu Anda memindahkan situs Anda dengan mudah dan tanpa gangguan.
+        <span className="font-medium"></span>Tentu saja! Kami menyediakan
+        layanan migrasi gratis untuk membantu Anda memindahkan situs Anda dengan
+        mudah dan tanpa gangguan.
       </p>
     ),
   },
@@ -537,7 +625,9 @@ export const faqCloudHostingDesaData = [
     question: "Apa yang harus saya lakukan jika mengalami masalah teknis?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium"></span>Kami menyediakan dukungan pelanggan 24/7. Anda dapat menghubungi tim dukungan melalui live chat, email, atau telepon. Kami siap membantu Anda menyelesaikan masalah dengan cepat.
+        <span className="font-medium"></span>Kami menyediakan dukungan pelanggan
+        24/7. Anda dapat menghubungi tim dukungan melalui live chat, email, atau
+        telepon. Kami siap membantu Anda menyelesaikan masalah dengan cepat.
       </p>
     ),
   },
@@ -546,7 +636,9 @@ export const faqCloudHostingDesaData = [
     question: "Apakah ada jaminan uptime?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium"></span>Kami berkomitmen untuk memberikan jaminan uptime 99,9%. Ini berarti situs Anda akan selalu online dan dapat diakses oleh pengunjung.
+        <span className="font-medium"></span>Kami berkomitmen untuk memberikan
+        jaminan uptime 99,9%. Ini berarti situs Anda akan selalu online dan
+        dapat diakses oleh pengunjung.
       </p>
     ),
   },
@@ -555,54 +647,85 @@ export const faqCloudHostingDesaData = [
     question: "Bagaimana cara membayar layanan Cloud Hosting Desa?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium"></span>Kami menerima berbagai metode pembayaran, termasuk transfer bank, kartu kredit, dan e-wallet. Anda bisa memilih metode yang paling nyaman bagi Anda saat mendaftar.
+        <span className="font-medium"></span>Kami menerima berbagai metode
+        pembayaran, termasuk transfer bank, kartu kredit, dan e-wallet. Anda
+        bisa memilih metode yang paling nyaman bagi Anda saat mendaftar.
       </p>
     ),
   },
-
-
-]
+];
 
 export const faqCloudVpsData = [
   {
     question: "Apa itu Managed Cloud VPS Hosting?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Managed Cloud VPS Hosting</span> adalah layanan hosting yang menyediakan server virtual pribadi (VPS) berbasis cloud dengan manajemen penuh oleh penyedia layanan. Ini berarti bahwa penyedia hosting akan mengelola dan memelihara server, termasuk pemantauan, pembaruan, keamanan, dan pemecahan masalah, sehingga Anda dapat fokus pada pengembangan 
-        aplikasi atau situs web Anda tanpa perlu khawatir tentang aspek teknis server.
+        <span className="font-medium">Managed Cloud VPS Hosting</span> adalah
+        layanan hosting yang menyediakan server virtual pribadi (VPS) berbasis
+        cloud dengan manajemen penuh oleh penyedia layanan. Ini berarti bahwa
+        penyedia hosting akan mengelola dan memelihara server, termasuk
+        pemantauan, pembaruan, keamanan, dan pemecahan masalah, sehingga Anda
+        dapat fokus pada pengembangan aplikasi atau situs web Anda tanpa perlu
+        khawatir tentang aspek teknis server.
       </p>
     ),
   },
   {
-    question: "Apa keuntungan menggunakan Managed Cloud VPS Hosting dibandingkan dengan VPS biasa?",
+    question:
+      "Apa keuntungan menggunakan Managed Cloud VPS Hosting dibandingkan dengan VPS biasa?",
     answer: (
-      <p className="text-sm md:text-base list-disc">
-        <li><span className="font-medium">Pengelolaan Server</span> Penyedia layanan menangani pemeliharaan dan administrasi server, mengurangi beban kerja Anda.</li>
-        <li><span className="font-medium">Keamanan</span>: Penyedia biasanya menyediakan solusi keamanan canggih seperti pemantauan malware dan perlindungan DDoS.</li>
-        <li><span className="font-medium">Pembaruan Rutin</span>: Server secara otomatis mendapatkan pembaruan dan patch keamanan terbaru.</li>
-        <li><span className="font-medium">Dukungan Teknis</span>: Akses ke dukungan teknis ahli yang dapat membantu memecahkan masalah dan memberikan saran.</li>
-        <li><span className="font-medium">Skalabilitas</span>: Memungkinkan penyesuaian sumber daya dengan mudah sesuai kebutuhan.</li>
+      <p className="list-disc text-sm md:text-base">
+        <li>
+          <span className="font-medium">Pengelolaan Server</span> Penyedia
+          layanan menangani pemeliharaan dan administrasi server, mengurangi
+          beban kerja Anda.
+        </li>
+        <li>
+          <span className="font-medium">Keamanan</span>: Penyedia biasanya
+          menyediakan solusi keamanan canggih seperti pemantauan malware dan
+          perlindungan DDoS.
+        </li>
+        <li>
+          <span className="font-medium">Pembaruan Rutin</span>: Server secara
+          otomatis mendapatkan pembaruan dan patch keamanan terbaru.
+        </li>
+        <li>
+          <span className="font-medium">Dukungan Teknis</span>: Akses ke
+          dukungan teknis ahli yang dapat membantu memecahkan masalah dan
+          memberikan saran.
+        </li>
+        <li>
+          <span className="font-medium">Skalabilitas</span>: Memungkinkan
+          penyesuaian sumber daya dengan mudah sesuai kebutuhan.
+        </li>
       </p>
     ),
   },
   {
-    question: "Apakah saya bisa mengelola aplikasi dan situs web saya sendiri dengan Managed Cloud VPS Hosting?",
+    question:
+      "Apakah saya bisa mengelola aplikasi dan situs web saya sendiri dengan Managed Cloud VPS Hosting?",
     answer: (
       <p className="text-sm md:text-base">
         {" "}
-        <span className="font-medium">Ya</span>, meskipun server dikelola oleh penyedia, Anda masih dapat mengelola aplikasi dan situs web Anda sendiri. Anda memiliki kontrol penuh atas konfigurasi dan pengaturan aplikasi yang Anda jalankan di server. Penyedia layanan akan menangani manajemen server tingkat rendah dan pemeliharaan, 
-        sementara Anda dapat fokus pada pengembangan dan pengelolaan aplikasi serta situs web Anda.
+        <span className="font-medium">Ya</span>, meskipun server dikelola oleh
+        penyedia, Anda masih dapat mengelola aplikasi dan situs web Anda
+        sendiri. Anda memiliki kontrol penuh atas konfigurasi dan pengaturan
+        aplikasi yang Anda jalankan di server. Penyedia layanan akan menangani
+        manajemen server tingkat rendah dan pemeliharaan, sementara Anda dapat
+        fokus pada pengembangan dan pengelolaan aplikasi serta situs web Anda.
       </p>
     ),
   },
-]
+];
 
 export const faqDomainMurahData = [
   {
     question: "Apa itu Domain?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium">Domain</span> adalah alamat unik yang digunakan untuk mengidentifikasi sebuah situs web di internet. Contohnya, www.contoh.com adalah sebuah domain.
+        <span className="font-medium">Domain</span> adalah alamat unik yang
+        digunakan untuk mengidentifikasi sebuah situs web di internet.
+        Contohnya, www.contoh.com adalah sebuah domain.
       </p>
     ),
   },
@@ -610,7 +733,9 @@ export const faqDomainMurahData = [
     question: "Mengapa saya perlu mendaftar domain?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium"></span> Mendaftar domain memberikan identitas online untuk bisnis atau proyek Anda, memungkinkan orang menemukan dan mengakses situs Anda dengan mudah.
+        <span className="font-medium"></span> Mendaftar domain memberikan
+        identitas online untuk bisnis atau proyek Anda, memungkinkan orang
+        menemukan dan mengakses situs Anda dengan mudah.
       </p>
     ),
   },
@@ -618,9 +743,9 @@ export const faqDomainMurahData = [
     question: "Apa perbedaan antara nama domain dan hosting?",
     answer: (
       <p className="text-sm md:text-base">
-        Nama domain adalah alamat situs web Anda, sementara hosting adalah layanan yang menyimpan data situs Anda dan membuatnya dapat diakses di internet.{" "}
-        <span className="font-medium">
-        </span>
+        Nama domain adalah alamat situs web Anda, sementara hosting adalah
+        layanan yang menyimpan data situs Anda dan membuatnya dapat diakses di
+        internet. <span className="font-medium"></span>
       </p>
     ),
   },
@@ -628,7 +753,9 @@ export const faqDomainMurahData = [
     question: "Berapa lama saya bisa mendaftarkan domain?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium"></span> Anda bisa mendaftarkan domain untuk periode minimum satu tahun, dan dapat memperpanjangnya hingga beberapa tahun ke depan.
+        <span className="font-medium"></span> Anda bisa mendaftarkan domain
+        untuk periode minimum satu tahun, dan dapat memperpanjangnya hingga
+        beberapa tahun ke depan.
       </p>
     ),
   },
@@ -636,20 +763,25 @@ export const faqDomainMurahData = [
     question: "Apakah ada biaya perpanjangan untuk domain?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium"></span> Ya, setelah periode pendaftaran berakhir, Anda perlu membayar biaya perpanjangan untuk mempertahankan kepemilikan domain Anda.
+        <span className="font-medium"></span> Ya, setelah periode pendaftaran
+        berakhir, Anda perlu membayar biaya perpanjangan untuk mempertahankan
+        kepemilikan domain Anda.
       </p>
     ),
   },
 
   {
-    question: "Apa yang harus saya lakukan jika nama domain yang saya inginkan sudah terdaftar?",
+    question:
+      "Apa yang harus saya lakukan jika nama domain yang saya inginkan sudah terdaftar?",
     answer: (
       <p className="text-sm md:text-base">
-        <span className="font-medium"></span> Anda bisa mencoba variasi lain dari nama tersebut atau menghubungi pemilik domain saat ini untuk menanyakan kemungkinan pembelian.
+        <span className="font-medium"></span> Anda bisa mencoba variasi lain
+        dari nama tersebut atau menghubungi pemilik domain saat ini untuk
+        menanyakan kemungkinan pembelian.
       </p>
     ),
   },
-]
+];
 
 export const faqData = [
   {
@@ -705,20 +837,22 @@ export const faqData = [
       <ul className="mx-4 list-disc">
         <li className="text-sm font-medium md:text-base">Minion Hosting</li>
         <p className="text-sm md:text-base">
-          Minion Hosting merupakan layanan hosting RumahHost yang
-          paling populer. menawarkan harga yang sangat terjangkau untuk paket
-          ini, mulai dari Rp7.000,- per bulan.
+          Minion Hosting merupakan layanan hosting RumahHost yang paling
+          populer. menawarkan harga yang sangat terjangkau untuk paket ini,
+          mulai dari Rp7.000,- per bulan.
         </p>
         <li className="font-medium">Cloud Wordpress Hosting</li>
         <p className="text-sm md:text-base">
           Nikmati performa WordPress Hosting yang bisa menampung trafik tinggi
-          dengan pengelolaan mudah. Didukung LiteSpeed,
-          WordPress Accelerator, dan domain gratis, website Anda bisa memberikan
-          performa terbaik dari kecepatan dan daya tampung.
+          dengan pengelolaan mudah. Didukung LiteSpeed, WordPress Accelerator,
+          dan domain gratis, website Anda bisa memberikan performa terbaik dari
+          kecepatan dan daya tampung.
         </p>
         <li className="font-medium">Cloud Hosting SSD NVme</li>
         <p className="text-sm md:text-base">
-        Cloud Hosting SSD Bussiness Kecepatan Akses Data yang Lebih Cepat: SSD mampu mengakses data dengan kecepatan yang lebih tinggi dibandingkan HDD, sehingga website Anda dapat memuat lebih cepat.
+          Cloud Hosting SSD Bussiness Kecepatan Akses Data yang Lebih Cepat: SSD
+          mampu mengakses data dengan kecepatan yang lebih tinggi dibandingkan
+          HDD, sehingga website Anda dapat memuat lebih cepat.
         </p>
         <li className="font-medium">Cloud VPS</li>
         <p className="text-sm md:text-base">
@@ -846,7 +980,7 @@ export const tablePackageVPSDatas = [
     server: "ID/SG/US",
     setup: "Gratis",
     price: 105000,
-    url: "#",
+    url: "https://client.rumahhost.com/cart.php?a=add&pid=38",
   },
   {
     product: "Cloud VPS Elite",
@@ -857,7 +991,7 @@ export const tablePackageVPSDatas = [
     server: "ID/SG/US",
     setup: "Gratis",
     price: 200000,
-    url: "#",
+    url: "https://client.rumahhost.com/cart.php?a=add&pid=39",
   },
   {
     product: "Cloud VPS Master",
@@ -868,7 +1002,7 @@ export const tablePackageVPSDatas = [
     server: "ID/SG/US",
     setup: "Gratis",
     price: 350000,
-    url: "#",
+    url: "https://client.rumahhost.com/cart.php?a=add&pid=40",
   },
   {
     product: "Cloud VPS Grandmaster",
@@ -879,7 +1013,7 @@ export const tablePackageVPSDatas = [
     server: "ID/SG/US",
     setup: "Gratis",
     price: 650000,
-    url: "#",
+    url: "https://client.rumahhost.com/cart.php?a=add&pid=41",
   },
   {
     product: "Cloud VPS Epic",
@@ -890,7 +1024,7 @@ export const tablePackageVPSDatas = [
     server: "ID/SG/US",
     setup: "Gratis",
     price: 1450000,
-    url: "#",
+    url: "https://client.rumahhost.com/cart.php?a=add&pid=42",
   },
   {
     product: "Cloud VPS Legend",
@@ -901,7 +1035,7 @@ export const tablePackageVPSDatas = [
     server: "ID/SG/US",
     setup: "Gratis",
     price: 3700000,
-    url: "#",
+    url: "https://client.rumahhost.com/cart.php?a=add&pid=43",
   },
   {
     product: "Cloud VPS Mythic",
@@ -912,7 +1046,7 @@ export const tablePackageVPSDatas = [
     server: "ID/SG/US",
     setup: "Gratis",
     price: 5500000,
-    url: "#",
+    url: "https://client.rumahhost.com/cart.php?a=add&pid=44",
   },
 ];
 
@@ -1555,19 +1689,37 @@ export const resellerHostingCardData = [
 ];
 
 export const resellerHostingFAQData = [
-  { question: "Apa itu reseller hosting?", answer: "Reseller hosting adalah layanan yang memungkinkan individu atau perusahaan untuk menjual kembali layanan hosting kepada klien mereka, biasanya dengan menggunakan server dan infrastruktur dari penyedia hosting." },
-  { question: "Apa itu WHM?", answer: "WHM (Web Host Manager) adalah panel kontrol yang digunakan oleh penyedia layanan hosting untuk mengelola akun hosting dan menawarkan fitur kepada reseller, seperti pembuatan akun baru dan pengaturan pengelolaan server." },
-  { question: "Bagaimana cara memulai reselling?", answer: "Untuk memulai reselling, Anda perlu memilih paket reseller dari penyedia hosting, mengatur akun WHM, dan mulai menawarkan layanan hosting kepada klien Anda melalui situs web atau saluran pemasaran." },
-  { question: "Bagaimana cara mendapatkan untung?", answer: "Anda dapat mendapatkan untung dengan menetapkan harga layanan hosting Anda lebih tinggi daripada biaya yang Anda bayar kepada penyedia hosting, serta menawarkan layanan tambahan seperti dukungan teknis atau pengelolaan situs web." },
+  {
+    question: "Apa itu reseller hosting?",
+    answer:
+      "Reseller hosting adalah layanan yang memungkinkan individu atau perusahaan untuk menjual kembali layanan hosting kepada klien mereka, biasanya dengan menggunakan server dan infrastruktur dari penyedia hosting.",
+  },
+  {
+    question: "Apa itu WHM?",
+    answer:
+      "WHM (Web Host Manager) adalah panel kontrol yang digunakan oleh penyedia layanan hosting untuk mengelola akun hosting dan menawarkan fitur kepada reseller, seperti pembuatan akun baru dan pengaturan pengelolaan server.",
+  },
+  {
+    question: "Bagaimana cara memulai reselling?",
+    answer:
+      "Untuk memulai reselling, Anda perlu memilih paket reseller dari penyedia hosting, mengatur akun WHM, dan mulai menawarkan layanan hosting kepada klien Anda melalui situs web atau saluran pemasaran.",
+  },
+  {
+    question: "Bagaimana cara mendapatkan untung?",
+    answer:
+      "Anda dapat mendapatkan untung dengan menetapkan harga layanan hosting Anda lebih tinggi daripada biaya yang Anda bayar kepada penyedia hosting, serta menawarkan layanan tambahan seperti dukungan teknis atau pengelolaan situs web.",
+  },
   {
     question:
       "Siapa yang akan menyediakan bantuan ke klien - saya atau RumahHost?",
-    answer: "Sebagai reseller, Anda akan menjadi titik kontak utama bagi klien Anda. Namun, RumahHost biasanya menyediakan dukungan teknis yang dapat Anda akses jika Anda membutuhkan bantuan lebih lanjut.",
+    answer:
+      "Sebagai reseller, Anda akan menjadi titik kontak utama bagi klien Anda. Namun, RumahHost biasanya menyediakan dukungan teknis yang dapat Anda akses jika Anda membutuhkan bantuan lebih lanjut.",
   },
   {
     question:
       "Jika bisnis saya tumbuh, bisakah saya mengupgrade paket kapan pun?",
-    answer: "Ya, Anda dapat mengupgrade paket reseller Anda kapan saja untuk memenuhi kebutuhan pertumbuhan bisnis Anda, sesuai dengan kebijakan yang ditetapkan oleh RumahHost.",
+    answer:
+      "Ya, Anda dapat mengupgrade paket reseller Anda kapan saja untuk memenuhi kebutuhan pertumbuhan bisnis Anda, sesuai dengan kebijakan yang ditetapkan oleh RumahHost.",
   },
 ];
 
@@ -1667,98 +1819,119 @@ export const emailHostingMainFeatures = [
 ];
 
 export const emailHostingFAQData = [
-  { question: "Apa itu Email Hosting?", answer: "Email hosting adalah layanan yang menyediakan server untuk menyimpan dan mengelola email domain Anda sendiri, memberikan alamat email profesional." },
-  { question: "Mengapa saya perlu menggunakan email hosting?", answer: "Email hosting meningkatkan kredibilitas bisnis Anda, menawarkan keamanan lebih baik, dan memungkinkan akses ke fitur kolaborasi." },
+  {
+    question: "Apa itu Email Hosting?",
+    answer:
+      "Email hosting adalah layanan yang menyediakan server untuk menyimpan dan mengelola email domain Anda sendiri, memberikan alamat email profesional.",
+  },
+  {
+    question: "Mengapa saya perlu menggunakan email hosting?",
+    answer:
+      "Email hosting meningkatkan kredibilitas bisnis Anda, menawarkan keamanan lebih baik, dan memungkinkan akses ke fitur kolaborasi.",
+  },
   {
     question:
       "Apa Keuntungan menggunakan email bisnis dibandingkan email pribadi?",
-    answer: "Email bisnis terlihat lebih profesional, menawarkan kapasitas penyimpanan lebih besar, dan dukungan teknis yang lebih baik dibandingkan email pribadi.",
+    answer:
+      "Email bisnis terlihat lebih profesional, menawarkan kapasitas penyimpanan lebih besar, dan dukungan teknis yang lebih baik dibandingkan email pribadi.",
   },
   {
     question: "Bisakah saya memindahkan email ke RumahHost dari layanan lain?",
-    answer: "Ya, Anda dapat memindahkan email Anda ke RumahHost dengan mengikuti proses migrasi yang disediakan.",
+    answer:
+      "Ya, Anda dapat memindahkan email Anda ke RumahHost dengan mengikuti proses migrasi yang disediakan.",
   },
-  { question: "Paket Email apa yang tepat untuk Anda?", answer: "Paket yang tepat bergantung pada kebutuhan bisnis Anda, seperti jumlah pengguna dan fitur yang diinginkan; Anda bisa konsultasi untuk menentukan pilihan terbaik." },
+  {
+    question: "Paket Email apa yang tepat untuk Anda?",
+    answer:
+      "Paket yang tepat bergantung pada kebutuhan bisnis Anda, seperti jumlah pengguna dan fitur yang diinginkan; Anda bisa konsultasi untuk menentukan pilihan terbaik.",
+  },
 ];
 
 export const FeatureHostingData = [
   {
-    icon: <Icon icon="stash:domain" color="#ff6900"/>,
+    icon: <Icon icon="stash:domain" color="#ff6900" />,
     title: "Domain Gratis Satu Tahun",
     desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
-    backgroundImage: "https://images.unsplash.com/photo-1520294891400-6818cdd83ce1?q=80&w=2911&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1520294891400-6818cdd83ce1?q=80&w=2911&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    icon: <Icon icon="la:expeditedssl" color="#ff6900"/>,
+    icon: <Icon icon="la:expeditedssl" color="#ff6900" />,
     title: "Sertifikat SSL Gratis",
     desc: "Membeli hosting minion sudah termasuk gratis SSL, tentunya dapat menghemat biaya tahunan kamu",
-    backgroundImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
-    
+    backgroundImage:
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
   },
   {
-    icon: <Icon icon="material-symbols:speed-outline" color="#ff6900"/>,
+    icon: <Icon icon="material-symbols:speed-outline" color="#ff6900" />,
     title: "Up to 80x Faster",
     desc: "Dirancang untuk membuat website memiliki performa yang baik, 80x lebih cepat di akses dengan dukungan teknology terbarukan.",
-    backgroundImage: "https://images.unsplash.com/photo-1698249173956-43c9c3dcd2f3?q=80&w=2940&auto=format&fit=crop",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1698249173956-43c9c3dcd2f3?q=80&w=2940&auto=format&fit=crop",
   },
   {
-    icon: <Icon icon="mdi:database" color="#ff6900"/>,
+    icon: <Icon icon="mdi:database" color="#ff6900" />,
     title: "Unlimited Database",
     desc: "kamu gak usah khawatir lagi dengan database yang selalu dibatasi, kini kamu bisa dapat unlimited database semua jenis paket minion hosting !",
-    backgroundImage: "https://images.unsplash.com/photo-1653179241439-c4c10083879a?q=80&w=2830&auto=format&fit=crop",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1653179241439-c4c10083879a?q=80&w=2830&auto=format&fit=crop",
   },
   {
-    icon: <Icon icon="clarity:backup-line" color="#ff6900"/>,
+    icon: <Icon icon="clarity:backup-line" color="#ff6900" />,
     title: "Backup Data Mingguan",
     desc: "Fitur backup mingguan ke server khusus untuk menjaga keamanan data.",
-    backgroundImage: "https://images.unsplash.com/photo-1508427062913-eba39b5aaf59?q=80&w=2787&auto=format&fit=crop",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1508427062913-eba39b5aaf59?q=80&w=2787&auto=format&fit=crop",
   },
   {
-    icon: <Icon icon="carbon:cics-program" color="#ff6900"/>,
+    icon: <Icon icon="carbon:cics-program" color="#ff6900" />,
     title: "Softaculous Auto-Installer",
     desc: "Kemudahan instalasi berbagai macam CMS seperti WordPress hanya dalam beberapa klik.",
-    backgroundImage: "https://media.istockphoto.com/id/1317628358/photo/open-road-and-hourglass.webp?a=1&b=1&s=612x612&w=0&k=20&c=qH8VQLnXERavL4rbN6XuS4tHhfPewDGjRtO6cIAdSjc=",
+    backgroundImage:
+      "https://media.istockphoto.com/id/1317628358/photo/open-road-and-hourglass.webp?a=1&b=1&s=612x612&w=0&k=20&c=qH8VQLnXERavL4rbN6XuS4tHhfPewDGjRtO6cIAdSjc=",
   },
   {
-    icon: <Icon icon="mdi:gear-outline" color="#ff6900"/>,
+    icon: <Icon icon="mdi:gear-outline" color="#ff6900" />,
     title: "CloudLinux",
     desc: "Memberikan limitasi serta keamanan tambahan untuk menjaga kestabilan server.",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1657665675084-2a9dec00f211?q=80&w=774",
   },
 ];
 
 export const FeatureSSDData = [
   {
-    icon: <Icon icon="stash:domain" color="#ff6900"/>,
+    icon: <Icon icon="stash:domain" color="#ff6900" />,
     title: "Domain Gratis Satu Tahun",
     desc: "Dapat domain gratis 1 tahun dengan ekstensi yang sudah di tetapkan.",
   },
   {
-    icon: <Icon icon="la:expeditedssl" color="#ff6900"/>,
+    icon: <Icon icon="la:expeditedssl" color="#ff6900" />,
     title: "Sertifikat SSL Gratis",
     desc: "Membeli hosting minion sudah termasuk gratis SSL, tentunya dapat menghemat biaya tahunan kamu",
   },
   {
-    icon: <Icon icon="material-symbols:speed-outline" color="#ff6900"/>,
+    icon: <Icon icon="material-symbols:speed-outline" color="#ff6900" />,
     title: "Up to 80x Faster",
     desc: "Dirancang untuk membuat website memiliki performa yang baik, 80x lebih cepat di akses dengan dukungan teknology terbarukan.",
   },
   {
-    icon: <Icon icon="mdi:database" color="#ff6900"/>,
+    icon: <Icon icon="mdi:database" color="#ff6900" />,
     title: "Unlimited Database",
     desc: "kamu gak usah khawatir lagi dengan database yang selalu dibatasi, kini kamu bisa dapat unlimited database semua jenis paket minion hosting !",
   },
   {
-    icon: <Icon icon="clarity:backup-line" color="#ff6900"/>,
+    icon: <Icon icon="clarity:backup-line" color="#ff6900" />,
     title: "Backup Data Mingguan",
     desc: "Fitur backup mingguan ke server khusus untuk menjaga keamanan data.",
   },
   {
-    icon: <Icon icon="carbon:cics-program" color="#ff6900"/>,
+    icon: <Icon icon="carbon:cics-program" color="#ff6900" />,
     title: "Softaculous Auto-Installer",
     desc: "Kemudahan instalasi berbagai macam CMS seperti WordPress hanya dalam beberapa klik.",
   },
   {
-    icon: <Icon icon="mdi:gear-outline" color="#ff6900"/>,
+    icon: <Icon icon="mdi:gear-outline" color="#ff6900" />,
     title: "CloudLinux",
     desc: "Memberikan limitasi serta keamanan tambahan untuk menjaga kestabilan server.",
   },
@@ -1766,27 +1939,29 @@ export const FeatureSSDData = [
 
 export const FeatureWordpressData = [
   {
-    icon: <Icon icon="carbon:dashboard" color="#ff6900"/>,
+    icon: <Icon icon="carbon:dashboard" color="#ff6900" />,
     title: "Dasbor Intuitif",
     desc: "Paket Hosting Wordpress dari Rumahhost menyediakan panel kontrol kaya fitur untuk mengelola website Wordpress, email, sertifikat SSL & lainnya, serta memantau penggunaan Core CPU dan RAM pada paket.",
   },
   {
-    icon: <Icon icon="arcticons:themes-app-icons" color="#ff6900"/>,
+    icon: <Icon icon="arcticons:themes-app-icons" color="#ff6900" />,
     title: "Tema Wordpress siap pakai",
     desc: "Pilih lebih dari 25,000+ tema yang tersedia untuk segala jenis bisnis, portfolio, atau blog.",
   },
   {
-    icon: <Icon icon="wi:cloud-up" color="#ff6900"/>,
+    icon: <Icon icon="wi:cloud-up" color="#ff6900" />,
     title: "Scaling Instan",
     desc: "Tidak perlu memindahkan hosting Anda seiring dengan berkembangnya traffic. Tambahkan sumber daya Anda hanya dengan mengklik tombol - secara instan tambah RAM dan CPU tanpa reboot.",
   },
   {
-    icon: <Icon icon="solar:server-square-update-line-duotone" color="#ff6900"/>,
+    icon: (
+      <Icon icon="solar:server-square-update-line-duotone" color="#ff6900" />
+    ),
     title: "Safeguarded",
     desc: "Industri terkemuka kami menggunakan sistem penyimpanan Ceph based untuk menyimpan data website Anda pada 3 perangkat berbeda untuk memastikan redundansi and keamanan.",
   },
   {
-    icon: <Icon icon="clarity:backup-line" color="#ff6900"/>,
+    icon: <Icon icon="clarity:backup-line" color="#ff6900" />,
     title: "Backup Data Otomatis",
     desc: "Website yang di-host oleh paket Hosting Wordpress dari RumahHost dengan Security Suite terintegrasi disertai Codeguard, solusi backup populer berbasis Cloud. Siapkan backup otomatis di Cloud untuk semua blogmu, dan kembalikan data hanya dengan beberapa klik!",
   },

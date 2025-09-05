@@ -4,9 +4,11 @@ const params = {
     tlds: 'net',
     'domain-name': 'cobaresellerclubapi'
 };
+
+const DEV_URL = "http://localhost:3000";
   
 export const getTldsPricing = async () => {
-    const response = await fetch(process.env.DEV_URL + "/api", {
+    const response = await fetch(DEV_URL + "/api", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

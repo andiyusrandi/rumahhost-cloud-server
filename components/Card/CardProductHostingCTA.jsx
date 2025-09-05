@@ -5,6 +5,9 @@ import CarouselMain from "../Carousel/CarouselMain";
 import Link from "next/link";
 
 function CardProductHostingCTA({ datas }) {
+  if (!Array.isArray(datas)) {
+    return <div>Loading or no data available...</div>;
+  }
   return (
     <>
       <div className="w-full md:hidden">

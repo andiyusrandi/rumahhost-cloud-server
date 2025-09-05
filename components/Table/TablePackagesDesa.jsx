@@ -25,7 +25,7 @@ function TablePackagesDesa() {
       ref={tableContainerRef}
       className="overflow-x-auto"
     >
-      <table className="whitespace-nowrap rounded-lg border-separate border-spacing-y-0 md:border-spacing-y-5">
+      <table className="border-separate border-spacing-y-0 whitespace-nowrap rounded-lg md:border-spacing-y-5">
         <thead className="relative">
           <tr>
             <th colSpan={9}>
@@ -50,17 +50,17 @@ function TablePackagesDesa() {
                   width: tableContainerWidth - 12 * 2,
                 }}
               >
-                <h3 className="mb-2 mt-10 font-semibold text-[#323548] md:text-white text-[28px] leading-10 md:leading-none md:text[40px] md:mt-0">
+                <h3 className="md:text[40px] mb-2 mt-10 text-[28px] font-semibold leading-10 text-[#323548] md:mt-0 md:leading-none md:text-white">
                   Harga Cloud Hosting Desa Terbaik di Indonesia
                 </h3>
-                <p className="mb-5 text-[#212529] text-base md:mb-0 lg:text-lg md:text-[#B5B5C3]">
+                <p className="mb-5 text-base text-[#212529] md:mb-0 md:text-[#B5B5C3] lg:text-lg">
                   Pilih paket Cloud Hosting Desa sesuai kebutuhan dan anggaran
                   Anda. Server cloud CHD untuk mendukung bisnis anda lebih maju
                 </p>
               </div>
             </th>
           </tr>
-          <tr className="text-white text-base font-semibold lg:text-lg bg-gradient-to-l from-[#077864] to-[#377bf6] md:from-[#077864B2] md:to-[#377BF640]">
+          <tr className="bg-gradient-to-l from-[#077864] to-[#377bf6] text-base font-semibold text-white md:from-[#077864B2] md:to-[#377BF640] lg:text-lg">
             <th>Product</th>
             <th>Disk Space</th>
             <th>Bandwidth</th>
@@ -74,16 +74,40 @@ function TablePackagesDesa() {
         </thead>
         <tbody>
           {tablePackageDesaDatas.map((data, index) => (
-            <tr className="shadow-lg" key={index}>
-              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base lg:text-lg">{data.product}</p></td>
-              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.diskSpace} GB</p></td>
-              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.bandwidth}</p></td>
-              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.email} Akun</p></td>
-              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.database}</p></td>
-              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.ssl}</p></td>
-              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}><p className="text-base font-medium lg:text-lg">{data.addOn}</p></td>
-              <td style={{padding: "5px 5px 1.25rem 0.75rem"}} className="price"><p className=" font-medium">Rp. {numeral(data.price).format("0,0")}</p></td>
-              <td style={{padding: "5px 5px 1.25rem 0.75rem"}}>
+            <tr className="shadow-[0_1px_3px_rgba(0,0,0,0.08)]" key={index}>
+              <td className="md:flex md:flex-row md:justify-start md:gap-2 md:align-middle">
+                <p className="text-base lg:text-lg">{data.product}</p>
+              </td>
+              <td>
+                <p className="text-base font-medium lg:text-lg">
+                  {data.diskSpace} GB
+                </p>
+              </td>
+              <td>
+                <p className="text-base font-medium lg:text-lg">
+                  {data.bandwidth}
+                </p>
+              </td>
+              <td>
+                <p className="text-base font-medium lg:text-lg">{data.email}</p>
+              </td>
+              <td>
+                <p className="text-base font-medium lg:text-lg">
+                  {data.database}
+                </p>
+              </td>
+              <td>
+                <p className="text-base font-medium lg:text-lg">{data.ssl}</p>
+              </td>
+              <td>
+                <p className="text-base font-medium lg:text-lg">{data.addOn}</p>
+              </td>
+              <td className="price">
+                <p className=" font-medium">
+                  Rp. {numeral(data.price).format("0,0")}
+                </p>
+              </td>
+              <td>
                 <button
                   // href={data.url}
                   // className="w-full rounded-lg border border-primary p-2 text-center text-lg font-semibold capitalize text-primary"

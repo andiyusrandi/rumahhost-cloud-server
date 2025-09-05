@@ -6,12 +6,12 @@ import numeral from "numeral";
 import Link from "next/link";
 
 function CloudHostingWordpressPackages({ datas }) {
-  console.log(datas)
+  console.log(datas);
   return (
     <section className="mb-12" id="pricing">
       <div className="container max-w-3xl">
         <div className="mb-10 text-center">
-          <h3 className="mb-4 text-[28px] leading-relaxed font-bold md:leading-none md:text-4xl">
+          <h3 className="mb-4 text-[28px] font-bold leading-relaxed md:text-4xl md:leading-none">
             Harga Wordpress Hosting Terbaik di Indonesia
           </h3>
           <p className="text-sm md:text-base">
@@ -51,45 +51,98 @@ function CloudHostingWordpressPackages({ datas }) {
                     </p>
                   </div>
                   <div className="mb-10 w-full">
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>Disk {data.type === 'other' ? (data.feature.QUOTA / 1000) : (data.feature.space / 1024)} GB</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
+                      <p>
+                        Disk{" "}
+                        {data.type === "other"
+                          ? data.feature.QUOTA / 1000
+                          : data.feature.space / 1024}{" "}
+                        GB
+                      </p>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>RAM {data.type === 'other' ? (data.previewName === "PERSONAL" ? '4' : data.previewName === "SMALL TEAM" ? '6' : '10') : data.feature.ram / 1024} GB</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
+                      <p>
+                        RAM{" "}
+                        {data.type === "other"
+                          ? data.previewName === "PERSONAL"
+                            ? "4"
+                            : data.previewName === "SMALL TEAM"
+                              ? "6"
+                              : "10"
+                          : data.feature.ram / 1024}{" "}
+                        GB
+                      </p>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>CPU CORE {data.type === 'other' ? (data.previewName === "PERSONAL" ? '2' : data.previewName === "SMALL TEAM" ? '3' : '5') : data.feature.cores}</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
+                      <p>
+                        CPU CORE{" "}
+                        {data.type === "other"
+                          ? data.previewName === "PERSONAL"
+                            ? "2"
+                            : data.previewName === "SMALL TEAM"
+                              ? "3"
+                              : "5"
+                          : data.feature.cores}
+                      </p>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
                       <p>Unmetered Bandwidth</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
                       <p>Subdomain Unlimited</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
                       <p>AKun Email Unlimited</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
                       <p>Cloudfire</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
@@ -108,7 +161,7 @@ function CloudHostingWordpressPackages({ datas }) {
             {datas.map((data, index) => (
               <div
                 key={index}
-                className={`flex w-80 flex-col items-center justify-between rounded-lg p-4 custom-shadow ${data.isPopular ? "bg-primary" : "my-8 bg-white"}`}
+                className={`custom-shadow flex w-80 flex-col items-center justify-between rounded-lg p-4 ${data.isPopular ? "bg-primary" : "my-8 bg-white"}`}
               >
                 <div className="w-full">
                   <h5
@@ -127,47 +180,100 @@ function CloudHostingWordpressPackages({ datas }) {
                       <span className="text-xs "> / Bulan</span>
                     </p>
                   </div>
-                  <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-200" />
+                  <hr className="my-2 h-px border-0 bg-gray-200 dark:bg-gray-200" />
                   <div className="mb-6 w-full">
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>Disk {data.type === 'other' ? (data.feature.QUOTA / 1000) : (data.feature.space / 1024)} GB</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
+                      <p>
+                        Disk{" "}
+                        {data.type === "other"
+                          ? data.feature.QUOTA / 1000
+                          : data.feature.space / 1024}{" "}
+                        GB
+                      </p>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>RAM {data.type === 'other' ? (data.previewName === "PERSONAL" ? '4' : data.previewName === "SMALL TEAM" ? '6' : '10') : data.feature.ram / 1024} GB</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
+                      <p>
+                        RAM{" "}
+                        {data.type === "other"
+                          ? data.previewName === "PERSONAL"
+                            ? "4"
+                            : data.previewName === "SMALL TEAM"
+                              ? "6"
+                              : "10"
+                          : data.feature.ram / 1024}{" "}
+                        GB
+                      </p>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
-                      <p>CPU CORE {data.type === 'other' ? (data.previewName === "PERSONAL" ? '2' : data.previewName === "SMALL TEAM" ? '3' : '5') : data.feature.cores}</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
+                      <p>
+                        CPU CORE{" "}
+                        {data.type === "other"
+                          ? data.previewName === "PERSONAL"
+                            ? "2"
+                            : data.previewName === "SMALL TEAM"
+                              ? "3"
+                              : "5"
+                          : data.feature.cores}
+                      </p>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
                       <p>Unmetered Bandwidth</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
                       <p>Subdomain Unlimited</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
                       <p>AKun Email Unlimited</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
-                    <div className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}>
+                    <div
+                      className={`flex w-full items-center justify-between p-2 text-sm font-medium uppercase ${data.isPopular ? "text-white" : "text-[#5E6278]"}`}
+                    >
                       <p>Cloudfire</p>
-                      <div className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}>
+                      <div
+                        className={`rounded-full text-lg ${data.isPopular ? "bg-white/30 text-white" : "bg-primary/30 text-primary"}`}
+                      >
                         <Icon icon="mdi:done" />
                       </div>
                     </div>
@@ -175,10 +281,11 @@ function CloudHostingWordpressPackages({ datas }) {
                 </div>
                 <Link
                   href={`https://client.rumahhost.com/cart.php?a=add&pid=${data.pid}`}
-                  className="rounded-lg border border-white bg-primary p-3 text-lg font-semibold capitalize text-white"
+                  className="rounded-lg border border-white bg-primary p-3 text-sm font-semibold capitalize text-white"
                 >
                   Order Sekarang
                 </Link>
+                <br></br>
               </div>
             ))}
           </div>
