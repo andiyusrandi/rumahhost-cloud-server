@@ -181,9 +181,9 @@ export const productsData = [
         height={36}
       />
     ),
-    title: "Cloud Hosting Desa",
+    title: "Cloud Server Desa",
     body: "Hosting Desa adalah Layanan Infrastruktur Server Berbasis Cloud yang di rancang khusus untuk Website Desa dengan Technology Terbaru dan jaminan uptime 99,99% .",
-    link: "/cloud-hosting-desa",
+    link: "/cloud-server-desa",
     price: "150.000",
   },
   {
